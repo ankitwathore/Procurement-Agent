@@ -1,0 +1,2804 @@
+{
+  "vendor_id": "V3",
+  "effort": "medium",
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V3",
+    "prompt_version": "extract_a@6e0b9db0",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": "claude-sonnet-5-5",
+    "fallback_used": false,
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 2642,
+      "output_tokens": 8993,
+      "cache_read_input_tokens": 7852,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.09678439999999999,
+    "ms": 62357,
+    "at": "2026-10-08T12:49:14.418Z"
+  },
+  "errors": [],
+  "injection": [],
+  "notes": [
+    "Rows L01-L08 and L15-L17 carry no board spec in the text; only dimensions are reported.",
+    "Rows L29 and L30 have no currency written in their table; the document's rate columns do not label it."
+  ],
+  "questionnaire": [
+    {
+      "q_id": "Q01",
+      "answer_raw": "Yes, ISO 9001 certificate attached",
+      "snippet": "Yes, ISO 9001 certificate attached"
+    },
+    {
+      "q_id": "Q02",
+      "answer_raw": "Yes, test report attached. BF 22 compliant for 5 ply BC board.",
+      "snippet": "Yes, test report attached. BF 22 compliant for 5 ply BC board."
+    },
+    {
+      "q_id": "Q03",
+      "answer_raw": "Yes, 9 years",
+      "snippet": "Yes, 9 years"
+    },
+    {
+      "q_id": "Q04",
+      "answer_raw": "No",
+      "snippet": "No"
+    },
+    {
+      "q_id": "Q05",
+      "answer_raw": "900",
+      "snippet": "900"
+    },
+    {
+      "q_id": "Q06",
+      "answer_raw": "12",
+      "snippet": "12"
+    },
+    {
+      "q_id": "Q07",
+      "answer_raw": "No: 100 percent advance for imported items, net 30 for others.",
+      "snippet": "No: 100 percent advance for imported items, net 30 for others."
+    },
+    {
+      "q_id": "Q08",
+      "answer_raw": "Yes",
+      "snippet": "Yes"
+    },
+    {
+      "q_id": "Q09",
+      "answer_raw": "7",
+      "snippet": "7"
+    },
+    {
+      "q_id": "Q10",
+      "answer_raw": "Hosur, about 1,050 km",
+      "snippet": "Hosur, about 1,050 km"
+    },
+    {
+      "q_id": "Q11",
+      "answer_raw": "15",
+      "snippet": "15"
+    },
+    {
+      "q_id": "Q12",
+      "answer_raw": "None",
+      "snippet": "None"
+    }
+  ],
+  "extraction": {
+    "vendor_terms": {
+      "freight_basis": {
+        "value": "delivered",
+        "snippet": "1. Delivery: FOR Chakan plant, freight included.",
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 22
+        }
+      },
+      "gst_basis": {
+        "value": "exclusive",
+        "rate_pct": 18,
+        "snippet": "2. GST: extra at 18 percent.",
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 23
+        }
+      },
+      "fx_clause": {
+        "value_text": "USD rates are subject to the RBI reference rate on the date of order.",
+        "snippet": "4. USD rates are subject to the RBI reference rate on the date of order.",
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 25
+        }
+      },
+      "conditional_discounts": [],
+      "validity": {
+        "value_text": "valid for 15 days from the date of this quotation",
+        "from_date": "2026-09-18",
+        "valid_days": 15,
+        "snippet": "5. Validity: valid for 15 days from the date of this quotation.",
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 26
+        }
+      }
+    },
+    "rows": [
+      {
+        "row_id": "A1",
+        "raw_text": "The rate for a mixer grinder 3 jar master carton of 440 by 330 by 310 mm is Rs 40.12 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L01",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 40.12,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            440,
+            330,
+            310
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 6
+        },
+        "snippet": "The rate for a mixer grinder 3 jar master carton of 440 by 330 by 310 mm is Rs 40.12 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A2",
+        "raw_text": "For the induction cooktop master carton (400 x 360 x 140 mm), our price is Rs 27.95 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L02",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 27.95,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            400,
+            360,
+            140
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 7
+        },
+        "snippet": "For the induction cooktop master carton (400 x 360 x 140 mm), our price is Rs 27.95 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A3",
+        "raw_text": "We can supply the air fryer 4l master carton, size 360 x 340 x 380 mm, at Rs 40.10 each.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L03",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 40.1,
+          "currency": "Rs",
+          "unit_as_written": "each",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            360,
+            340,
+            380
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 8
+        },
+        "snippet": "We can supply the air fryer 4l master carton, size 360 x 340 x 380 mm, at Rs 40.10 each.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A4",
+        "raw_text": "The rate for a ceiling fan 1200mm master carton of 1260 by 180 by 260 mm is Rs 76.86 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L04",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 76.86,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1260,
+            180,
+            260
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 9
+        },
+        "snippet": "The rate for a ceiling fan 1200mm master carton of 1260 by 180 by 260 mm is Rs 76.86 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A5",
+        "raw_text": "For the table fan 400mm master carton (450 x 230 x 480 mm), our price is Rs 47.53 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L05",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 47.53,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            450,
+            230,
+            480
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 10
+        },
+        "snippet": "For the table fan 400mm master carton (450 x 230 x 480 mm), our price is Rs 47.53 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A6",
+        "raw_text": "We can supply the room cooler 40l master carton, size 560 x 430 x 860 mm, at Rs 115.81 each.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L06",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 115.81,
+          "currency": "Rs",
+          "unit_as_written": "each",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            560,
+            430,
+            860
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 11
+        },
+        "snippet": "We can supply the room cooler 40l master carton, size 560 x 430 x 860 mm, at Rs 115.81 each.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A7",
+        "raw_text": "The rate for a water heater 15l master carton of 380 by 380 by 520 mm is Rs 69.46 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L07",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 69.46,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            380,
+            380,
+            520
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 12
+        },
+        "snippet": "The rate for a water heater 15l master carton of 380 by 380 by 520 mm is Rs 69.46 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A8",
+        "raw_text": "For the microwave oven 28l master carton (560 x 480 x 370 mm), our price is Rs 97.27 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L08",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 97.27,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            560,
+            480,
+            370
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 13
+        },
+        "snippet": "For the microwave oven 28l master carton (560 x 480 x 370 mm), our price is Rs 97.27 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A9",
+        "raw_text": "We can supply the washing machine fully automatic 6.5kg outer carton, size 620 x 640 x 1000 mm, at Rs 243.41 each.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L15",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 243.41,
+          "currency": "Rs",
+          "unit_as_written": "each",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            620,
+            640,
+            1000
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 14
+        },
+        "snippet": "We can supply the washing machine fully automatic 6.5kg outer carton, size 620 x 640 x 1000 mm, at Rs 243.41 each.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A10",
+        "raw_text": "The rate for a refrigerator 190l outer carton of 560 by 600 by 1250 mm is Rs 279.95 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L16",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 279.95,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            560,
+            600,
+            1250
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 15
+        },
+        "snippet": "The rate for a refrigerator 190l outer carton of 560 by 600 by 1250 mm is Rs 279.95 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A11",
+        "raw_text": "For the split ac outdoor unit outer carton (800 x 340 x 580 mm), our price is Rs 188.18 per piece.",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L17",
+            "match_confidence": 0.98,
+            "reasons": [
+              "Description and dimensions match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 188.18,
+          "currency": "Rs",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            800,
+            340,
+            580
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "paragraph_idx": 16
+        },
+        "snippet": "For the split ac outdoor unit outer carton (800 x 340 x 580 mm), our price is Rs 188.18 per piece.",
+        "assumptions": []
+      },
+      {
+        "row_id": "A12",
+        "raw_text": "Mixer jar accessory box | 180x140x120 | 3 ply B 120/16 | 661.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L09",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 661,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            180,
+            140,
+            120
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 1
+        },
+        "snippet": "Mixer jar accessory box | 180x140x120 | 3 ply B 120/16 | 661.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A13",
+        "raw_text": "Fan blade set inner carton | 1250x120x60 | 3 ply B 120/16 | 1993.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L10",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1993,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1250,
+            120,
+            60
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 2
+        },
+        "snippet": "Fan blade set inner carton | 1250x120x60 | 3 ply B 120/16 | 1993.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A14",
+        "raw_text": "Power cord and manual pouch carton | 220x160x40 | 3 ply B 120/16 | 341.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L11",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 341,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            220,
+            160,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 3
+        },
+        "snippet": "Power cord and manual pouch carton | 220x160x40 | 3 ply B 120/16 | 341.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A15",
+        "raw_text": "Cooktop glass plate inner carton | 380x340x50 | 3 ply B 150/18 | 1471.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L12",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1471,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            380,
+            340,
+            50
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 4
+        },
+        "snippet": "Cooktop glass plate inner carton | 380x340x50 | 3 ply B 150/18 | 1471.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A16",
+        "raw_text": "Remote and battery kit box | 160x90x40 | 3 ply B 120/16 | 266.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L13",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 266,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            160,
+            90,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 5
+        },
+        "snippet": "Remote and battery kit box | 160x90x40 | 3 ply B 120/16 | 266.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A17",
+        "raw_text": "Air fryer basket inner carton | 330x300x120 | 3 ply B 150/18 | 1669.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L14",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1669,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            330,
+            300,
+            120
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 6
+        },
+        "snippet": "Air fryer basket inner carton | 330x300x120 | 3 ply B 150/18 | 1669.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A18",
+        "raw_text": "Mixer grinder 3 jar corrugated partition set | 420x310x80 | 3 ply B 120/16 | 1372.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L18",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1372,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            420,
+            310,
+            80
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 7
+        },
+        "snippet": "Mixer grinder 3 jar corrugated partition set | 420x310x80 | 3 ply B 120/16 | 1372.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A19",
+        "raw_text": "Ceiling fan blade separator pad | 1230x110x15 | 3 ply B 120/16 | 930.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L19",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 930,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1230,
+            110,
+            15
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 8
+        },
+        "snippet": "Ceiling fan blade separator pad | 1230x110x15 | 3 ply B 120/16 | 930.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A20",
+        "raw_text": "Microwave top and bottom pad pair | 540x460x40 | 5 ply BC 150/18 | 30.76 | per pair",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L20",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 30.76,
+          "currency": "Rs",
+          "unit_as_written": "per pair",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            540,
+            460,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 9
+        },
+        "snippet": "Microwave top and bottom pad pair | 540x460x40 | 5 ply BC 150/18 | 30.76 | per pair",
+        "assumptions": []
+      },
+      {
+        "row_id": "A21",
+        "raw_text": "Cooler water tank wrap sleeve | 900x300 flat | 3 ply B 150/18 | 16.02 | per pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L21",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 16.02,
+          "currency": "Rs",
+          "unit_as_written": "per pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            900,
+            300
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 10
+        },
+        "snippet": "Cooler water tank wrap sleeve | 900x300 flat | 3 ply B 150/18 | 16.02 | per pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A22",
+        "raw_text": "Die cut tray for glass plate | 370x330x25 | 3 ply B 150/18 | 1020.00 | per 100 pcs",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L22",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1020,
+          "currency": "Rs",
+          "unit_as_written": "per 100 pcs",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            370,
+            330,
+            25
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 0,
+          "row": 11
+        },
+        "snippet": "Die cut tray for glass plate | 370x330x25 | 3 ply B 150/18 | 1020.00 | per 100 pcs",
+        "assumptions": []
+      },
+      {
+        "row_id": "A23",
+        "raw_text": "Corrugated sheet 5 ply 1100x1600 | 1100x1600 | 5 ply BC 180/22 | 46.29 | per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L23",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 46.29,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            1100,
+            1600
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 1,
+          "row": 1
+        },
+        "snippet": "Corrugated sheet 5 ply 1100x1600 | 1100x1600 | 5 ply BC 180/22 | 46.29 | per kg",
+        "assumptions": []
+      },
+      {
+        "row_id": "A24",
+        "raw_text": "Corrugated sheet 3 ply 1000x1400 | 1000x1400 | 3 ply B 150/18 | 41.41 | per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L24",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 41.41,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            1000,
+            1400
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 1,
+          "row": 2
+        },
+        "snippet": "Corrugated sheet 3 ply 1000x1400 | 1000x1400 | 3 ply B 150/18 | 41.41 | per kg",
+        "assumptions": []
+      },
+      {
+        "row_id": "A25",
+        "raw_text": "Corrugated roll 3 ply 1500mm width | 1500 wide | 3 ply B 120/16 | 42.25 | per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L25",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name, size and board match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 42.25,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1500
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 1,
+          "row": 3
+        },
+        "snippet": "Corrugated roll 3 ply 1500mm width | 1500 wide | 3 ply B 120/16 | 42.25 | per kg",
+        "assumptions": []
+      },
+      {
+        "row_id": "A26",
+        "raw_text": "Stretch film 23 micron 500mm | 500mm | USD 1.53 | per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L26",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name and size match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1.53,
+          "currency": "USD",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            500
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 2,
+          "row": 1
+        },
+        "snippet": "Stretch film 23 micron 500mm | 500mm | USD 1.53 | per kg",
+        "assumptions": []
+      },
+      {
+        "row_id": "A27",
+        "raw_text": "BOPP tape 48mm x 100m brown | 48mm x 100m | USD 0.41 | per roll",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L27",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name and size match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 0.41,
+          "currency": "USD",
+          "unit_as_written": "per roll",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            48,
+            100
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 2,
+          "row": 2
+        },
+        "snippet": "BOPP tape 48mm x 100m brown | 48mm x 100m | USD 0.41 | per roll",
+        "assumptions": []
+      },
+      {
+        "row_id": "A28",
+        "raw_text": "Pallet corner protector 50x50x4mm x 1000mm | 1000mm | USD 0.14 | per piece",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L28",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name and size match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 0.14,
+          "currency": "USD",
+          "unit_as_written": "per piece",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1000
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 2,
+          "row": 3
+        },
+        "snippet": "Pallet corner protector 50x50x4mm x 1000mm | 1000mm | USD 0.14 | per piece",
+        "assumptions": []
+      },
+      {
+        "row_id": "A29",
+        "raw_text": "Corrugated pallet slip sheet 1100x1100 | 1100x1100 | 24.10 | per pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L29",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name and size match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 24.1,
+          "currency": "",
+          "unit_as_written": "per pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1100,
+            1100
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 2,
+          "row": 4
+        },
+        "snippet": "Corrugated pallet slip sheet 1100x1100 | 1100x1100 | 24.10 | per pc",
+        "assumptions": [
+          "No currency written in this table; USD statement refers only to stretch film, tape and corner protectors."
+        ]
+      },
+      {
+        "row_id": "A30",
+        "raw_text": "Edge board 40x40x3mm x 1200mm | 1200mm | 13.87 | per pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L30",
+            "match_confidence": 0.99,
+            "reasons": [
+              "Item name and size match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 13.87,
+          "currency": "",
+          "unit_as_written": "per pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1200
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "docx",
+          "table_idx": 2,
+          "row": 5
+        },
+        "snippet": "Edge board 40x40x3mm x 1200mm | 1200mm | 13.87 | per pc",
+        "assumptions": [
+          "No currency written in this table; USD statement refers only to stretch film, tape and corner protectors."
+        ]
+      }
+    ],
+    "extras": [],
+    "notes": [
+      "Rows L01-L08 and L15-L17 carry no board spec in the text; only dimensions are reported.",
+      "Rows L29 and L30 have no currency written in their table; the document's rate columns do not label it."
+    ]
+  },
+  "pass_b": {
+    "trace": {
+      "step": "extract_b",
+      "vendor_id": "V3",
+      "prompt_version": "extract_b@09ba265c",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 2642,
+        "output_tokens": 6260,
+        "cache_read_input_tokens": 6452,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0691744,
+      "ms": 43751,
+      "at": "2026-10-08T13:05:40.146Z"
+    },
+    "errors": [],
+    "notes": [
+      "Master and outer carton lines (L01-L08, L15-L17) state no board spec (ply, GSM, BF) in the offer.",
+      "Terms: GST extra at 18 percent; freight included FOR Chakan; validity 15 days; lead time 12 days.",
+      "USD rates subject to RBI reference rate on date of order; 100 percent advance for imported items.",
+      "Q02 answer says BF 22 compliant for 5 ply BC board only."
+    ],
+    "extraction": {
+      "vendor_terms": {},
+      "rows": [
+        {
+          "row_id": "B-L01",
+          "raw_text": "The rate for a mixer grinder 3 jar master carton of 440 by 330 by 310 mm is Rs 40.12 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L01",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 40.12,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              440,
+              330,
+              310
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 6
+          },
+          "snippet": "The rate for a mixer grinder 3 jar master carton of 440 by 330 by 310 mm is Rs 40.12 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L02",
+          "raw_text": "For the induction cooktop master carton (400 x 360 x 140 mm), our price is Rs 27.95 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L02",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 27.95,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              400,
+              360,
+              140
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 7
+          },
+          "snippet": "For the induction cooktop master carton (400 x 360 x 140 mm), our price is Rs 27.95 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L03",
+          "raw_text": "We can supply the air fryer 4l master carton, size 360 x 340 x 380 mm, at Rs 40.10 each.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L03",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 40.1,
+            "currency": "Rs",
+            "unit_as_written": "each",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              360,
+              340,
+              380
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 8
+          },
+          "snippet": "We can supply the air fryer 4l master carton, size 360 x 340 x 380 mm, at Rs 40.10 each.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L04",
+          "raw_text": "The rate for a ceiling fan 1200mm master carton of 1260 by 180 by 260 mm is Rs 76.86 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L04",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 76.86,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1260,
+              180,
+              260
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 9
+          },
+          "snippet": "The rate for a ceiling fan 1200mm master carton of 1260 by 180 by 260 mm is Rs 76.86 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L05",
+          "raw_text": "For the table fan 400mm master carton (450 x 230 x 480 mm), our price is Rs 47.53 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L05",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 47.53,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              450,
+              230,
+              480
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 10
+          },
+          "snippet": "For the table fan 400mm master carton (450 x 230 x 480 mm), our price is Rs 47.53 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L06",
+          "raw_text": "We can supply the room cooler 40l master carton, size 560 x 430 x 860 mm, at Rs 115.81 each.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L06",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 115.81,
+            "currency": "Rs",
+            "unit_as_written": "each",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              560,
+              430,
+              860
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 11
+          },
+          "snippet": "We can supply the room cooler 40l master carton, size 560 x 430 x 860 mm, at Rs 115.81 each.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L07",
+          "raw_text": "The rate for a water heater 15l master carton of 380 by 380 by 520 mm is Rs 69.46 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L07",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 69.46,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              380,
+              380,
+              520
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 12
+          },
+          "snippet": "The rate for a water heater 15l master carton of 380 by 380 by 520 mm is Rs 69.46 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L08",
+          "raw_text": "For the microwave oven 28l master carton (560 x 480 x 370 mm), our price is Rs 97.27 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L08",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 97.27,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              560,
+              480,
+              370
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 13
+          },
+          "snippet": "For the microwave oven 28l master carton (560 x 480 x 370 mm), our price is Rs 97.27 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L09",
+          "raw_text": "Mixer jar accessory box | 180x140x120 | 3 ply B 120/16 | 661.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L09",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 661,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              180,
+              140,
+              120
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 1
+          },
+          "snippet": "Mixer jar accessory box | 180x140x120 | 3 ply B 120/16 | 661.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L10",
+          "raw_text": "Fan blade set inner carton | 1250x120x60 | 3 ply B 120/16 | 1993.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L10",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1993,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1250,
+              120,
+              60
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 2
+          },
+          "snippet": "Fan blade set inner carton | 1250x120x60 | 3 ply B 120/16 | 1993.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L11",
+          "raw_text": "Power cord and manual pouch carton | 220x160x40 | 3 ply B 120/16 | 341.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L11",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 341,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              220,
+              160,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 3
+          },
+          "snippet": "Power cord and manual pouch carton | 220x160x40 | 3 ply B 120/16 | 341.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L12",
+          "raw_text": "Cooktop glass plate inner carton | 380x340x50 | 3 ply B 150/18 | 1471.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L12",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1471,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              380,
+              340,
+              50
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 4
+          },
+          "snippet": "Cooktop glass plate inner carton | 380x340x50 | 3 ply B 150/18 | 1471.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L13",
+          "raw_text": "Remote and battery kit box | 160x90x40 | 3 ply B 120/16 | 266.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L13",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 266,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              160,
+              90,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 5
+          },
+          "snippet": "Remote and battery kit box | 160x90x40 | 3 ply B 120/16 | 266.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L14",
+          "raw_text": "Air fryer basket inner carton | 330x300x120 | 3 ply B 150/18 | 1669.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L14",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1669,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              330,
+              300,
+              120
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 6
+          },
+          "snippet": "Air fryer basket inner carton | 330x300x120 | 3 ply B 150/18 | 1669.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L15",
+          "raw_text": "We can supply the washing machine fully automatic 6.5kg outer carton, size 620 x 640 x 1000 mm, at Rs 243.41 each.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L15",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 243.41,
+            "currency": "Rs",
+            "unit_as_written": "each",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              620,
+              640,
+              1000
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 14
+          },
+          "snippet": "We can supply the washing machine fully automatic 6.5kg outer carton, size 620 x 640 x 1000 mm, at Rs 243.41 each.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L16",
+          "raw_text": "The rate for a refrigerator 190l outer carton of 560 by 600 by 1250 mm is Rs 279.95 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L16",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 279.95,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              560,
+              600,
+              1250
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 15
+          },
+          "snippet": "The rate for a refrigerator 190l outer carton of 560 by 600 by 1250 mm is Rs 279.95 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L17",
+          "raw_text": "For the split ac outdoor unit outer carton (800 x 340 x 580 mm), our price is Rs 188.18 per piece.",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L17",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 188.18,
+            "currency": "Rs",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              800,
+              340,
+              580
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "paragraph_idx": 16
+          },
+          "snippet": "For the split ac outdoor unit outer carton (800 x 340 x 580 mm), our price is Rs 188.18 per piece.",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L18",
+          "raw_text": "Mixer grinder 3 jar corrugated partition set | 420x310x80 | 3 ply B 120/16 | 1372.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L18",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1372,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              420,
+              310,
+              80
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 7
+          },
+          "snippet": "Mixer grinder 3 jar corrugated partition set | 420x310x80 | 3 ply B 120/16 | 1372.00 | per 100 pcs",
+          "assumptions": [
+            "Basis is per 100 pcs while RFx base UOM is set; read as 100 pieces of sets."
+          ]
+        },
+        {
+          "row_id": "B-L19",
+          "raw_text": "Ceiling fan blade separator pad | 1230x110x15 | 3 ply B 120/16 | 930.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L19",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 930,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1230,
+              110,
+              15
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 8
+          },
+          "snippet": "Ceiling fan blade separator pad | 1230x110x15 | 3 ply B 120/16 | 930.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L20",
+          "raw_text": "Microwave top and bottom pad pair | 540x460x40 | 5 ply BC 150/18 | 30.76 | per pair",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L20",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 30.76,
+            "currency": "Rs",
+            "unit_as_written": "per pair",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              540,
+              460,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 9
+          },
+          "snippet": "Microwave top and bottom pad pair | 540x460x40 | 5 ply BC 150/18 | 30.76 | per pair",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L21",
+          "raw_text": "Cooler water tank wrap sleeve | 900x300 flat | 3 ply B 150/18 | 16.02 | per pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L21",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 16.02,
+            "currency": "Rs",
+            "unit_as_written": "per pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              900,
+              300
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 10
+          },
+          "snippet": "Cooler water tank wrap sleeve | 900x300 flat | 3 ply B 150/18 | 16.02 | per pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L22",
+          "raw_text": "Die cut tray for glass plate | 370x330x25 | 3 ply B 150/18 | 1020.00 | per 100 pcs",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L22",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1020,
+            "currency": "Rs",
+            "unit_as_written": "per 100 pcs",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              370,
+              330,
+              25
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 0,
+            "row": 11
+          },
+          "snippet": "Die cut tray for glass plate | 370x330x25 | 3 ply B 150/18 | 1020.00 | per 100 pcs",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L23",
+          "raw_text": "Corrugated sheet 5 ply 1100x1600 | 1100x1600 | 5 ply BC 180/22 | 46.29 | per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L23",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 46.29,
+            "currency": "Rs",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              1100,
+              1600
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 1,
+            "row": 1
+          },
+          "snippet": "Corrugated sheet 5 ply 1100x1600 | 1100x1600 | 5 ply BC 180/22 | 46.29 | per kg",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L24",
+          "raw_text": "Corrugated sheet 3 ply 1000x1400 | 1000x1400 | 3 ply B 150/18 | 41.41 | per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L24",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 41.41,
+            "currency": "Rs",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              1000,
+              1400
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 1,
+            "row": 2
+          },
+          "snippet": "Corrugated sheet 3 ply 1000x1400 | 1000x1400 | 3 ply B 150/18 | 41.41 | per kg",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L25",
+          "raw_text": "Corrugated roll 3 ply 1500mm width | 1500 wide | 3 ply B 120/16 | 42.25 | per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L25",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 42.25,
+            "currency": "Rs",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1500
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 1,
+            "row": 3
+          },
+          "snippet": "Corrugated roll 3 ply 1500mm width | 1500 wide | 3 ply B 120/16 | 42.25 | per kg",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L26",
+          "raw_text": "Stretch film 23 micron 500mm | 500mm | USD 1.53 | per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L26",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1.53,
+            "currency": "USD",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              500
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 2,
+            "row": 1
+          },
+          "snippet": "Stretch film 23 micron 500mm | 500mm | USD 1.53 | per kg",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L27",
+          "raw_text": "BOPP tape 48mm x 100m brown | 48mm x 100m | USD 0.41 | per roll",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L27",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 0.41,
+            "currency": "USD",
+            "unit_as_written": "per roll",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              48,
+              100
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 2,
+            "row": 2
+          },
+          "snippet": "BOPP tape 48mm x 100m brown | 48mm x 100m | USD 0.41 | per roll",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L28",
+          "raw_text": "Pallet corner protector 50x50x4mm x 1000mm | 1000mm | USD 0.14 | per piece",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L28",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 0.14,
+            "currency": "USD",
+            "unit_as_written": "per piece",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1000
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 2,
+            "row": 3
+          },
+          "snippet": "Pallet corner protector 50x50x4mm x 1000mm | 1000mm | USD 0.14 | per piece",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L29",
+          "raw_text": "Corrugated pallet slip sheet 1100x1100 | 1100x1100 | 24.10 | per pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L29",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 24.1,
+            "currency": "",
+            "unit_as_written": "per pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1100,
+              1100
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 2,
+            "row": 4
+          },
+          "snippet": "Corrugated pallet slip sheet 1100x1100 | 1100x1100 | 24.10 | per pc",
+          "assumptions": [
+            "No currency written on this row; the USD note covers stretch film, tape and corner protectors only, so currency left blank."
+          ]
+        },
+        {
+          "row_id": "B-L30",
+          "raw_text": "Edge board 40x40x3mm x 1200mm | 1200mm | 13.87 | per pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L30",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 13.87,
+            "currency": "",
+            "unit_as_written": "per pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1200
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "docx",
+            "table_idx": 2,
+            "row": 5
+          },
+          "snippet": "Edge board 40x40x3mm x 1200mm | 1200mm | 13.87 | per pc",
+          "assumptions": [
+            "No currency written on this row; the USD note does not name edge board, so currency left blank."
+          ]
+        }
+      ],
+      "extras": [],
+      "notes": [
+        "Master and outer carton lines (L01-L08, L15-L17) state no board spec (ply, GSM, BF) in the offer.",
+        "Terms: GST extra at 18 percent; freight included FOR Chakan; validity 15 days; lead time 12 days.",
+        "USD rates subject to RBI reference rate on date of order; 100 percent advance for imported items.",
+        "Q02 answer says BF 22 compliant for 5 ply BC board only."
+      ]
+    }
+  },
+  "rejected": [],
+  "score": {
+    "lines": [
+      {
+        "line_id": "L01",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 40.12,
+        "got_point": 40.12,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L02",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 27.95,
+        "got_point": 27.95,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L03",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 40.1,
+        "got_point": 40.1,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L04",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 76.86,
+        "got_point": 76.86,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L05",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 47.53,
+        "got_point": 47.53,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L06",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 115.81,
+        "got_point": 115.81,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L07",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 69.46,
+        "got_point": 69.46,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L08",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 97.27,
+        "got_point": 97.27,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L09",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 6.61,
+        "got_point": 6.61,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L10",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 19.93,
+        "got_point": 19.93,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L11",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 3.41,
+        "got_point": 3.41,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L12",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 14.71,
+        "got_point": 14.71,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L13",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 2.66,
+        "got_point": 2.66,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L14",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 16.69,
+        "got_point": 16.69,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L15",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 243.41,
+        "got_point": 243.41,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L16",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 279.95,
+        "got_point": 279.95,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L17",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 188.18,
+        "got_point": 188.18,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L18",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 13.72,
+        "got_point": 13.72,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L19",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 9.3,
+        "got_point": 9.3,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L20",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 30.76,
+        "got_point": 30.76,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L21",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 16.02,
+        "got_point": 16.02,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L22",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 10.2,
+        "got_point": 10.2,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L23",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 46.29,
+        "got_point": 46.29,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L24",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 41.41,
+        "got_point": 41.41,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L25",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 42.25,
+        "got_point": 42.25,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L26",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 134.64000000000001,
+        "got_point": 134.64000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L27",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 36.08,
+        "got_point": 36.08,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L28",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 12.32,
+        "got_point": 12.32,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L29",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 24.1,
+        "got_point": 24.1,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L30",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 13.87,
+        "got_point": 13.87,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      }
+    ],
+    "state_accuracy": 1,
+    "price_checked": 30,
+    "price_accuracy": 1,
+    "dangerous": [],
+    "coverage_errors": [],
+    "flags_expected": 5,
+    "flag_recall": 1,
+    "missing_flags": []
+  },
+  "pending_confirmations": [
+    {
+      "id": "V3:currency_assumed:currency",
+      "vendor_id": "V3",
+      "kind": "currency_assumed",
+      "fields": [
+        "currency"
+      ],
+      "lines": [
+        "L29",
+        "L30"
+      ],
+      "snippets": [
+        "Corrugated pallet slip sheet 1100x1100 | 1100x1100 | 24.10 | per pc",
+        "Edge board 40x40x3mm x 1200mm | 1200mm | 13.87 | per pc"
+      ],
+      "question": "V3 did not state a currency for these prices (\"Corrugated pallet slip sheet 1100x1100 | 1100x1100 | 24.10 | per pc\", \"Edge board 40x40x3mm x 1200mm | 1200mm | 13.87 | per pc\"); they are priced in INR, the RFx currency. Confirm INR for L29, L30?"
+    }
+  ]
+}

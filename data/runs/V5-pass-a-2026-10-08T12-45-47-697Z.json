@@ -1,0 +1,685 @@
+{
+  "vendor_id": "V5",
+  "effort": "medium",
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V5",
+    "prompt_version": "extract_a@6e0b9db0",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": "claude-sonnet-5-5",
+    "fallback_used": false,
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 351,
+      "output_tokens": 855,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7852
+    },
+    "cost_usd": 0.028882,
+    "ms": 7021,
+    "at": "2026-10-08T12:45:47.697Z"
+  },
+  "errors": [],
+  "injection": [],
+  "notes": [
+    "Quoted text from the buyer's earlier email (after 'On ... wrote:') was ignored as history.",
+    "No GST basis or validity stated in the vendor's message.",
+    "Other lines are covered only by the 'rest same as last year' statement and were not given rows."
+  ],
+  "questionnaire": [],
+  "extraction": {
+    "vendor_terms": {
+      "freight_basis": {
+        "value": "freight_extra",
+        "snippet": "freight extra",
+        "locator": {
+          "type": "email",
+          "char_start": 78,
+          "char_end": 91,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        }
+      },
+      "conditional_discounts": [],
+      "lines_not_quoted_statement": {
+        "value_text": "rest same as last year",
+        "applies_to": "unquoted lines",
+        "resolves_to": "baseline",
+        "snippet": "rest same as last year",
+        "locator": {
+          "type": "email",
+          "char_start": 54,
+          "char_end": 76,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        }
+      }
+    },
+    "rows": [
+      {
+        "row_id": "A1",
+        "raw_text": "Rs 42/kg for the 5-ply",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L23",
+            "match_confidence": 0.6,
+            "reasons": [
+              "Email quotes '5-ply' at per kg; the only 5 ply kg line in the RFx is the 5 ply corrugated sheet L23."
+            ]
+          }
+        ],
+        "rate": {
+          "value": 42,
+          "currency": "Rs",
+          "unit_as_written": "/kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 12,
+          "char_end": 34,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        },
+        "snippet": "Rs 42/kg for the 5-ply",
+        "assumptions": [
+          "5-ply read as the 5 ply sheet line L23."
+        ]
+      },
+      {
+        "row_id": "A2",
+        "raw_text": "38 for the 3-ply",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L24",
+            "match_confidence": 0.4,
+            "reasons": [
+              "Email quotes '3-ply' per kg; RFx has two 3 ply kg lines (L24 sheet, L25 roll), ambiguous; sheet chosen as nearest to last year's '3 ply sheet' reference."
+            ]
+          }
+        ],
+        "rate": {
+          "value": 38,
+          "currency": "Rs",
+          "unit_as_written": "/kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [
+          "unit",
+          "currency"
+        ],
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 36,
+          "char_end": 52,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        },
+        "snippet": "38 for the 3-ply",
+        "assumptions": [
+          "3-ply read as the 3 ply sheet line L24, not the roll L25.",
+          "Unit /kg and currency Rs carried from the 5-ply price in the same sentence."
+        ]
+      }
+    ],
+    "extras": [],
+    "notes": [
+      "Quoted text from the buyer's earlier email (after 'On ... wrote:') was ignored as history.",
+      "No GST basis or validity stated in the vendor's message.",
+      "Other lines are covered only by the 'rest same as last year' statement and were not given rows."
+    ]
+  },
+  "pass_b": {
+    "trace": {
+      "step": "extract_b",
+      "vendor_id": "V5",
+      "prompt_version": "extract_b@09ba265c",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 351,
+        "output_tokens": 5963,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 6452
+      },
+      "cost_usd": 0.076462,
+      "ms": 46431,
+      "at": "2026-10-08T13:03:07.400Z"
+    },
+    "errors": [],
+    "notes": [
+      "Vendor wrote 'rest same as last year' without stating any rates, so no price was taken for the other lines.",
+      "Freight is stated as extra; GST basis, validity and questionnaire answers are not given.",
+      "Last year's rates (Rs 44.50/kg 5 ply, Rs 39.80/kg 3 ply) appear only in the quoted buyer history and were not treated as an offer.",
+      "The per-kg rates for 5-ply and 3-ply are not tied to specific GSM, BF or dimensions."
+    ],
+    "extraction": {
+      "vendor_terms": {},
+      "rows": [
+        {
+          "row_id": "B-L23",
+          "raw_text": "Rs 42/kg for the 5-ply, 38 for the 3-ply",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L23",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 42,
+            "currency": "Rs",
+            "unit_as_written": "/kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "email",
+            "char_start": 12,
+            "char_end": 52,
+            "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+          },
+          "snippet": "Rs 42/kg for the 5-ply, 38 for the 3-ply",
+          "assumptions": [
+            "The 5-ply per-kg rate is read as covering the 5 ply corrugated sheet line."
+          ]
+        },
+        {
+          "row_id": "B-L24",
+          "raw_text": "Rs 42/kg for the 5-ply, 38 for the 3-ply",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L24",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 38,
+            "currency": "Rs",
+            "unit_as_written": "/kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [
+            "unit",
+            "currency"
+          ],
+          "legibility": 1,
+          "locator": {
+            "type": "email",
+            "char_start": 12,
+            "char_end": 52,
+            "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+          },
+          "snippet": "Rs 42/kg for the 5-ply, 38 for the 3-ply",
+          "assumptions": [
+            "The 3-ply per-kg rate is read as covering the 3 ply corrugated sheet line."
+          ]
+        },
+        {
+          "row_id": "B-L25",
+          "raw_text": "Rs 42/kg for the 5-ply, 38 for the 3-ply",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L25",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 38,
+            "currency": "Rs",
+            "unit_as_written": "/kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [
+            "unit",
+            "currency"
+          ],
+          "legibility": 1,
+          "locator": {
+            "type": "email",
+            "char_start": 12,
+            "char_end": 52,
+            "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+          },
+          "snippet": "Rs 42/kg for the 5-ply, 38 for the 3-ply",
+          "assumptions": [
+            "The 3-ply per-kg rate is assumed to also cover the 3 ply corrugated roll line."
+          ]
+        }
+      ],
+      "extras": [],
+      "notes": [
+        "Vendor wrote 'rest same as last year' without stating any rates, so no price was taken for the other lines.",
+        "Freight is stated as extra; GST basis, validity and questionnaire answers are not given.",
+        "Last year's rates (Rs 44.50/kg 5 ply, Rs 39.80/kg 3 ply) appear only in the quoted buyer history and were not treated as an offer.",
+        "The per-kg rates for 5-ply and 3-ply are not tied to specific GSM, BF or dimensions."
+      ]
+    }
+  },
+  "adjudication": {
+    "trace": {
+      "step": "adjudicate",
+      "vendor_id": "V5",
+      "prompt_version": "adjudicate@253d4101",
+      "model_requested": "claude-opus-5-5",
+      "model_used": "claude-opus-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 451,
+        "output_tokens": 757,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 6163
+      },
+      "cost_usd": 0.047759,
+      "ms": 10951,
+      "at": "2026-10-08T13:10:36.576Z"
+    },
+    "errors": [],
+    "adjudications": [
+      {
+        "line_id": "L25",
+        "decision": "UNRESOLVED",
+        "reasoning": "The vendor's only price is \"38 for the 3-ply\", which does not say sheet or roll. The quoted history (\"3 ply sheet Rs 39.80/kg\") suggests it updates the L24 3-ply sheet rate, but the document does not clearly say whether it also covers the L25 3-ply roll.",
+        "row": null,
+        "model": "claude-opus-5-5"
+      }
+    ]
+  },
+  "rejected": [],
+  "score": {
+    "lines": [
+      {
+        "line_id": "L01",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 42.78,
+        "got_point": 42.78,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L02",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 29,
+        "got_point": 29,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L03",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 41.72,
+        "got_point": 41.72,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L04",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 81.1,
+        "got_point": 81.10000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L05",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 50,
+        "got_point": 50,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L06",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 121.9,
+        "got_point": 121.9,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L07",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 74,
+        "got_point": 74,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L08",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 101.6,
+        "got_point": 101.6,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L09",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 6.96,
+        "got_point": 6.960000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L10",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 20.88,
+        "got_point": 20.88,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L11",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 3.58,
+        "got_point": 3.58,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L12",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 15.34,
+        "got_point": 15.34,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L13",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 2.8,
+        "got_point": 2.8000000000000003,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L14",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 17.84,
+        "got_point": 17.84,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L15",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 255.6,
+        "got_point": 255.6,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L16",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 290.4,
+        "got_point": 290.4,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L17",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 197.2,
+        "got_point": 197.2,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L18",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.32,
+        "got_point": 14.32,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L19",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 9.9,
+        "got_point": 9.9,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L20",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 31.98,
+        "got_point": 31.98,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L21",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 16.92,
+        "got_point": 16.919999999999998,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L22",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 10.56,
+        "got_point": 10.56,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L23",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 46,
+        "got_point": 46,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L24",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 42,
+        "got_point": 42,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L25",
+        "expected_state": "INFERRED",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": false,
+        "expected_point": 42,
+        "got_point": null,
+        "price_ok": false,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L26",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 132,
+        "got_point": 132,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L27",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 34.94,
+        "got_point": 34.94,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L28",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 12.52,
+        "got_point": 12.520000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L29",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 25.6,
+        "got_point": 25.599999999999998,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L30",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.8,
+        "got_point": 14.799999999999999,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      }
+    ],
+    "state_accuracy": 0.9666666666666667,
+    "price_checked": 30,
+    "price_accuracy": 0.9666666666666667,
+    "dangerous": [],
+    "coverage_errors": [],
+    "flags_expected": 0,
+    "flag_recall": 1,
+    "missing_flags": []
+  },
+  "pending_confirmations": [
+    {
+      "id": "V5:carried_over:currency,unit",
+      "vendor_id": "V5",
+      "kind": "carried_over",
+      "fields": [
+        "currency",
+        "unit"
+      ],
+      "lines": [
+        "L24"
+      ],
+      "snippets": [
+        "38 for the 3-ply"
+      ],
+      "question": "V5 did not write the currency or unit next to this price (\"38 for the 3-ply\"); it was read from the same sentence. Confirm that reading for L24?"
+    }
+  ]
+}

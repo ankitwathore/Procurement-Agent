@@ -1,0 +1,324 @@
+[
+  {
+    "vendor_id": "V1",
+    "expected_role": "certificate",
+    "reading": {
+      "doc_role": "certificate",
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "IQA/QMS/2023/0957",
+        "issuer": "Indus Quality Assurance Services (fictional)",
+        "entity_name": "Shree Ganesh Corrugators, Chakan, Pune",
+        "valid_from": "2023-11-20",
+        "valid_to": "2026-11-19",
+        "scope": "Manufacture of corrugated boxes and board"
+      },
+      "test_report": null,
+      "problems": []
+    },
+    "notes": [
+      "Issuer name is followed by the text \"(fictional)\" in the document."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V1/Shree_Ganesh_ISO.pdf",
+      "vendor_id": "V1",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 239,
+        "output_tokens": 256,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.007043,
+      "ms": 3143,
+      "at": "2026-10-08T16:13:52.212Z"
+    }
+  },
+  {
+    "vendor_id": "V1",
+    "expected_role": "test_report",
+    "reading": {
+      "doc_role": "test_report",
+      "certificate": null,
+      "test_report": {
+        "lab": "Pune Packaging Test Laboratory (fictional)",
+        "report_no": "PPTL/26/0388",
+        "report_date": "2026-08-05",
+        "samples": [
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 120,
+            "bf": 16.5
+          },
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 150,
+            "bf": 18.4
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 120,
+            "bf": 16.2
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 150,
+            "bf": 18.5
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 180,
+            "bf": 22.3
+          },
+          {
+            "ply": 7,
+            "flute": "BCB",
+            "liner_gsm": 200,
+            "bf": 24.6
+          }
+        ]
+      },
+      "problems": []
+    },
+    "notes": [
+      "The 7-ply BCB row appears after the 'Result: Samples tested as received...' statement, outside the main table body; it is included as a sample row in table order as it appears in the document.",
+      "Lab name is marked '(fictional)' in the document."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V1/Shree_Ganesh_Board_Tests.pdf",
+      "vendor_id": "V1",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 312,
+        "output_tokens": 576,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.010389,
+      "ms": 4401,
+      "at": "2026-10-08T16:13:53.498Z"
+    }
+  },
+  {
+    "vendor_id": "V2",
+    "expected_role": "certificate",
+    "reading": {
+      "doc_role": "certificate",
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "QCB/9001/2023/3318",
+        "issuer": "Quality Certification Bureau (India) Pvt Ltd (fictional)",
+        "entity_name": "Ahmedabad Packwell Industries, GIDC Vatva, Ahmedabad",
+        "valid_from": "2023-07-16",
+        "valid_to": "2026-07-15",
+        "scope": "Manufacture of corrugated boxes and board"
+      },
+      "test_report": null,
+      "problems": []
+    },
+    "notes": [
+      "Issuer name is followed by the text \"(fictional)\" in the document."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V2/Packwell_ISO_Certificate.pdf",
+      "vendor_id": "V2",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 256,
+        "output_tokens": 273,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.007247,
+      "ms": 3054,
+      "at": "2026-10-08T16:13:52.109Z"
+    }
+  },
+  {
+    "vendor_id": "V2",
+    "expected_role": "test_report",
+    "reading": {
+      "doc_role": "test_report",
+      "certificate": null,
+      "test_report": {
+        "lab": "Sabarmati Board Testing Centre (fictional)",
+        "report_no": "SBTC/26/1021",
+        "report_date": "2026-05-12",
+        "samples": [
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 150,
+            "bf": 18.7
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 180,
+            "bf": 22.6
+          },
+          {
+            "ply": 7,
+            "flute": "BCB",
+            "liner_gsm": 200,
+            "bf": 24.4
+          }
+        ]
+      },
+      "problems": []
+    },
+    "notes": [
+      "Lab name includes the word \"(fictional)\" as written in the document.",
+      "Customer named on the report is Ahmedabad Packwell Industries, GIDC Vatva, Ahmedabad."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V2/Packwell_Board_Lab_Report.pdf",
+      "vendor_id": "V2",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 275,
+        "output_tokens": 404,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.008595,
+      "ms": 5550,
+      "at": "2026-10-08T16:13:54.636Z"
+    }
+  },
+  {
+    "vendor_id": "V3",
+    "expected_role": "certificate",
+    "reading": {
+      "doc_role": "certificate",
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "IQA/QMS/2024/0466",
+        "issuer": "Indus Quality Assessors Pvt Ltd (fictional)",
+        "entity_name": "Southern Flute Packaging, SIPCOT Phase II, Hosur",
+        "valid_from": "2024-09-01",
+        "valid_to": "2027-08-31",
+        "scope": "Manufacture of corrugated boxes and board"
+      },
+      "test_report": null,
+      "problems": []
+    },
+    "notes": [
+      "Issuer name includes the text \"(fictional)\" as written in the document."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V3/SouthernFlute_ISO.pdf",
+      "vendor_id": "V3",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 247,
+        "output_tokens": 266,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.007159,
+      "ms": 3187,
+      "at": "2026-10-08T16:13:52.256Z"
+    }
+  },
+  {
+    "vendor_id": "V3",
+    "expected_role": "test_report",
+    "reading": {
+      "doc_role": "test_report",
+      "certificate": null,
+      "test_report": {
+        "lab": "Hosur Paperboard Testing Centre",
+        "report_no": "HPTC/2026/0631",
+        "report_date": "2026-07-14",
+        "samples": [
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 150,
+            "bf": 17.6
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 180,
+            "bf": 22.5
+          },
+          {
+            "ply": 7,
+            "flute": "BCB",
+            "liner_gsm": 200,
+            "bf": 24.3
+          }
+        ]
+      },
+      "problems": []
+    },
+    "notes": [
+      "Lab name is followed by \"(fictional)\" in the document header.",
+      "Customer named in report: Southern Flute Packaging, SIPCOT Phase II, Hosur.",
+      "Report states results relate only to the samples tested, which were tested as received."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V3/SouthernFlute_BF_Report.pdf",
+      "vendor_id": "V3",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 271,
+        "output_tokens": 417,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.008717,
+      "ms": 4428,
+      "at": "2026-10-08T16:13:53.515Z"
+    }
+  }
+]

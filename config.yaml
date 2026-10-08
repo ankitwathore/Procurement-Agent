@@ -1,0 +1,50 @@
+as_of_date: 2026-10-08          # the demo "today"; all validity checks use this
+expected_award_date: 2026-10-12
+rfx_issue_date: 2026-09-14
+rfx_due_date: 2026-09-23
+currency_of_record: INR
+buyer_utc_offset: "+05:30"       # deadlines are judged on the buyer's calendar (IST)
+fx:                              # demo constants, replace with a real source
+  USD_INR: 88.00
+  snapshot_date: 2026-10-01
+  clause_band_pct: 3.0           # applied when a vendor writes "rate on date of order"
+gst:
+  default_rate_pct: 18.0         # demo default; per line override allowed; verify HSN rates before real use
+tolerances:
+  rate_agreement_pct: 0.5        # pass A vs pass B
+  arithmetic_pct: 0.5            # qty x rate vs vendor total
+  dim_tolerance_pct: 2.0
+  outlier_vs_peer_median: [0.6, 1.7]
+  outlier_vs_baseline: [0.5, 2.0]
+  magnitude_slip_ratios: [10, 100, 1000, 12]
+freight:                         # buyer owned lane tariff, INR per kg to Chakan Pune
+  lanes:
+    Pune: 1.10
+    Ahmedabad: 4.20
+    Hosur: 5.00
+    Bahadurgarh: 7.80
+  default_when_unknown: 4.00
+  band_pct_lane_known: 10
+  band_pct_default: 30
+inference_bands:
+  baseline_same_as_last_year: { low_pct: 0, high_pct: 8 }
+exposure:
+  safe_states: [CONFIRMED, HIGH_CONF, BUYER_VERIFIED]
+award_gate:
+  block_if_exposure_pct_over: 5.0
+  require_ack_if_exposure_pct_over: 1.0
+optimizer:
+  default_mode: risk_adjusted    # trusted_only | point | risk_adjusted
+  default_max_vendor_share_pct: 100
+  capacity_utilization: 0.8
+models:
+  extract_a: claude-sonnet-5-5
+  extract_b: claude-sonnet-5-5
+  adjudicator: claude-opus-5-5
+  analyst: claude-opus-5-5
+  copilot: claude-sonnet-5-5
+  light: claude-haiku-5-5
+limits:
+  max_cost_usd_per_document: 1.50
+  llm_timeout_s: 120
+  max_retries: 3

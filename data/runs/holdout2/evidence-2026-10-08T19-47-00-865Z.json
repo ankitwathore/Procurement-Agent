@@ -1,0 +1,47 @@
+[
+  {
+    "vendor_id": "V4",
+    "expected_role": "certificate",
+    "reading": {
+      "doc_role": "certificate",
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "BQC/QMS/23/5561",
+        "issuer": "Bharat Quality Certification Pvt Ltd (fictional)",
+        "entity_name": "Delhi Carton Works, Plot 18, HSIIDC Industrial Area, Bahadurgarh",
+        "valid_from": "2023-12-05",
+        "valid_to": "2026-12-04",
+        "scope": "Manufacture of corrugated boxes and board"
+      },
+      "test_report": null,
+      "problems": [
+        "read from a photo: no text layer to check the values against"
+      ]
+    },
+    "notes": [
+      "Issuer name is followed by the word \"(fictional)\" as printed on the certificate.",
+      "Document is a photo of a certificate titled \"CERTIFICATE OF REGISTRATION\"."
+    ],
+    "injection": [],
+    "errors": [],
+    "trace": {
+      "step": "extract_evidence",
+      "file": "V4/iso-dcw.jpg",
+      "vendor_id": "V4",
+      "prompt_version": "extract_evidence@be630463",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 2098,
+        "output_tokens": 316,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1602
+      },
+      "cost_usd": 0.011361,
+      "ms": 4467,
+      "at": "2026-10-08T19:47:00.861Z"
+    }
+  }
+]

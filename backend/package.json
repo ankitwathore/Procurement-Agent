@@ -1,0 +1,47 @@
+{
+  "name": "@quotekill/backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "gen-data": "tsx src/generator/run.ts",
+    "summary": "tsx src/cli/summary.ts",
+    "extract": "tsx --env-file=../.env src/cli/extract.ts",
+    "check-key": "tsx --env-file=../.env src/cli/check-key.ts",
+    "rescore": "tsx src/cli/rescore.ts",
+    "clarify": "tsx src/cli/clarify.ts",
+    "reply": "tsx --env-file=../.env src/cli/reply.ts",
+    "gates": "tsx src/cli/gates.ts",
+    "evidence": "tsx --env-file=../.env src/cli/evidence.ts",
+    "eval": "tsx src/cli/eval.ts",
+    "api": "tsx --env-file=../.env src/server/main.ts",
+    "ask": "tsx --env-file=../.env src/cli/ask.ts",
+    "golden": "tsx --env-file=../.env src/cli/golden.ts",
+    "db": "tsx src/cli/db.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "better-sqlite3": "^11.10.0",
+    "docx": "^9.9.0",
+    "exceljs": "^4.4.0",
+    "fast-xml-parser": "^5.11.2",
+    "jszip": "^3.10.2",
+    "mailparser": "^3.9.37",
+    "pdfjs-dist": "^4.10.38",
+    "pdfkit": "^0.20.2",
+    "sharp": "^0.33.5",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^26.6.4",
+    "@types/pdfkit": "^0.17.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^3.2.7"
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V5",
+    "prompt_version": "extract_a@5da757b6",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": "claude-sonnet-5-5",
+    "fallback_used": false,
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 351,
+      "output_tokens": 2100,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7545
+    },
+    "cost_usd": 0.0405645,
+    "ms": 24665,
+    "at": "2026-10-08T12:26:00.274Z"
+  },
+  "errors": [],
+  "injection": [],
+  "notes": [
+    "Only the vendor's new message (first line) is treated as the offer; the quoted text from Meera Kulkarni (including last year's rates of Rs 44.50/kg and Rs 39.80/kg) is history and was not used.",
+    "GST basis, validity and FX are not stated by the vendor.",
+    "Vendor did not price the other lines individually; 'rest same as last year' is reported as a lines_not_quoted_statement."
+  ],
+  "questionnaire": [],
+  "extraction": {
+    "vendor_terms": {
+      "freight_basis": {
+        "value": "freight_extra",
+        "snippet": "freight extra",
+        "locator": {
+          "type": "email",
+          "char_start": 78,
+          "char_end": 91,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        }
+      },
+      "conditional_discounts": [],
+      "lines_not_quoted_statement": {
+        "value_text": "rest same as last year",
+        "applies_to": "unquoted lines",
+        "resolves_to": "baseline",
+        "snippet": "rest same as last year",
+        "locator": {
+          "type": "email",
+          "char_start": 54,
+          "char_end": 76,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        }
+      }
+    },
+    "rows": [
+      {
+        "row_id": "A1",
+        "raw_text": "Rs 42/kg for the 5-ply",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L23",
+            "match_confidence": 0.75,
+            "reasons": [
+              "Vendor quotes per kg for '5-ply'; the only kg-based 5 ply RFx line is the corrugated sheet 5 ply (L23). The buyer's quoted reference also lists last year's '5 ply sheet' at Rs/kg."
+            ]
+          }
+        ],
+        "rate": {
+          "value": 42,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": null,
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 12,
+          "char_end": 34,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        },
+        "snippet": "Rs 42/kg for the 5-ply",
+        "assumptions": [
+          "'5-ply' read as the 5 ply sheet line L23 (kg basis), not the 5-ply per-piece master cartons L01-L08, L20",
+          "Unit written as '/kg'"
+        ]
+      },
+      {
+        "row_id": "A2",
+        "raw_text": "38 for the 3-ply",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L24",
+            "match_confidence": 0.7,
+            "reasons": [
+              "'3-ply' priced alongside the kg-based 5-ply; the kg-based 3 ply sheet line is L24, matching the buyer's reference of '3 ply sheet' at Rs/kg."
+            ]
+          }
+        ],
+        "rate": {
+          "value": 38,
+          "currency": "",
+          "unit_as_written": null,
+          "basis_note": ""
+        },
+        "spec_offered": null,
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 36,
+          "char_end": 52,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        },
+        "snippet": "38 for the 3-ply",
+        "assumptions": [
+          "Unit not stated next to 38; the preceding sentence uses /kg, but this is not explicit, so unit left blank",
+          "Currency not stated next to 38; the preceding 'Rs' may apply, but left blank",
+          "'3-ply' read as the 3 ply sheet line L24"
+        ]
+      },
+      {
+        "row_id": "A3",
+        "raw_text": "38 for the 3-ply",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L25",
+            "match_confidence": 0.4,
+            "reasons": [
+              "'3-ply' is generic; the 3 ply roll L25 is also kg-based and 3 ply, so the price may apply to it too."
+            ]
+          }
+        ],
+        "rate": {
+          "value": 38,
+          "currency": "",
+          "unit_as_written": null,
+          "basis_note": ""
+        },
+        "spec_offered": null,
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 36,
+          "char_end": 52,
+          "message_id": "<v5-reply-20260922@jaibharatboards.example>"
+        },
+        "snippet": "38 for the 3-ply",
+        "assumptions": [
+          "Unit and currency not stated next to 38",
+          "Generic '3-ply' may cover the 3 ply roll L25 as well as the 3 ply sheet L24; this mapping is a judgment"
+        ]
+      }
+    ],
+    "extras": [],
+    "notes": [
+      "Only the vendor's new message (first line) is treated as the offer; the quoted text from Meera Kulkarni (including last year's rates of Rs 44.50/kg and Rs 39.80/kg) is history and was not used.",
+      "GST basis, validity and FX are not stated by the vendor.",
+      "Vendor did not price the other lines individually; 'rest same as last year' is reported as a lines_not_quoted_statement."
+    ]
+  },
+  "rejected": [],
+  "score": {
+    "lines": [
+      {
+        "line_id": "L01",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 42.78,
+        "got_point": 42.78,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L02",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 29,
+        "got_point": 29,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L03",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 41.72,
+        "got_point": 41.72,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L04",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 81.1,
+        "got_point": 81.10000000000001,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L05",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 50,
+        "got_point": 50,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L06",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 121.9,
+        "got_point": 121.9,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L07",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 74,
+        "got_point": 74,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L08",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 101.6,
+        "got_point": 101.6,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L09",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 6.96,
+        "got_point": 6.960000000000001,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L10",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 20.88,
+        "got_point": 20.88,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L11",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 3.58,
+        "got_point": 3.58,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L12",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 15.34,
+        "got_point": 15.34,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L13",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 2.8,
+        "got_point": 2.8000000000000003,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L14",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 17.84,
+        "got_point": 17.84,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L15",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 255.6,
+        "got_point": 255.6,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L16",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 290.4,
+        "got_point": 290.4,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L17",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 197.2,
+        "got_point": 197.2,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L18",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.32,
+        "got_point": 14.32,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L19",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 9.9,
+        "got_point": 9.9,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L20",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 31.98,
+        "got_point": 31.98,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L21",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 16.92,
+        "got_point": 16.919999999999998,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L22",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 10.56,
+        "got_point": 10.56,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L23",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 46,
+        "got_point": 46,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L24",
+        "expected_state": "INFERRED",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": false,
+        "expected_point": 42,
+        "got_point": null,
+        "price_ok": false,
+        "dangerous": false
+      },
+      {
+        "line_id": "L25",
+        "expected_state": "INFERRED",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": false,
+        "expected_point": 42,
+        "got_point": null,
+        "price_ok": false,
+        "dangerous": false
+      },
+      {
+        "line_id": "L26",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 132,
+        "got_point": 132,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L27",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 34.94,
+        "got_point": 34.94,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L28",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 12.52,
+        "got_point": 12.520000000000001,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L29",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 25.6,
+        "got_point": 25.599999999999998,
+        "price_ok": true,
+        "dangerous": false
+      },
+      {
+        "line_id": "L30",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.8,
+        "got_point": 14.799999999999999,
+        "price_ok": true,
+        "dangerous": false
+      }
+    ],
+    "state_accuracy": 0.9333333333333333,
+    "price_checked": 30,
+    "price_accuracy": 0.9333333333333333,
+    "dangerous": [],
+    "coverage_errors": []
+  }
+}

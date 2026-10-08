@@ -1,0 +1,122 @@
+import type { Question, RfxHeader, RfxLine } from "../schemas.js";
+
+/**
+ * The demo RFx, transcribed from QUOTEKILL_MASTER_SPEC.md sections 17.1, 17.2 and 17.4.
+ * Baseline prices are last year's delivered, ex GST, per base UoM.
+ * Freight lane tariff lives in config.yaml (section 17.3), not here.
+ */
+
+export const RFX_HEADER: RfxHeader = {
+  rfx_id: "KHA-PKG-FY26-27",
+  title: "Annual corrugated packaging and packing accessories FY 2026 27",
+  category: "corrugated_packaging",
+  buyer_org: "Kaveri Home Appliances Pvt Ltd (fictional)",
+  delivery_location: "Chakan, Pune plant",
+  currency: "INR",
+  issue_date: "2026-09-14",
+  due_date: "2026-09-23",
+  terms: {
+    payment_terms_days: 45,
+    delivery_basis_preferred: "FOR Chakan plant",
+    prices_basis: "ex GST",
+    min_validity_days: 30,
+    max_lead_days: 15,
+  },
+  baseline: {
+    basis: "delivered Chakan, ex GST, per base UoM",
+    date: "2025-10-01",
+  },
+};
+
+const PER_100_NOTE = "per 100 pcs is an accepted quoting basis, state it";
+
+type LineInput = {
+  line_id: string;
+  group: string;
+  description: string;
+  ply: 3 | 5 | 7 | null;
+  flute: string | null;
+  liner_gsm: number | null;
+  bf: number | null;
+  dims_text: string;
+  print: string;
+  base_uom: RfxLine["base_uom"];
+  annual_qty: number;
+  weight_kg_per_uom: number;
+  baseline_price_inr: number;
+  conversion_hints?: RfxLine["conversion_hints"];
+};
+
+// Per-100 quoting basis is accepted on small cartons, partitions, pads and trays (17.2).
+const PER_100_LINES = new Set(["L09", "L10", "L11", "L12", "L13", "L14", "L18", "L19", "L22"]);
+
+const RAW_LINES: LineInput[] = [
+  { line_id: "L01", group: "A", description: "Mixer grinder 3 jar master carton", ply: 5, flute: "BC", liner_gsm: 150, bf: 18, dims_text: "440x330x310", print: "2 colour", base_uom: "piece", annual_qty: 101500, weight_kg_per_uom: 0.82, baseline_price_inr: 39.5 },
+  { line_id: "L02", group: "A", description: "Induction cooktop master carton", ply: 5, flute: "BC", liner_gsm: 150, bf: 18, dims_text: "400x360x140", print: "2 colour", base_uom: "piece", annual_qty: 65000, weight_kg_per_uom: 0.55, baseline_price_inr: 26.8 },
+  { line_id: "L03", group: "A", description: "Air fryer 4L master carton", ply: 5, flute: "BC", liner_gsm: 150, bf: 18, dims_text: "360x340x380", print: "3 colour", base_uom: "piece", annual_qty: 43500, weight_kg_per_uom: 0.78, baseline_price_inr: 38.6 },
+  { line_id: "L04", group: "A", description: "Ceiling fan 1200mm master carton", ply: 5, flute: "BC", liner_gsm: 180, bf: 22, dims_text: "1260x180x260", print: "2 colour", base_uom: "piece", annual_qty: 79500, weight_kg_per_uom: 1.55, baseline_price_inr: 74.9 },
+  { line_id: "L05", group: "A", description: "Table fan 400mm master carton", ply: 5, flute: "BC", liner_gsm: 150, bf: 18, dims_text: "450x230x480", print: "2 colour", base_uom: "piece", annual_qty: 32500, weight_kg_per_uom: 0.95, baseline_price_inr: 46.2 },
+  { line_id: "L06", group: "A", description: "Room cooler 40L master carton", ply: 5, flute: "BC", liner_gsm: 180, bf: 22, dims_text: "560x430x860", print: "2 colour", base_uom: "piece", annual_qty: 13000, weight_kg_per_uom: 2.35, baseline_price_inr: 112.5 },
+  { line_id: "L07", group: "A", description: "Water heater 15L master carton", ply: 5, flute: "BC", liner_gsm: 180, bf: 22, dims_text: "380x380x520", print: "2 colour", base_uom: "piece", annual_qty: 20500, weight_kg_per_uom: 1.4, baseline_price_inr: 68.4 },
+  { line_id: "L08", group: "A", description: "Microwave oven 28L master carton", ply: 5, flute: "BC", liner_gsm: 180, bf: 22, dims_text: "560x480x370", print: "3 colour", base_uom: "piece", annual_qty: 15900, weight_kg_per_uom: 1.95, baseline_price_inr: 93.8 },
+  { line_id: "L09", group: "B", description: "Mixer jar accessory box", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "180x140x120", print: "1 colour", base_uom: "piece", annual_qty: 217000, weight_kg_per_uom: 0.14, baseline_price_inr: 6.4 },
+  { line_id: "L10", group: "B", description: "Fan blade set inner carton", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "1250x120x60", print: "plain", base_uom: "piece", annual_qty: 79500, weight_kg_per_uom: 0.42, baseline_price_inr: 19.2 },
+  { line_id: "L11", group: "B", description: "Power cord and manual pouch carton", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "220x160x40", print: "plain", base_uom: "piece", annual_qty: 188500, weight_kg_per_uom: 0.07, baseline_price_inr: 3.3 },
+  { line_id: "L12", group: "B", description: "Cooktop glass plate inner carton", ply: 3, flute: "B", liner_gsm: 150, bf: 18, dims_text: "380x340x50", print: "1 colour", base_uom: "piece", annual_qty: 65000, weight_kg_per_uom: 0.31, baseline_price_inr: 14.1 },
+  { line_id: "L13", group: "B", description: "Remote and battery kit box", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "160x90x40", print: "1 colour", base_uom: "piece", annual_qty: 145000, weight_kg_per_uom: 0.05, baseline_price_inr: 2.6 },
+  { line_id: "L14", group: "B", description: "Air fryer basket inner carton", ply: 3, flute: "B", liner_gsm: 150, bf: 18, dims_text: "330x300x120", print: "plain", base_uom: "piece", annual_qty: 43500, weight_kg_per_uom: 0.36, baseline_price_inr: 16.4 },
+  { line_id: "L15", group: "C", description: "Washing machine fully automatic 6.5kg outer carton", ply: 7, flute: "BCB", liner_gsm: 200, bf: 24, dims_text: "620x640x1000", print: "2 colour", base_uom: "piece", annual_qty: 6500, weight_kg_per_uom: 4.9, baseline_price_inr: 236 },
+  { line_id: "L16", group: "C", description: "Refrigerator 190L outer carton", ply: 7, flute: "BCB", liner_gsm: 200, bf: 24, dims_text: "560x600x1250", print: "2 colour", base_uom: "piece", annual_qty: 5100, weight_kg_per_uom: 5.6, baseline_price_inr: 268 },
+  { line_id: "L17", group: "C", description: "Split AC outdoor unit outer carton", ply: 7, flute: "BCB", liner_gsm: 200, bf: 24, dims_text: "800x340x580", print: "2 colour", base_uom: "piece", annual_qty: 8700, weight_kg_per_uom: 3.8, baseline_price_inr: 182 },
+  { line_id: "L18", group: "D", description: "Mixer grinder 3 jar corrugated partition set", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "420x310x80", print: "plain", base_uom: "set", annual_qty: 101500, weight_kg_per_uom: 0.28, baseline_price_inr: 13.2 },
+  { line_id: "L19", group: "D", description: "Ceiling fan blade separator pad", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "1230x110x15", print: "plain", base_uom: "piece", annual_qty: 79500, weight_kg_per_uom: 0.2, baseline_price_inr: 9.1 },
+  { line_id: "L20", group: "D", description: "Microwave top and bottom pad pair", ply: 5, flute: "BC", liner_gsm: 150, bf: 18, dims_text: "540x460x40", print: "plain", base_uom: "pair", annual_qty: 15900, weight_kg_per_uom: 0.62, baseline_price_inr: 29.5 },
+  { line_id: "L21", group: "D", description: "Cooler water tank wrap sleeve", ply: 3, flute: "B", liner_gsm: 150, bf: 18, dims_text: "900x300 flat", print: "plain", base_uom: "piece", annual_qty: 13000, weight_kg_per_uom: 0.33, baseline_price_inr: 15.6 },
+  { line_id: "L22", group: "D", description: "Die cut tray for glass plate", ply: 3, flute: "B", liner_gsm: 150, bf: 18, dims_text: "370x330x25", print: "die cut", base_uom: "piece", annual_qty: 65000, weight_kg_per_uom: 0.19, baseline_price_inr: 9.8 },
+  { line_id: "L23", group: "E", description: "Corrugated sheet 5 ply 1100x1600", ply: 5, flute: "BC", liner_gsm: 180, bf: 22, dims_text: "1100x1600", print: "plain", base_uom: "kg", annual_qty: 37500, weight_kg_per_uom: 1, baseline_price_inr: 44.5 },
+  { line_id: "L24", group: "E", description: "Corrugated sheet 3 ply 1000x1400", ply: 3, flute: "B", liner_gsm: 150, bf: 18, dims_text: "1000x1400", print: "plain", base_uom: "kg", annual_qty: 27500, weight_kg_per_uom: 1, baseline_price_inr: 39.8 },
+  { line_id: "L25", group: "E", description: "Corrugated roll 3 ply 1500mm width", ply: 3, flute: "B", liner_gsm: 120, bf: 16, dims_text: "1500 wide", print: "plain", base_uom: "kg", annual_qty: 18800, weight_kg_per_uom: 1, baseline_price_inr: 41.2 },
+  { line_id: "L26", group: "F", description: "Stretch film 23 micron 500mm", ply: null, flute: null, liner_gsm: null, bf: null, dims_text: "500mm", print: "clear", base_uom: "kg", annual_qty: 2500, weight_kg_per_uom: 1, baseline_price_inr: 128 },
+  { line_id: "L27", group: "F", description: "BOPP tape 48mm x 100m brown", ply: null, flute: null, liner_gsm: null, bf: null, dims_text: "48mm x 100m", print: "plain", base_uom: "roll", annual_qty: 60000, weight_kg_per_uom: 0.11, baseline_price_inr: 34.5, conversion_hints: { rolls_per_carton: 72 } },
+  { line_id: "L28", group: "F", description: "Pallet corner protector 50x50x4mm x 1000mm", ply: null, flute: null, liner_gsm: null, bf: null, dims_text: "1000mm", print: "plain", base_uom: "piece", annual_qty: 50000, weight_kg_per_uom: 0.18, baseline_price_inr: 11.8 },
+  { line_id: "L29", group: "F", description: "Corrugated pallet slip sheet 1100x1100", ply: 3, flute: "B", liner_gsm: 150, bf: 18, dims_text: "1100x1100", print: "plain", base_uom: "piece", annual_qty: 12000, weight_kg_per_uom: 0.55, baseline_price_inr: 23.4 },
+  { line_id: "L30", group: "F", description: "Edge board 40x40x3mm x 1200mm", ply: null, flute: null, liner_gsm: null, bf: null, dims_text: "1200mm", print: "plain", base_uom: "piece", annual_qty: 40000, weight_kg_per_uom: 0.3, baseline_price_inr: 13.6 },
+];
+
+export const RFX_LINES: RfxLine[] = RAW_LINES.map((l) => ({
+  line_id: l.line_id,
+  group: l.group,
+  description: l.description,
+  spec: {
+    ply: l.ply,
+    flute: l.flute,
+    liner_gsm: l.liner_gsm,
+    bf: l.bf,
+    dims_text: l.dims_text,
+    print: l.print,
+  },
+  base_uom: l.base_uom,
+  annual_qty: l.annual_qty,
+  weight_kg_per_uom: l.weight_kg_per_uom,
+  conversion_hints: {
+    ...(l.conversion_hints ?? {}),
+    ...(PER_100_LINES.has(l.line_id) ? { quoting_basis_note: PER_100_NOTE, piece_is_base_uom: true } : {}),
+  },
+  baseline_price_inr: l.baseline_price_inr,
+}));
+
+/** Questionnaire, section 17.4. Pass rules are stored as text here and become machine rules in the evidence step. */
+export const QUESTIONS: (Question & { pass_rule: string | null })[] = [
+  { q_id: "Q01", text: "Valid ISO 9001 certificate for the quoting plant", type: "yes_no_file", is_gate: true, file_required: true, pass_check: "valid_certificate", claim_check: null, pass_rule: "Yes, file attached, entity matches, valid on as_of_date and expected_award_date" },
+  { q_id: "Q02", text: "BF and GSM test report for the offered board, dated within 12 months", type: "yes_no_file", is_gate: true, file_required: true, pass_check: "test_report_covers_offered_plies", claim_check: null, pass_rule: "Yes, file attached, report covers 3, 5 and 7 ply samples offered" },
+  { q_id: "Q03", text: "Supplied corrugated packaging to a consumer durables or appliance manufacturer for at least 3 years", type: "yes_no", is_gate: true, file_required: false, pass_check: "answer_yes", claim_check: null, pass_rule: "Yes" },
+  { q_id: "Q04", text: "FSC certified board available", type: "yes_no", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q05", text: "Monthly capacity in tonnes", type: "number", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q06", text: "Standard lead time in days from PO", type: "number", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q07", text: "Accept payment terms net 45 days", type: "yes_no", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q08", text: "Free samples before PO", type: "yes_no", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q09", text: "Rejection policy: replacement within how many days", type: "number", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q10", text: "Plant location and distance to Chakan", type: "text", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q11", text: "Price validity in days", type: "number", is_gate: false, file_required: false, pass_check: null, claim_check: null, pass_rule: null },
+  { q_id: "Q12", text: "Any deviations from the specification", type: "text", is_gate: false, file_required: false, pass_check: null, claim_check: "no_spec_deviations", pass_rule: null },
+];

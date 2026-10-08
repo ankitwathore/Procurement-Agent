@@ -1,0 +1,22 @@
+{
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V5",
+    "prompt_version": "extract_a@1433cc40",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": null,
+    "fallback_used": false,
+    "stop_reason": null,
+    "usage": null,
+    "cost_usd": null,
+    "ms": 0,
+    "at": "2026-10-08T12:23:05.293Z"
+  },
+  "errors": [
+    "call failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The compiled grammar is too large, which would cause performance issues. Simplify your tool schemas or reduce the number of strict tools.\"},\"request_id\":\"req_011CfpmD5k1W69NbfJRQcv4H\"}"
+  ],
+  "injection": [],
+  "notes": [],
+  "questionnaire": [],
+  "extraction": null
+}

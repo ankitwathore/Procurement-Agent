@@ -1,0 +1,2717 @@
+{
+  "vendor_id": "V1",
+  "effort": "medium",
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V1",
+    "prompt_version": "extract_a@6e0b9db0",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": "claude-sonnet-5-5",
+    "fallback_used": false,
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 3282,
+      "output_tokens": 8507,
+      "cache_read_input_tokens": 7852,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.09320439999999999,
+    "ms": 62761,
+    "at": "2026-10-08T12:46:52.554Z"
+  },
+  "errors": [],
+  "injection": [],
+  "notes": [
+    "L20 (microwave pad pair) has U8=NQ, no rate given, so no row created.",
+    "L21 (cooler water tank wrap sleeve) has no rate in V8, so no row created.",
+    "Hidden row 10 (Rates!A10 'Rate Q2') holds a second set of rates for most items. It is labelled as a Q2 rate rather than the FY 26-27 offer, so it is not reported as rows. Examples: G10=115.37, B10=39.06.",
+    "Remarks say L01, L02, L03 and L05 are offered on 120 GSM liner, BF 16, which differs from the RFx spec of 150/18; deviation answer in QA says 'No deviations.'",
+    "Summary B8 grand total is not reported as a rate."
+  ],
+  "questionnaire": [
+    {
+      "q_id": "Q01",
+      "answer_raw": "Yes - certificate attached (valid to 14-03-2027)",
+      "snippet": "Yes - certificate attached (valid to 14-03-2027)"
+    },
+    {
+      "q_id": "Q02",
+      "answer_raw": "Yes - test report attached",
+      "snippet": "Yes - test report attached"
+    },
+    {
+      "q_id": "Q03",
+      "answer_raw": "Yes - 8 years",
+      "snippet": "Yes - 8 years"
+    },
+    {
+      "q_id": "Q04",
+      "answer_raw": "No",
+      "snippet": "No"
+    },
+    {
+      "q_id": "Q05",
+      "answer_raw": "600",
+      "snippet": "600"
+    },
+    {
+      "q_id": "Q06",
+      "answer_raw": "10",
+      "snippet": "10"
+    },
+    {
+      "q_id": "Q07",
+      "answer_raw": "Yes",
+      "snippet": "Yes"
+    },
+    {
+      "q_id": "Q08",
+      "answer_raw": "Yes",
+      "snippet": "Yes"
+    },
+    {
+      "q_id": "Q09",
+      "answer_raw": "7",
+      "snippet": "7"
+    },
+    {
+      "q_id": "Q10",
+      "answer_raw": "Chakan, Pune - 4 km",
+      "snippet": "Chakan, Pune - 4 km"
+    },
+    {
+      "q_id": "Q11",
+      "answer_raw": "30",
+      "snippet": "30"
+    },
+    {
+      "q_id": "Q12",
+      "answer_raw": "No deviations.",
+      "snippet": "No deviations."
+    }
+  ],
+  "extraction": {
+    "vendor_terms": {
+      "freight_basis": {
+        "value": "delivered",
+        "snippet": "Delivered, FOR Chakan plant",
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Summary",
+          "cell": "B3"
+        }
+      },
+      "gst_basis": {
+        "value": "exclusive",
+        "rate_pct": 18,
+        "snippet": "Extra at 18%",
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Summary",
+          "cell": "B4"
+        }
+      },
+      "conditional_discounts": [],
+      "validity": {
+        "value_text": "30 days from 21-09-2026",
+        "from_date": "2026-09-21",
+        "valid_days": 30,
+        "snippet": "30 days from 21-09-2026",
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Summary",
+          "cell": "B6"
+        }
+      }
+    },
+    "rows": [
+      {
+        "row_id": "A1",
+        "raw_text": "MIXER 3 JAR MC 37.29",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L01",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item MIXER 3 JAR MC, size 440x330x310 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 37.29,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            440,
+            330,
+            310
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "B8"
+        },
+        "snippet": "37.29",
+        "assumptions": []
+      },
+      {
+        "row_id": "A2",
+        "raw_text": "INDUCTION COOKTOP MC 24.76",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L02",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item INDUCTION COOKTOP MC, size 400x360x140 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 24.76,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            400,
+            360,
+            140
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "C8"
+        },
+        "snippet": "24.76",
+        "assumptions": []
+      },
+      {
+        "row_id": "A3",
+        "raw_text": "AIR FRYER 4L MC 35.93",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L03",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item AIR FRYER 4L MC, size 360x340x380 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 35.93,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            360,
+            340,
+            380
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "D8"
+        },
+        "snippet": "35.93",
+        "assumptions": []
+      },
+      {
+        "row_id": "A4",
+        "raw_text": "C FAN 1200MM MC 72.8",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L04",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item C FAN 1200MM MC, size 1260x180x260 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 72.8,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            1260,
+            180,
+            260
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "E8"
+        },
+        "snippet": "72.8",
+        "assumptions": []
+      },
+      {
+        "row_id": "A5",
+        "raw_text": "TABLE FAN 400MM MC 42.4",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L05",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item TABLE FAN 400MM MC, size 450x230x480 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 42.4,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            450,
+            230,
+            480
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "F8"
+        },
+        "snippet": "42.4",
+        "assumptions": []
+      },
+      {
+        "row_id": "A6",
+        "raw_text": "ROOM COOLER 40L MC 11.08",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L06",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item ROOM COOLER 40L MC, size 560x430x860 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 11.08,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            560,
+            430,
+            860
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "G8"
+        },
+        "snippet": "11.08",
+        "assumptions": []
+      },
+      {
+        "row_id": "A7",
+        "raw_text": "WATER HEATER 15L MC 66.45",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L07",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item WATER HEATER 15L MC, size 380x380x520 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 66.45,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            380,
+            380,
+            520
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "H8"
+        },
+        "snippet": "66.45",
+        "assumptions": []
+      },
+      {
+        "row_id": "A8",
+        "raw_text": "MW OVEN 28L MC 91.18",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L08",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item MW OVEN 28L MC, size 560x480x370 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 91.18,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            560,
+            480,
+            370
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "I8"
+        },
+        "snippet": "91.18",
+        "assumptions": []
+      },
+      {
+        "row_id": "A9",
+        "raw_text": "MIXER JAR ACCESSORY BOX 6.38",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L09",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item MIXER JAR ACCESSORY BOX, size 180x140x120 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 6.38,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            180,
+            140,
+            120
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "J8"
+        },
+        "snippet": "6.38",
+        "assumptions": []
+      },
+      {
+        "row_id": "A10",
+        "raw_text": "FAN BLADE SET IC 18.74",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L10",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item FAN BLADE SET IC, size 1250x120x60 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 18.74,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1250,
+            120,
+            60
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "K8"
+        },
+        "snippet": "18.74",
+        "assumptions": []
+      },
+      {
+        "row_id": "A11",
+        "raw_text": "POWER CORD AND MANUAL POUCH CARTON 3.23",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L11",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item POWER CORD AND MANUAL POUCH CARTON, size 220x160x40 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 3.23,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            220,
+            160,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "L8"
+        },
+        "snippet": "3.23",
+        "assumptions": []
+      },
+      {
+        "row_id": "A12",
+        "raw_text": "COOKTOP GLASS PLATE IC 14.04",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L12",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item COOKTOP GLASS PLATE IC, size 380x340x50 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 14.04,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            380,
+            340,
+            50
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "M8"
+        },
+        "snippet": "14.04",
+        "assumptions": []
+      },
+      {
+        "row_id": "A13",
+        "raw_text": "REMOTE AND BATTERY KIT BOX 2.59",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L13",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item REMOTE AND BATTERY KIT BOX, size 160x90x40 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 2.59,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            160,
+            90,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "N8"
+        },
+        "snippet": "2.59",
+        "assumptions": []
+      },
+      {
+        "row_id": "A14",
+        "raw_text": "AIR FRYER BASKET IC 15.94",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L14",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item AIR FRYER BASKET IC, size 330x300x120 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 15.94,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            330,
+            300,
+            120
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "O8"
+        },
+        "snippet": "15.94",
+        "assumptions": []
+      },
+      {
+        "row_id": "A15",
+        "raw_text": "WM FA 6.5KG OUTER CARTON 232.15",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L15",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item WM FA 6.5KG OUTER CARTON, size 620x640x1000 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 232.15,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 7,
+          "liner_gsm": 200,
+          "bf": 24,
+          "dims_mm": [
+            620,
+            640,
+            1000
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "P8"
+        },
+        "snippet": "232.15",
+        "assumptions": []
+      },
+      {
+        "row_id": "A16",
+        "raw_text": "FRIDGE 190L OUTER CARTON 262.18",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L16",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item FRIDGE 190L OUTER CARTON, size 560x600x1250 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 262.18,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 7,
+          "liner_gsm": 200,
+          "bf": 24,
+          "dims_mm": [
+            560,
+            600,
+            1250
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "Q8"
+        },
+        "snippet": "262.18",
+        "assumptions": []
+      },
+      {
+        "row_id": "A17",
+        "raw_text": "SPLIT AC OUTDOOR UNIT OUTER CARTON 178.53",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L17",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item SPLIT AC OUTDOOR UNIT OUTER CARTON, size 800x340x580 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 178.53,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 7,
+          "liner_gsm": 200,
+          "bf": 24,
+          "dims_mm": [
+            800,
+            340,
+            580
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "R8"
+        },
+        "snippet": "178.53",
+        "assumptions": []
+      },
+      {
+        "row_id": "A18",
+        "raw_text": "MIXER 3 JAR CORR PARTITION SET 13.08",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L18",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item MIXER 3 JAR CORR PARTITION SET, size 420x310x80 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 13.08,
+          "currency": "Rs",
+          "unit_as_written": "set",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            420,
+            310,
+            80
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "S8"
+        },
+        "snippet": "13.08",
+        "assumptions": []
+      },
+      {
+        "row_id": "A19",
+        "raw_text": "C FAN BLADE SEPARATOR PAD 9.02",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L19",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item C FAN BLADE SEPARATOR PAD, size 1230x110x15 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 9.02,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1230,
+            110,
+            15
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "T8"
+        },
+        "snippet": "9.02",
+        "assumptions": []
+      },
+      {
+        "row_id": "A20",
+        "raw_text": "DIE CUT TRAY FOR GLASS PLATE 9.52",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L22",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item DIE CUT TRAY FOR GLASS PLATE, size 370x330x25 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 9.52,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            370,
+            330,
+            25
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "W8"
+        },
+        "snippet": "9.52",
+        "assumptions": []
+      },
+      {
+        "row_id": "A21",
+        "raw_text": "CORR SHEET 5 PLY 1100X1600 44.4",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L23",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item CORR SHEET 5 PLY 1100X1600 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 44.4,
+          "currency": "Rs",
+          "unit_as_written": "kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5,
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            1100,
+            1600
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "X8"
+        },
+        "snippet": "44.4",
+        "assumptions": []
+      },
+      {
+        "row_id": "A22",
+        "raw_text": "CORR SHEET 3 PLY 1000X1400 39.07",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L24",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item CORR SHEET 3 PLY 1000X1400 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 39.07,
+          "currency": "Rs",
+          "unit_as_written": "kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            1000,
+            1400
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "Y8"
+        },
+        "snippet": "39.07",
+        "assumptions": []
+      },
+      {
+        "row_id": "A23",
+        "raw_text": "CORR ROLL 3 PLY 1500MM WIDTH 40.74",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L25",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item CORR ROLL 3 PLY 1500MM WIDTH match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 40.74,
+          "currency": "Rs",
+          "unit_as_written": "kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1500
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "Z8"
+        },
+        "snippet": "40.74",
+        "assumptions": []
+      },
+      {
+        "row_id": "A24",
+        "raw_text": "STRETCH FILM 23 MICRON 500MM 127.71",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L26",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item STRETCH FILM 23 MICRON 500MM match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 127.71,
+          "currency": "Rs",
+          "unit_as_written": "kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            500
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "AA8"
+        },
+        "snippet": "127.71",
+        "assumptions": []
+      },
+      {
+        "row_id": "A25",
+        "raw_text": "BOPP TAPE 48MM X 100M BROWN 34.83",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L27",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item BOPP TAPE 48MM X 100M BROWN match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 34.83,
+          "currency": "Rs",
+          "unit_as_written": "roll",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            48,
+            100
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "AB8"
+        },
+        "snippet": "34.83",
+        "assumptions": []
+      },
+      {
+        "row_id": "A26",
+        "raw_text": "PALLET CORNER PROTECTOR 50X50X4MM X 1000MM 11.86",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L28",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item PALLET CORNER PROTECTOR 50X50X4MM X 1000MM match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 11.86,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1000
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "AC8"
+        },
+        "snippet": "11.86",
+        "assumptions": []
+      },
+      {
+        "row_id": "A27",
+        "raw_text": "CORR PALLET SLIP SHEET 1100X1100 23.49",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L29",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item CORR PALLET SLIP SHEET 1100X1100 match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 23.49,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3,
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            1100,
+            1100
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "AD8"
+        },
+        "snippet": "23.49",
+        "assumptions": []
+      },
+      {
+        "row_id": "A28",
+        "raw_text": "EDGE BOARD 40X40X3MM X 1200MM 13.8",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L30",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Item EDGE BOARD 40X40X3MM X 1200MM match"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 13.8,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1200
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "xlsx",
+          "sheet": "Rates",
+          "cell": "AE8"
+        },
+        "snippet": "13.8",
+        "assumptions": []
+      }
+    ],
+    "extras": [],
+    "notes": [
+      "L20 (microwave pad pair) has U8=NQ, no rate given, so no row created.",
+      "L21 (cooler water tank wrap sleeve) has no rate in V8, so no row created.",
+      "Hidden row 10 (Rates!A10 'Rate Q2') holds a second set of rates for most items. It is labelled as a Q2 rate rather than the FY 26-27 offer, so it is not reported as rows. Examples: G10=115.37, B10=39.06.",
+      "Remarks say L01, L02, L03 and L05 are offered on 120 GSM liner, BF 16, which differs from the RFx spec of 150/18; deviation answer in QA says 'No deviations.'",
+      "Summary B8 grand total is not reported as a rate."
+    ]
+  },
+  "pass_b": {
+    "trace": {
+      "step": "extract_b",
+      "vendor_id": "V1",
+      "prompt_version": "extract_b@09ba265c",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3282,
+        "output_tokens": 6354,
+        "cache_read_input_tokens": 6452,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0713944,
+      "ms": 47136,
+      "at": "2026-10-08T13:03:57.713Z"
+    },
+    "errors": [],
+    "notes": [
+      "Hidden row 10 (Rate Q2) holds previous-quarter rates; these are not the offer and were not used. Its G10 value (115.37) differs sharply from the current G8 (11.08), reported as written.",
+      "L01, L02, L03 and L05 are offered on 120 GSM liner, BF 16 (remarks row), lower than the RFx 150 GSM / BF 18.",
+      "L20 (microwave pad pair) is marked NQ and L21 (cooler wrap sleeve) has no rate.",
+      "Rates are per piece/set/pair/kg/roll as in the UNIT row; the vendor states GST extra at 18%, delivered FOR Chakan, validity 30 days from 21-09-2026, 45 days payment.",
+      "Print is not stated per line; the group header says 5 PLY PRINTED but no print colours are given.",
+      "Summary grand total (Rs 36947708) was not used for line totals."
+    ],
+    "extraction": {
+      "vendor_terms": {},
+      "rows": [
+        {
+          "row_id": "B-L01",
+          "raw_text": "37.29",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L01",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 37.29,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              440,
+              330,
+              310
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "B8"
+          },
+          "snippet": "37.29",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L02",
+          "raw_text": "24.76",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L02",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 24.76,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              400,
+              360,
+              140
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "C8"
+          },
+          "snippet": "24.76",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L03",
+          "raw_text": "35.93",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L03",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 35.93,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              360,
+              340,
+              380
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "D8"
+          },
+          "snippet": "35.93",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L04",
+          "raw_text": "72.8",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L04",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 72.8,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              1260,
+              180,
+              260
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "E8"
+          },
+          "snippet": "72.8",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L05",
+          "raw_text": "42.4",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L05",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 42.4,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              450,
+              230,
+              480
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "F8"
+          },
+          "snippet": "42.4",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L06",
+          "raw_text": "11.08",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L06",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 11.08,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              560,
+              430,
+              860
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "G8"
+          },
+          "snippet": "11.08",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L07",
+          "raw_text": "66.45",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L07",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 66.45,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              380,
+              380,
+              520
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "H8"
+          },
+          "snippet": "66.45",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L08",
+          "raw_text": "91.18",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L08",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 91.18,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              560,
+              480,
+              370
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "I8"
+          },
+          "snippet": "91.18",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L09",
+          "raw_text": "6.38",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L09",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 6.38,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              180,
+              140,
+              120
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "J8"
+          },
+          "snippet": "6.38",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L10",
+          "raw_text": "18.74",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L10",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 18.74,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1250,
+              120,
+              60
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "K8"
+          },
+          "snippet": "18.74",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L11",
+          "raw_text": "3.23",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L11",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 3.23,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              220,
+              160,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "L8"
+          },
+          "snippet": "3.23",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L12",
+          "raw_text": "14.04",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L12",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 14.04,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              380,
+              340,
+              50
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "M8"
+          },
+          "snippet": "14.04",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L13",
+          "raw_text": "2.59",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L13",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 2.59,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              160,
+              90,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "N8"
+          },
+          "snippet": "2.59",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L14",
+          "raw_text": "15.94",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L14",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 15.94,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              330,
+              300,
+              120
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "O8"
+          },
+          "snippet": "15.94",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L15",
+          "raw_text": "232.15",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L15",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 232.15,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              620,
+              640,
+              1000
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "P8"
+          },
+          "snippet": "232.15",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L16",
+          "raw_text": "262.18",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L16",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 262.18,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              560,
+              600,
+              1250
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "Q8"
+          },
+          "snippet": "262.18",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L17",
+          "raw_text": "178.53",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L17",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 178.53,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              800,
+              340,
+              580
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "R8"
+          },
+          "snippet": "178.53",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L18",
+          "raw_text": "13.08",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L18",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 13.08,
+            "currency": "Rs",
+            "unit_as_written": "set",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              420,
+              310,
+              80
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "S8"
+          },
+          "snippet": "13.08",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L19",
+          "raw_text": "9.02",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L19",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 9.02,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1230,
+              110,
+              15
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "T8"
+          },
+          "snippet": "9.02",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L22",
+          "raw_text": "9.52",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L22",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 9.52,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              370,
+              330,
+              25
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "W8"
+          },
+          "snippet": "9.52",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L23",
+          "raw_text": "44.4",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L23",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 44.4,
+            "currency": "Rs",
+            "unit_as_written": "kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              1100,
+              1600
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "X8"
+          },
+          "snippet": "44.4",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L24",
+          "raw_text": "39.07",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L24",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 39.07,
+            "currency": "Rs",
+            "unit_as_written": "kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              1000,
+              1400
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "Y8"
+          },
+          "snippet": "39.07",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L25",
+          "raw_text": "40.74",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L25",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 40.74,
+            "currency": "Rs",
+            "unit_as_written": "kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1500
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "Z8"
+          },
+          "snippet": "40.74",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L26",
+          "raw_text": "127.71",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L26",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 127.71,
+            "currency": "Rs",
+            "unit_as_written": "kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              500
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "AA8"
+          },
+          "snippet": "127.71",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L27",
+          "raw_text": "34.83",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L27",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 34.83,
+            "currency": "Rs",
+            "unit_as_written": "roll",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              48,
+              100
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "AB8"
+          },
+          "snippet": "34.83",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L28",
+          "raw_text": "11.86",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L28",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 11.86,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1000
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "AC8"
+          },
+          "snippet": "11.86",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L29",
+          "raw_text": "23.49",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L29",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 23.49,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              1100,
+              1100
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "AD8"
+          },
+          "snippet": "23.49",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L30",
+          "raw_text": "13.8",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L30",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 13.8,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1200
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "xlsx",
+            "sheet": "Rates",
+            "cell": "AE8"
+          },
+          "snippet": "13.8",
+          "assumptions": []
+        }
+      ],
+      "extras": [],
+      "notes": [
+        "Hidden row 10 (Rate Q2) holds previous-quarter rates; these are not the offer and were not used. Its G10 value (115.37) differs sharply from the current G8 (11.08), reported as written.",
+        "L01, L02, L03 and L05 are offered on 120 GSM liner, BF 16 (remarks row), lower than the RFx 150 GSM / BF 18.",
+        "L20 (microwave pad pair) is marked NQ and L21 (cooler wrap sleeve) has no rate.",
+        "Rates are per piece/set/pair/kg/roll as in the UNIT row; the vendor states GST extra at 18%, delivered FOR Chakan, validity 30 days from 21-09-2026, 45 days payment.",
+        "Print is not stated per line; the group header says 5 PLY PRINTED but no print colours are given.",
+        "Summary grand total (Rs 36947708) was not used for line totals."
+      ]
+    }
+  },
+  "rejected": [],
+  "score": {
+    "lines": [
+      {
+        "line_id": "L01",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 37.29,
+        "got_point": 37.29,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L02",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 24.76,
+        "got_point": 24.76,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L03",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 35.93,
+        "got_point": 35.93,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L04",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 72.8,
+        "got_point": 72.8,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L05",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 42.4,
+        "got_point": 42.4,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L06",
+        "expected_state": "NEEDS_REVIEW",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": 11.08,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L07",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 66.45,
+        "got_point": 66.45,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L08",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 91.18,
+        "got_point": 91.18,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L09",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 6.38,
+        "got_point": 6.38,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L10",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 18.74,
+        "got_point": 18.74,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L11",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 3.23,
+        "got_point": 3.23,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L12",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 14.04,
+        "got_point": 14.04,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L13",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 2.59,
+        "got_point": 2.59,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L14",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 15.94,
+        "got_point": 15.94,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L15",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 232.15,
+        "got_point": 232.15,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L16",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 262.18,
+        "got_point": 262.18,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L17",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 178.53,
+        "got_point": 178.53,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L18",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 13.08,
+        "got_point": 13.08,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L19",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 9.02,
+        "got_point": 9.02,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L20",
+        "expected_state": "MISSING",
+        "got_state": "MISSING",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L21",
+        "expected_state": "MISSING",
+        "got_state": "MISSING",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L22",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 9.52,
+        "got_point": 9.52,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L23",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 44.4,
+        "got_point": 44.4,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L24",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 39.07,
+        "got_point": 39.07,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L25",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 40.74,
+        "got_point": 40.74,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L26",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 127.71,
+        "got_point": 127.71,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L27",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 34.83,
+        "got_point": 34.83,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L28",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 11.86,
+        "got_point": 11.86,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L29",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 23.49,
+        "got_point": 23.49,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L30",
+        "expected_state": "CONFIRMED",
+        "got_state": "CONFIRMED",
+        "state_ok": true,
+        "expected_point": 13.8,
+        "got_point": 13.8,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      }
+    ],
+    "state_accuracy": 1,
+    "price_checked": 27,
+    "price_accuracy": 1,
+    "dangerous": [],
+    "coverage_errors": [],
+    "flags_expected": 33,
+    "flag_recall": 1,
+    "missing_flags": []
+  },
+  "pending_confirmations": []
+}

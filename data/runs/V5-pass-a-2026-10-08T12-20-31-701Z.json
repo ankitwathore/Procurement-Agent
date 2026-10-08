@@ -1,0 +1,22 @@
+{
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V5",
+    "prompt_version": "extract_a@36434c85",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": null,
+    "fallback_used": false,
+    "stop_reason": null,
+    "usage": null,
+    "cost_usd": null,
+    "ms": 0,
+    "at": "2026-10-08T12:20:31.701Z"
+  },
+  "errors": [
+    "call failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Schemas contains too many parameters with union types (74 parameters with type arrays or anyOf). This causes exponential compilation cost. Reduce the number of nullable or union-typed parameters (limit: 16 parameters with unions).\"},\"request_id\":\"req_011Cfpm1mP9yxQWPBDJ38RR9\"}"
+  ],
+  "injection": [],
+  "notes": [],
+  "questionnaire": [],
+  "extraction": null
+}

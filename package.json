@@ -1,0 +1,29 @@
+{
+  "name": "quotekill",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "test": "npm test --workspace backend",
+    "typecheck": "npm run typecheck --workspaces",
+    "gen-data": "npm run gen-data --workspace backend",
+    "summary": "npm run summary --workspace backend",
+    "extract": "npm run extract --workspace backend --",
+    "check-key": "npm run check-key --workspace backend",
+    "rescore": "npm run rescore --workspace backend --",
+    "clarify": "npm run clarify --workspace backend --",
+    "reply": "npm run reply --workspace backend --",
+    "gates": "npm run gates --workspace backend",
+    "evidence": "npm run evidence --workspace backend --",
+    "eval": "npm run eval --workspace backend",
+    "api": "npm run api --workspace backend",
+    "ui": "npm run dev --workspace frontend",
+    "dev": "node scripts/dev.mjs",
+    "ask": "npm run ask --workspace backend --",
+    "golden": "npm run golden --workspace backend --",
+    "db": "npm run db --workspace backend --"
+  }
+}

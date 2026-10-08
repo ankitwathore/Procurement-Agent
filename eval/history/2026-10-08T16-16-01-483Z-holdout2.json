@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-08T16:16:01.483Z",
+  "set": "holdout2",
+  "confirmed_precision": 1,
+  "dangerous_rate": 0,
+  "trap_recall": {
+    "passed": 22,
+    "runnable": 26,
+    "registered": 36
+  },
+  "overall": {
+    "cells": 120,
+    "state_accuracy": 0.7666666666666667,
+    "price_checked": 117,
+    "price_accuracy": 0.9914529914529915,
+    "quoted": {
+      "tp": 118,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1,
+      "recall": 1
+    },
+    "dangerous": []
+  },
+  "calibration": [
+    {
+      "state": "CONFIRMED",
+      "cells": 26,
+      "correct": 26,
+      "precision": 1,
+      "rule": "value correct within 0.5% (safe state)"
+    },
+    {
+      "state": "HIGH_CONF",
+      "cells": 0,
+      "correct": 0,
+      "precision": null,
+      "rule": "value correct within 0.5% (safe state)"
+    },
+    {
+      "state": "BUYER_VERIFIED",
+      "cells": 0,
+      "correct": 0,
+      "precision": null,
+      "rule": "value correct within 0.5% (safe state)"
+    },
+    {
+      "state": "INFERRED",
+      "cells": 89,
+      "correct": 89,
+      "precision": 1,
+      "rule": "true value within the stated range"
+    },
+    {
+      "state": "NEEDS_REVIEW",
+      "cells": 3,
+      "correct": 2,
+      "precision": 0.6666666666666666,
+      "rule": "genuinely ambiguous or wrong"
+    },
+    {
+      "state": "MISSING",
+      "cells": 2,
+      "correct": 2,
+      "precision": 1,
+      "rule": "nothing was offered"
+    }
+  ]
+}

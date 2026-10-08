@@ -1,0 +1,3447 @@
+{
+  "set": "holdout2",
+  "seed": 8,
+  "vendors": {
+    "V1": {
+      "freight_basis": "delivered",
+      "gst_basis": "exclusive",
+      "revision": 1,
+      "coverage": "28 of 30",
+      "lines": {
+        "L01": {
+          "quoted": true,
+          "cell": "Price List!F6",
+          "intended_rate": 38.56,
+          "rate_as_shown": 38.56,
+          "hidden_q2_rate": 40.43,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              440,
+              330,
+              310
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 38.56
+        },
+        "L02": {
+          "quoted": true,
+          "cell": "Price List!F7",
+          "intended_rate": 26.68,
+          "rate_as_shown": 26.68,
+          "hidden_q2_rate": 27.92,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              400,
+              360,
+              140
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 26.68
+        },
+        "L03": {
+          "quoted": true,
+          "cell": "Price List!F8",
+          "intended_rate": 35.51,
+          "rate_as_shown": 35.51,
+          "hidden_q2_rate": 37,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              360,
+              340,
+              380
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs",
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 35.51
+        },
+        "L04": {
+          "quoted": true,
+          "cell": "Price List!F9",
+          "intended_rate": 74.49,
+          "rate_as_shown": 74.49,
+          "hidden_q2_rate": 76.95,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              1260,
+              180,
+              260
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 74.49
+        },
+        "L05": {
+          "quoted": true,
+          "cell": "Price List!F10",
+          "intended_rate": 45.81,
+          "rate_as_shown": 45.81,
+          "hidden_q2_rate": 47.48,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              450,
+              230,
+              480
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 45.81
+        },
+        "L06": {
+          "quoted": true,
+          "cell": "Price List!F11",
+          "intended_rate": 111.44,
+          "rate_as_shown": 111.44,
+          "hidden_q2_rate": 115.91,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              560,
+              430,
+              860
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 111.44
+        },
+        "L07": {
+          "quoted": true,
+          "cell": "Price List!F12",
+          "intended_rate": 66.89,
+          "rate_as_shown": 66.89,
+          "hidden_q2_rate": 69.63,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              380,
+              380,
+              520
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 66.89
+        },
+        "L08": {
+          "quoted": true,
+          "cell": "Price List!F13",
+          "intended_rate": 93.56,
+          "rate_as_shown": 93.56,
+          "hidden_q2_rate": 96.56,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              560,
+              480,
+              370
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 93.56
+        },
+        "L09": {
+          "quoted": true,
+          "cell": "Price List!F15",
+          "intended_rate": 6.23,
+          "rate_as_shown": 6.23,
+          "hidden_q2_rate": 6.47,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              180,
+              140,
+              120
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 6.23
+        },
+        "L10": {
+          "quoted": true,
+          "cell": "Price List!F16",
+          "intended_rate": 18.99,
+          "rate_as_shown": 18.99,
+          "hidden_q2_rate": 19.85,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1250,
+              120,
+              60
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 18.99
+        },
+        "L11": {
+          "quoted": true,
+          "cell": "Price List!F17",
+          "intended_rate": 3.27,
+          "rate_as_shown": 3.27,
+          "hidden_q2_rate": 3.4,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              220,
+              160,
+              40
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 3.27
+        },
+        "L12": {
+          "quoted": true,
+          "cell": "Price List!F18",
+          "intended_rate": 13.92,
+          "rate_as_shown": 13.92,
+          "hidden_q2_rate": 14.36,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              380,
+              340,
+              50
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 13.92
+        },
+        "L13": {
+          "quoted": false,
+          "cell": "Price List!F19",
+          "intended_rate": null,
+          "rate_as_shown": null,
+          "hidden_q2_rate": null,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              160,
+              90,
+              40
+            ]
+          },
+          "expected_state": "MISSING",
+          "expected_flags": [],
+          "landed_unit_inr_point": null
+        },
+        "L14": {
+          "quoted": true,
+          "cell": "Price List!F20",
+          "intended_rate": 16.37,
+          "rate_as_shown": 16.37,
+          "hidden_q2_rate": 17,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              330,
+              300,
+              120
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 16.37
+        },
+        "L15": {
+          "quoted": true,
+          "cell": "Price List!F22",
+          "intended_rate": 230.97,
+          "rate_as_shown": 230.97,
+          "hidden_q2_rate": 239.14,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              620,
+              640,
+              1000
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 230.97
+        },
+        "L16": {
+          "quoted": true,
+          "cell": "Price List!F23",
+          "intended_rate": 265.8,
+          "rate_as_shown": 265.8,
+          "hidden_q2_rate": 276.52,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              560,
+              600,
+              1250
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 265.8
+        },
+        "L17": {
+          "quoted": true,
+          "cell": "Price List!F24",
+          "intended_rate": 180.03,
+          "rate_as_shown": 180.03,
+          "hidden_q2_rate": 188.85,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              800,
+              340,
+              580
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 180.03
+        },
+        "L18": {
+          "quoted": true,
+          "cell": "Price List!F26",
+          "intended_rate": 12.95,
+          "rate_as_shown": 12.95,
+          "hidden_q2_rate": 13.4,
+          "unit": "set",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              420,
+              310,
+              80
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 12.95
+        },
+        "L19": {
+          "quoted": true,
+          "cell": "Price List!F27",
+          "intended_rate": 8.97,
+          "rate_as_shown": 8.97,
+          "hidden_q2_rate": 9.28,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1230,
+              110,
+              15
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 8.97
+        },
+        "L20": {
+          "quoted": true,
+          "cell": "Price List!F28",
+          "intended_rate": 27.76,
+          "rate_as_shown": 27.76,
+          "hidden_q2_rate": 28.99,
+          "unit": "pair",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              540,
+              460,
+              40
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs",
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 27.76
+        },
+        "L21": {
+          "quoted": true,
+          "cell": "Price List!F29",
+          "intended_rate": 15.53,
+          "rate_as_shown": 15.53,
+          "hidden_q2_rate": 16.26,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              900,
+              300
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 15.53
+        },
+        "L22": {
+          "quoted": true,
+          "cell": "Price List!F30",
+          "intended_rate": 9.64,
+          "rate_as_shown": 9.64,
+          "hidden_q2_rate": 10.05,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              370,
+              330,
+              25
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 9.64
+        },
+        "L23": {
+          "quoted": true,
+          "cell": "Price List!F32",
+          "intended_rate": 44.32,
+          "rate_as_shown": 4.43,
+          "hidden_q2_rate": 46.32,
+          "unit": "kg",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              1100,
+              1600
+            ]
+          },
+          "expected_state": "NEEDS_REVIEW",
+          "expected_flags": [
+            "magnitude_slip",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": null,
+          "true_landed_point": 44.32
+        },
+        "L24": {
+          "quoted": true,
+          "cell": "Price List!F33",
+          "intended_rate": 38.84,
+          "rate_as_shown": 38.84,
+          "hidden_q2_rate": 40.59,
+          "unit": "kg",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              1000,
+              1400
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 38.84
+        },
+        "L25": {
+          "quoted": true,
+          "cell": "Price List!F34",
+          "intended_rate": 40.8,
+          "rate_as_shown": 40.8,
+          "hidden_q2_rate": 42.38,
+          "unit": "kg",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1500
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 40.8
+        },
+        "L26": {
+          "quoted": true,
+          "cell": "Price List!F36",
+          "intended_rate": 127.36,
+          "rate_as_shown": 127.36,
+          "hidden_q2_rate": 131.7,
+          "unit": "kg",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": null,
+            "liner_gsm": null,
+            "bf": null,
+            "dims_mm": [
+              500
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 127.36
+        },
+        "L27": {
+          "quoted": false,
+          "cell": "Price List!F37",
+          "intended_rate": null,
+          "rate_as_shown": "N/A",
+          "hidden_q2_rate": null,
+          "unit": "roll",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": null,
+            "liner_gsm": null,
+            "bf": null,
+            "dims_mm": [
+              48,
+              100
+            ]
+          },
+          "expected_state": "MISSING",
+          "expected_flags": [],
+          "landed_unit_inr_point": null
+        },
+        "L28": {
+          "quoted": true,
+          "cell": "Price List!F38",
+          "intended_rate": 11.93,
+          "rate_as_shown": 11.93,
+          "hidden_q2_rate": 12.47,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": null,
+            "liner_gsm": null,
+            "bf": null,
+            "dims_mm": [
+              1000
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 11.93
+        },
+        "L29": {
+          "quoted": true,
+          "cell": "Price List!F39",
+          "intended_rate": 23.19,
+          "rate_as_shown": 23.19,
+          "hidden_q2_rate": 24.24,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              1100,
+              1100
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 23.19
+        },
+        "L30": {
+          "quoted": true,
+          "cell": "Price List!F40",
+          "intended_rate": 13.61,
+          "rate_as_shown": 13.61,
+          "hidden_q2_rate": 14.19,
+          "unit": "piece",
+          "currency": "INR",
+          "readable": true,
+          "spec_offered": {
+            "ply": null,
+            "liner_gsm": null,
+            "bf": null,
+            "dims_mm": [
+              1200
+            ]
+          },
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "currency_assumed",
+            "hidden_value_differs"
+          ],
+          "landed_unit_inr_point": 13.61
+        }
+      },
+      "gates": {
+        "Q01": "PASS",
+        "Q02": "PASS",
+        "Q03": "PASS"
+      },
+      "claim_vs_evidence": {
+        "Q12": {
+          "claimed": "No deviation from specs",
+          "contradicted_by": "lighter board on L03, L20"
+        }
+      },
+      "report_findings": {
+        "lines": [
+          "L03",
+          "L20"
+        ],
+        "fields": [
+          "bf",
+          "liner_gsm"
+        ]
+      },
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "IQA/QMS/2023/0957",
+        "issuer": "Indus Quality Assurance Services (fictional)",
+        "entity": "Shree Ganesh Corrugators, Chakan, Pune",
+        "scope": "Manufacture of corrugated boxes and board",
+        "valid_from": "2023-11-20",
+        "valid_to": "2026-11-19"
+      },
+      "test_report": {
+        "lab": "Pune Packaging Test Laboratory (fictional)",
+        "report_no": "PPTL/26/0388",
+        "report_date": "2026-08-05",
+        "samples": [
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 120,
+            "bf": 16.5
+          },
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 150,
+            "bf": 18.4
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 120,
+            "bf": 16.2
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 150,
+            "bf": 18.5
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 180,
+            "bf": 22.3
+          },
+          {
+            "ply": 7,
+            "flute": "BCB",
+            "liner_gsm": 200,
+            "bf": 24.6
+          }
+        ]
+      },
+      "expected_discrepancies": [
+        "hidden_value_differs",
+        "spec_below_requirement",
+        "claim_vs_evidence",
+        "magnitude_slip"
+      ]
+    },
+    "V2": {
+      "freight_basis": "ex_works",
+      "gst_basis": "inclusive",
+      "quote_date": "2026-09-19",
+      "validity_until": "2026-10-19",
+      "coverage": "30 of 30 plus one alternate offer",
+      "lines": {
+        "L30": {
+          "quoted": true,
+          "vendor_code": "APW/AC/031",
+          "page": 1,
+          "rate_as_shown": 15.25,
+          "intended_rate_ex_gst": 12.923728813559324,
+          "amount_as_shown": 610000,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 14.183728813559323,
+          "landed_low": 14.057728813559324,
+          "landed_high": 14.309728813559325
+        },
+        "L29": {
+          "quoted": true,
+          "vendor_code": "APW/3P/034",
+          "page": 1,
+          "rate_as_shown": 24.51,
+          "intended_rate_ex_gst": 20.77118644067797,
+          "amount_as_shown": 294120,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 23.081186440677968,
+          "landed_low": 22.85018644067797,
+          "landed_high": 23.31218644067797
+        },
+        "L28": {
+          "quoted": true,
+          "vendor_code": "APW/AC/037",
+          "page": 1,
+          "rate_as_shown": 13.24,
+          "intended_rate_ex_gst": 11.220338983050848,
+          "amount_as_shown": 662000,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 11.976338983050848,
+          "landed_low": 11.900738983050848,
+          "landed_high": 12.051938983050848
+        },
+        "L27": {
+          "quoted": true,
+          "vendor_code": "APW/AC/040",
+          "page": 1,
+          "rate_as_shown": 38.54,
+          "intended_rate_ex_gst": 32.66101694915255,
+          "amount_as_shown": 2312400,
+          "unit": "roll",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 33.12301694915255,
+          "landed_low": 33.076816949152544,
+          "landed_high": 33.16921694915255
+        },
+        "L26": {
+          "quoted": true,
+          "vendor_code": "APW/AC/043",
+          "page": 1,
+          "rate_as_shown": 142.8,
+          "intended_rate_ex_gst": 121.0169491525424,
+          "amount_as_shown": 357000,
+          "unit": "kg",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 125.2169491525424,
+          "landed_low": 124.7969491525424,
+          "landed_high": 125.6369491525424
+        },
+        "L25": {
+          "quoted": true,
+          "vendor_code": "APW/3P/046",
+          "page": 1,
+          "rate_as_shown": 44.45,
+          "intended_rate_ex_gst": 37.66949152542373,
+          "amount_as_shown": 835660,
+          "unit": "kg",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 41.86949152542373,
+          "landed_low": 41.44949152542373,
+          "landed_high": 42.28949152542373
+        },
+        "L24": {
+          "quoted": true,
+          "vendor_code": "APW/3P/049",
+          "page": 1,
+          "rate_as_shown": 43.19,
+          "intended_rate_ex_gst": 36.601694915254235,
+          "amount_as_shown": 1187725,
+          "unit": "kg",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 40.80169491525424,
+          "landed_low": 40.381694915254236,
+          "landed_high": 41.22169491525423
+        },
+        "L23": {
+          "quoted": true,
+          "vendor_code": "APW/5P/052",
+          "page": 1,
+          "rate_as_shown": 48.34,
+          "intended_rate_ex_gst": 40.96610169491526,
+          "amount_as_shown": 1812750,
+          "unit": "kg",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 45.16610169491526,
+          "landed_low": 44.74610169491526,
+          "landed_high": 45.58610169491526
+        },
+        "L22": {
+          "quoted": true,
+          "vendor_code": "APW/3P/055",
+          "page": 1,
+          "rate_as_shown": 10.47,
+          "intended_rate_ex_gst": 8.872881355932204,
+          "amount_as_shown": 728188.5,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "NEEDS_REVIEW",
+          "expected_state": "NEEDS_REVIEW",
+          "expected_flags": [
+            "arithmetic_mismatch"
+          ],
+          "landed_unit_inr_point": 9.670881355932204,
+          "landed_low": null,
+          "landed_high": null
+        },
+        "L21": {
+          "quoted": true,
+          "vendor_code": "APW/3P/058",
+          "page": 1,
+          "rate_as_shown": 16.51,
+          "intended_rate_ex_gst": 13.991525423728815,
+          "amount_as_shown": 214630,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 15.377525423728816,
+          "landed_low": 15.238925423728816,
+          "landed_high": 15.516125423728814
+        },
+        "L20": {
+          "quoted": true,
+          "vendor_code": "APW/5P/061",
+          "page": 1,
+          "rate_as_shown": 31.01,
+          "intended_rate_ex_gst": 26.279661016949156,
+          "amount_as_shown": 493059,
+          "unit": "pair",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 28.883661016949155,
+          "landed_low": 28.623261016949158,
+          "landed_high": 29.144061016949156
+        },
+        "L19": {
+          "quoted": true,
+          "vendor_code": "APW/3P/064",
+          "page": 1,
+          "rate_as_shown": 9.79,
+          "intended_rate_ex_gst": 8.296610169491526,
+          "amount_as_shown": 778305,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 9.136610169491526,
+          "landed_low": 9.052610169491526,
+          "landed_high": 9.220610169491525
+        },
+        "L18": {
+          "quoted": true,
+          "vendor_code": "APW/3P/067",
+          "page": 1,
+          "rate_as_shown": 14.15,
+          "intended_rate_ex_gst": 11.991525423728815,
+          "amount_as_shown": 1436225,
+          "unit": "set",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 13.167525423728815,
+          "landed_low": 13.049925423728816,
+          "landed_high": 13.285125423728815
+        },
+        "L17": {
+          "quoted": true,
+          "vendor_code": "APW/7P/070",
+          "page": 1,
+          "rate_as_shown": 192.07,
+          "intended_rate_ex_gst": 162.77118644067798,
+          "amount_as_shown": 1671009,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 178.731186440678,
+          "landed_low": 177.13518644067798,
+          "landed_high": 180.327186440678
+        },
+        "L16": {
+          "quoted": true,
+          "vendor_code": "APW/7P/073",
+          "page": 2,
+          "rate_as_shown": 288.25,
+          "intended_rate_ex_gst": 244.27966101694918,
+          "amount_as_shown": 1470075,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 267.7996610169492,
+          "landed_low": 265.44766101694916,
+          "landed_high": 270.15166101694916
+        },
+        "L15": {
+          "quoted": true,
+          "vendor_code": "APW/7P/076",
+          "page": 2,
+          "rate_as_shown": 250.22,
+          "intended_rate_ex_gst": 212.05084745762713,
+          "amount_as_shown": 1626430,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 232.63084745762714,
+          "landed_low": 230.57284745762712,
+          "landed_high": 234.68884745762713
+        },
+        "L14": {
+          "quoted": true,
+          "vendor_code": "APW/3P/079",
+          "page": 2,
+          "rate_as_shown": 17.36,
+          "intended_rate_ex_gst": 14.711864406779661,
+          "amount_as_shown": 755160,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 16.22386440677966,
+          "landed_low": 16.072664406779662,
+          "landed_high": 16.37506440677966
+        },
+        "L13": {
+          "quoted": true,
+          "vendor_code": "APW/3P/082",
+          "page": 2,
+          "rate_as_shown": 2.75,
+          "intended_rate_ex_gst": 2.330508474576271,
+          "amount_as_shown": 398750,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 2.540508474576271,
+          "landed_low": 2.5195084745762713,
+          "landed_high": 2.561508474576271
+        },
+        "L12": {
+          "quoted": true,
+          "vendor_code": "APW/3P/085",
+          "page": 2,
+          "rate_as_shown": 14.81,
+          "intended_rate_ex_gst": 12.55084745762712,
+          "amount_as_shown": 962650,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 13.852847457627119,
+          "landed_low": 13.722647457627119,
+          "landed_high": 13.98304745762712
+        },
+        "L11": {
+          "quoted": true,
+          "vendor_code": "APW/3P/088",
+          "page": 2,
+          "rate_as_shown": 3.55,
+          "intended_rate_ex_gst": 3.0084745762711864,
+          "amount_as_shown": 669175,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 3.3024745762711865,
+          "landed_low": 3.2730745762711866,
+          "landed_high": 3.3318745762711863
+        },
+        "L10": {
+          "quoted": true,
+          "vendor_code": "APW/3P/091",
+          "page": 2,
+          "rate_as_shown": 20.7,
+          "intended_rate_ex_gst": 17.54237288135593,
+          "amount_as_shown": 1645650,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 19.30637288135593,
+          "landed_low": 19.129972881355933,
+          "landed_high": 19.48277288135593
+        },
+        "L09": {
+          "quoted": true,
+          "vendor_code": "APW/3P/094",
+          "page": 2,
+          "rate_as_shown": 6.7,
+          "intended_rate_ex_gst": 5.677966101694916,
+          "amount_as_shown": 1453900,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 6.265966101694916,
+          "landed_low": 6.2071661016949164,
+          "landed_high": 6.324766101694916
+        },
+        "L08": {
+          "quoted": true,
+          "vendor_code": "APW/5P/097",
+          "page": 2,
+          "rate_as_shown": 98.38,
+          "intended_rate_ex_gst": 83.37288135593221,
+          "amount_as_shown": 1564242,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 91.5628813559322,
+          "landed_low": 90.7438813559322,
+          "landed_high": 92.38188135593221
+        },
+        "L07": {
+          "quoted": true,
+          "vendor_code": "APW/5P/100",
+          "page": 2,
+          "rate_as_shown": 71.99,
+          "intended_rate_ex_gst": 61.00847457627118,
+          "amount_as_shown": 1475795,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 66.88847457627118,
+          "landed_low": 66.30047457627118,
+          "landed_high": 67.47647457627119
+        },
+        "L06": {
+          "quoted": true,
+          "vendor_code": "APW/5P/103",
+          "page": 2,
+          "rate_as_shown": 119.29,
+          "intended_rate_ex_gst": 101.09322033898306,
+          "amount_as_shown": 1550770,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 110.96322033898306,
+          "landed_low": 109.97622033898305,
+          "landed_high": 111.95022033898306
+        },
+        "L05": {
+          "quoted": true,
+          "vendor_code": "APW/5P/106",
+          "page": 2,
+          "rate_as_shown": 49.01,
+          "intended_rate_ex_gst": 41.53389830508475,
+          "amount_as_shown": 1592825,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 45.52389830508475,
+          "landed_low": 45.12489830508475,
+          "landed_high": 45.92289830508475
+        },
+        "L04": {
+          "quoted": true,
+          "vendor_code": "APW/5P/109",
+          "page": 2,
+          "rate_as_shown": 80.26,
+          "intended_rate_ex_gst": 68.01694915254238,
+          "amount_as_shown": 6380670,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 74.52694915254239,
+          "landed_low": 73.87594915254238,
+          "landed_high": 75.17794915254238
+        },
+        "L03": {
+          "quoted": true,
+          "vendor_code": "APW/5P/112",
+          "page": 2,
+          "rate_as_shown": 41.23,
+          "intended_rate_ex_gst": 34.940677966101696,
+          "amount_as_shown": 1793505,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 38.2166779661017,
+          "landed_low": 37.889077966101695,
+          "landed_high": 38.544277966101696
+        },
+        "L02": {
+          "quoted": true,
+          "vendor_code": "APW/5P/115",
+          "page": 2,
+          "rate_as_shown": 28.82,
+          "intended_rate_ex_gst": 24.423728813559322,
+          "amount_as_shown": 1873300,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 26.733728813559324,
+          "landed_low": 26.502728813559322,
+          "landed_high": 26.964728813559322
+        },
+        "L01": {
+          "quoted": true,
+          "vendor_code": "APW/5P/118",
+          "page": 2,
+          "rate_as_shown": 41.95,
+          "intended_rate_ex_gst": 35.55084745762712,
+          "amount_as_shown": 4257925,
+          "unit": "piece",
+          "currency": "INR",
+          "gst_inclusive": true,
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 38.994847457627124,
+          "landed_low": 38.65044745762712,
+          "landed_high": 39.339247457627124
+        }
+      },
+      "extras": [
+        {
+          "code": "APW/ALT/12",
+          "description": "Option: 3 Ply B 180/22 for Cooktop Glass Plate Inner",
+          "rate_incl_gst": 12.74,
+          "for_line": "L12"
+        }
+      ],
+      "conditional_discount": {
+        "pct": 2,
+        "threshold_inr": 4000000
+      },
+      "gates": {
+        "Q01": "FAIL",
+        "Q02": "PASS",
+        "Q03": "PASS"
+      },
+      "hedged": {
+        "Q07": "Agreed for net 45 with 1.5% interest after due date"
+      },
+      "expected_discrepancies": [
+        "gst_basis_fine_print",
+        "conditional_discount",
+        "arithmetic_mismatch",
+        "expired_certificate",
+        "injection_attempt",
+        "extra_offer",
+        "hedged_answer",
+        "duplicate_attachment"
+      ],
+      "duplicate_files": [
+        "APW_Quote_Kaveri_Sep26.pdf",
+        "APW_Quote_Kaveri_Sep26 (1).pdf"
+      ],
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "QCB/9001/2023/3318",
+        "issuer": "Quality Certification Bureau (India) Pvt Ltd (fictional)",
+        "entity": "Ahmedabad Packwell Industries, GIDC Vatva, Ahmedabad",
+        "scope": "Manufacture of corrugated boxes and board",
+        "valid_from": "2023-07-16",
+        "valid_to": "2026-07-15"
+      },
+      "test_report": {
+        "lab": "Sabarmati Board Testing Centre (fictional)",
+        "report_no": "SBTC/26/1021",
+        "report_date": "2026-05-12",
+        "samples": [
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 150,
+            "bf": 18.7
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 180,
+            "bf": 22.6
+          },
+          {
+            "ply": 7,
+            "flute": "BCB",
+            "liner_gsm": 200,
+            "bf": 24.4
+          }
+        ]
+      }
+    },
+    "V3": {
+      "freight_basis": "delivered",
+      "gst_basis": "exclusive",
+      "quote_date": "2026-09-17",
+      "validity_until": "2026-09-25",
+      "validity": "lapsed",
+      "coverage": "30 of 30",
+      "lines": {
+        "L01": {
+          "quoted": true,
+          "where": "prose",
+          "rate_as_shown": 40.7,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 40.7,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 40.7,
+          "landed_low": 40.7,
+          "landed_high": 40.7
+        },
+        "L02": {
+          "quoted": true,
+          "where": "prose",
+          "rate_as_shown": 27.63,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 27.63,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 27.63,
+          "landed_low": 27.63,
+          "landed_high": 27.63
+        },
+        "L03": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 39.89,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 39.89,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 39.89,
+          "landed_low": 39.89,
+          "landed_high": 39.89
+        },
+        "L04": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 77.36,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 77.36,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 77.36,
+          "landed_low": 77.36,
+          "landed_high": 77.36
+        },
+        "L05": {
+          "quoted": true,
+          "where": "prose",
+          "rate_as_shown": 48.09,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 48.09,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 48.09,
+          "landed_low": 48.09,
+          "landed_high": 48.09
+        },
+        "L06": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 116.01,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 116.01,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 116.01,
+          "landed_low": 116.01,
+          "landed_high": 116.01
+        },
+        "L07": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 69.56,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 69.56,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 69.56,
+          "landed_low": 69.56,
+          "landed_high": 69.56
+        },
+        "L08": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 96.7,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 96.7,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 96.7,
+          "landed_low": 96.7,
+          "landed_high": 96.7
+        },
+        "L09": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 6.61,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 6.61,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 6.61,
+          "landed_low": 6.61,
+          "landed_high": 6.61
+        },
+        "L10": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 1975,
+          "basis_as_shown": "per 100 nos",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 19.75,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 19.75,
+          "landed_low": 19.75,
+          "landed_high": 19.75
+        },
+        "L11": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 3.4,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 3.4,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 3.4,
+          "landed_low": 3.4,
+          "landed_high": 3.4
+        },
+        "L12": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 1467,
+          "basis_as_shown": "per hundred",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 14.67,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 14.67,
+          "landed_low": 14.67,
+          "landed_high": 14.67
+        },
+        "L13": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 2.67,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 2.67,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 2.67,
+          "landed_low": 2.67,
+          "landed_high": 2.67
+        },
+        "L14": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 1698,
+          "basis_as_shown": "per 100 nos",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 16.98,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 16.98,
+          "landed_low": 16.98,
+          "landed_high": 16.98
+        },
+        "L15": {
+          "quoted": true,
+          "where": "prose",
+          "rate_as_shown": 244.4,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 244.4,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 244.4,
+          "landed_low": 244.4,
+          "landed_high": 244.4
+        },
+        "L16": {
+          "quoted": true,
+          "where": "prose",
+          "rate_as_shown": 273.23,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 273.23,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 273.23,
+          "landed_low": 273.23,
+          "landed_high": 273.23
+        },
+        "L17": {
+          "quoted": true,
+          "where": "prose",
+          "rate_as_shown": 185.65,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 185.65,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 185.65,
+          "landed_low": 185.65,
+          "landed_high": 185.65
+        },
+        "L18": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 675,
+          "basis_as_shown": "per 50 sets",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 13.5,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 13.5,
+          "landed_low": 13.5,
+          "landed_high": 13.5
+        },
+        "L19": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 9.34,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 9.34,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 9.34,
+          "landed_low": 9.34,
+          "landed_high": 9.34
+        },
+        "L20": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 30.27,
+          "basis_as_shown": "per pair",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 30.27,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 30.27,
+          "landed_low": 30.27,
+          "landed_high": 30.27
+        },
+        "L21": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 16.11,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 16.11,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 16.11,
+          "landed_low": 16.11,
+          "landed_high": 16.11
+        },
+        "L22": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 9.98,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 9.98,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 9.98,
+          "landed_low": 9.98,
+          "landed_high": 9.98
+        },
+        "L23": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 45.97,
+          "basis_as_shown": "per kg",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 45.97,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 45.97,
+          "landed_low": 45.97,
+          "landed_high": 45.97
+        },
+        "L24": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 41.09,
+          "basis_as_shown": "per kg",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 41.09,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 41.09,
+          "landed_low": 41.09,
+          "landed_high": 41.09
+        },
+        "L25": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 42.33,
+          "basis_as_shown": "per kg",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 42.33,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 42.33,
+          "landed_low": 42.33,
+          "landed_high": 42.33
+        },
+        "L26": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 1.55,
+          "basis_as_shown": "per kg",
+          "currency": "USD",
+          "intended_rate_per_base_inr": 136.4,
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "fx_clause"
+          ],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 136.4,
+          "landed_low": 132.308,
+          "landed_high": 140.49200000000002
+        },
+        "L27": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 0.42,
+          "basis_as_shown": "per roll",
+          "currency": "USD",
+          "intended_rate_per_base_inr": 36.96,
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "fx_clause"
+          ],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 36.96,
+          "landed_low": 35.8512,
+          "landed_high": 38.0688
+        },
+        "L28": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 0.13,
+          "basis_as_shown": "per piece",
+          "currency": "USD",
+          "intended_rate_per_base_inr": 11.440000000000001,
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "fx_clause"
+          ],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 11.440000000000001,
+          "landed_low": 11.096800000000002,
+          "landed_high": 11.7832
+        },
+        "L29": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 23.97,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 23.97,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [
+            "spec_below_requirement"
+          ],
+          "landed_unit_inr_point": 23.97,
+          "landed_low": 23.97,
+          "landed_high": 23.97
+        },
+        "L30": {
+          "quoted": true,
+          "where": "table",
+          "rate_as_shown": 14.06,
+          "basis_as_shown": "per pc",
+          "currency": "INR",
+          "intended_rate_per_base_inr": 14.06,
+          "expected_state": "CONFIRMED",
+          "expected_flags": [],
+          "expected_evidence_flags": [],
+          "landed_unit_inr_point": 14.06,
+          "landed_low": 14.06,
+          "landed_high": 14.06
+        }
+      },
+      "gates": {
+        "Q01": "PASS",
+        "Q02": "PASS",
+        "Q03": "PASS"
+      },
+      "hedged": {
+        "Q07": "For corrugated items yes; imported items need full advance."
+      },
+      "claim_vs_evidence": {
+        "claim": "Yes, attached; 3 ply board tested above BF 18.",
+        "evidence": "test report shows BF 17.6 for 3 ply B 150 GSM",
+        "lines": [
+          "L12",
+          "L14",
+          "L21",
+          "L22",
+          "L24",
+          "L29"
+        ]
+      },
+      "expected_discrepancies": [
+        "validity_lapsed",
+        "fx_clause",
+        "claim_vs_evidence",
+        "spec_below_requirement",
+        "hedged_answer"
+      ],
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "number": "IQA/QMS/2024/0466",
+        "issuer": "Indus Quality Assessors Pvt Ltd (fictional)",
+        "entity": "Southern Flute Packaging, SIPCOT Phase II, Hosur",
+        "scope": "Manufacture of corrugated boxes and board",
+        "valid_from": "2024-09-01",
+        "valid_to": "2027-08-31"
+      },
+      "test_report": {
+        "lab": "Hosur Paperboard Testing Centre (fictional)",
+        "report_no": "HPTC/2026/0631",
+        "report_date": "2026-07-14",
+        "samples": [
+          {
+            "ply": 3,
+            "flute": "B",
+            "liner_gsm": 150,
+            "bf": 17.6
+          },
+          {
+            "ply": 5,
+            "flute": "BC",
+            "liner_gsm": 180,
+            "bf": 22.5
+          },
+          {
+            "ply": 7,
+            "flute": "BCB",
+            "liner_gsm": 200,
+            "bf": 24.3
+          }
+        ]
+      }
+    },
+    "V5": {
+      "freight_basis": "freight_extra",
+      "gst_basis": "unstated",
+      "received": "2026-09-22",
+      "late": false,
+      "validity": "not_stated",
+      "coverage": "3 explicit, 27 same as last year",
+      "lines": {
+        "L01": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 39.5,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 42.78,
+          "landed_low": 39.5,
+          "landed_high": 46.924
+        },
+        "L02": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 26.8,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 29,
+          "landed_low": 26.8,
+          "landed_high": 31.804
+        },
+        "L03": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 38.6,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 41.72,
+          "landed_low": 38.6,
+          "landed_high": 45.744
+        },
+        "L04": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 74.9,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 81.1,
+          "landed_low": 74.9,
+          "landed_high": 88.952
+        },
+        "L05": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 46.2,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 50,
+          "landed_low": 46.2,
+          "landed_high": 54.836
+        },
+        "L06": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 112.5,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 121.9,
+          "landed_low": 112.5,
+          "landed_high": 133.72
+        },
+        "L07": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 68.4,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 74,
+          "landed_low": 68.4,
+          "landed_high": 81.152
+        },
+        "L08": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 93.8,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 101.6,
+          "landed_low": 93.8,
+          "landed_high": 111.444
+        },
+        "L09": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 6.4,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 6.96,
+          "landed_low": 6.4,
+          "landed_high": 7.64
+        },
+        "L10": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 19.2,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 20.88,
+          "landed_low": 19.2,
+          "landed_high": 22.92
+        },
+        "L11": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 3.3,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 3.58,
+          "landed_low": 3.3,
+          "landed_high": 3.928
+        },
+        "L12": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 14.1,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 15.34,
+          "landed_low": 14.1,
+          "landed_high": 16.84
+        },
+        "L13": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 2.6,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 2.8,
+          "landed_low": 2.6,
+          "landed_high": 3.068
+        },
+        "L14": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 16.4,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 17.84,
+          "landed_low": 16.4,
+          "landed_high": 19.584
+        },
+        "L15": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 236,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 255.6,
+          "landed_low": 236,
+          "landed_high": 280.36
+        },
+        "L16": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 268,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 290.4,
+          "landed_low": 268,
+          "landed_high": 318.56
+        },
+        "L17": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 182,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 197.2,
+          "landed_low": 182,
+          "landed_high": 216.32
+        },
+        "L18": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 13.2,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 14.32,
+          "landed_low": 13.2,
+          "landed_high": 15.712
+        },
+        "L19": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 9.1,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 9.9,
+          "landed_low": 9.1,
+          "landed_high": 10.868
+        },
+        "L20": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 29.5,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 31.98,
+          "landed_low": 29.5,
+          "landed_high": 35.084
+        },
+        "L21": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 15.6,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 16.92,
+          "landed_low": 15.6,
+          "landed_high": 18.564
+        },
+        "L22": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 9.8,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 10.56,
+          "landed_low": 9.8,
+          "landed_high": 11.572
+        },
+        "L23": {
+          "quoted": true,
+          "intended_rate": 43,
+          "unit": "kg",
+          "currency": "INR",
+          "base_state": "INFERRED",
+          "carried_over": [
+            "currency"
+          ],
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 47,
+          "landed_low": 45.8,
+          "landed_high": 48.2
+        },
+        "L24": {
+          "quoted": true,
+          "intended_rate": 39,
+          "unit": "kg",
+          "currency": "INR",
+          "base_state": "INFERRED",
+          "carried_over": [
+            "currency"
+          ],
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 43,
+          "landed_low": 41.8,
+          "landed_high": 44.2
+        },
+        "L25": {
+          "quoted": true,
+          "intended_rate": 39,
+          "unit": "kg",
+          "currency": "INR",
+          "base_state": "INFERRED",
+          "carried_over": [
+            "currency"
+          ],
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 43,
+          "landed_low": 41.8,
+          "landed_high": 44.2
+        },
+        "L26": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 128,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 132,
+          "landed_low": 128,
+          "landed_high": 143.44
+        },
+        "L27": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 34.5,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 34.94,
+          "landed_low": 34.5,
+          "landed_high": 37.832
+        },
+        "L28": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 11.8,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 12.52,
+          "landed_low": 11.8,
+          "landed_high": 13.68
+        },
+        "L29": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 23.4,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 25.6,
+          "landed_low": 23.4,
+          "landed_high": 28.132
+        },
+        "L30": {
+          "quoted": false,
+          "inferred_from": "baseline_same_as_last_year",
+          "intended_rate": 13.6,
+          "base_state": "INFERRED",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 14.8,
+          "landed_low": 13.6,
+          "landed_high": 16.248
+        }
+      },
+      "gates": {
+        "Q01": "UNKNOWN",
+        "Q02": "UNKNOWN",
+        "Q03": "UNKNOWN"
+      },
+      "expected_discrepancies": [
+        "validity_not_stated"
+      ],
+      "decoy_in_quoted_history": [
+        "Rs 44.50/kg",
+        "Rs 39.80/kg"
+      ],
+      "reply": "Meera ji,\nPankaj here. Sheets & rolls: 5ply @ 43/kg, 3ply sheet & roll @ 39/kg (rates in INR, ex-GST).\nBalance items as per previous year rate. Transport extra.\nPankaj"
+    },
+    "V4": {
+      "freight_basis": "ex_works",
+      "gst_basis": "exclusive",
+      "received": "2026-09-24",
+      "late": true,
+      "validity_until": "2026-10-09",
+      "validity": "expiring",
+      "coverage": "27 of 30",
+      "lines": {
+        "L01": {
+          "quoted": true,
+          "serial": 1,
+          "rate_as_printed": 34.54,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 34.54,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.135,
+              0.2068,
+              0.7895,
+              0.2753
+            ],
+            "rate": [
+              0.678,
+              0.2096,
+              0.7507,
+              0.2351
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 40.936,
+          "landed_low": 40.2964,
+          "landed_high": 41.5756
+        },
+        "L02": {
+          "quoted": true,
+          "serial": 2,
+          "rate_as_printed": 23.28,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 23.28,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1361,
+              0.2279,
+              0.793,
+              0.2966
+            ],
+            "rate": [
+              0.681,
+              0.2308,
+              0.754,
+              0.2564
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 27.57,
+          "landed_low": 27.141,
+          "landed_high": 27.999
+        },
+        "L03": {
+          "quoted": true,
+          "serial": 3,
+          "rate_as_printed": 34.05,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 34.05,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1372,
+              0.2493,
+              0.7965,
+              0.318
+            ],
+            "rate": [
+              0.6841,
+              0.2521,
+              0.7574,
+              0.2779
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 40.134,
+          "landed_low": 39.5256,
+          "landed_high": 40.7424
+        },
+        "L04": {
+          "quoted": true,
+          "serial": 4,
+          "rate_as_printed": 66.78,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 66.78,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1383,
+              0.2708,
+              0.8001,
+              0.3396
+            ],
+            "rate": [
+              0.6872,
+              0.2736,
+              0.7608,
+              0.2996
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 78.87,
+          "landed_low": 77.661,
+          "landed_high": 80.079
+        },
+        "L05": {
+          "quoted": true,
+          "serial": 5,
+          "rate_as_printed": 40.23,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 40.23,
+          "readable": false,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1394,
+              0.2924,
+              0.8037,
+              0.3613
+            ],
+            "rate": [
+              0.6904,
+              0.2953,
+              0.7642,
+              0.3214
+            ]
+          },
+          "base_state": "NEEDS_REVIEW",
+          "expected_state": "NEEDS_REVIEW",
+          "expected_flags": [],
+          "landed_unit_inr_point": null,
+          "true_landed_point": 47.64,
+          "landed_low": null,
+          "landed_high": null
+        },
+        "L06": {
+          "quoted": true,
+          "serial": 6,
+          "rate_as_printed": 97.56,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 97.56,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1405,
+              0.3143,
+              0.8073,
+              0.3832
+            ],
+            "rate": [
+              0.6935,
+              0.3171,
+              0.7677,
+              0.3433
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 115.89,
+          "landed_low": 114.057,
+          "landed_high": 117.723
+        },
+        "L07": {
+          "quoted": true,
+          "serial": 7,
+          "rate_as_printed": 56.91,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 56.91,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1416,
+              0.3363,
+              0.8109,
+              0.4053
+            ],
+            "rate": [
+              0.6967,
+              0.3391,
+              0.7712,
+              0.3655
+            ]
+          },
+          "size_offered": "370x370x505",
+          "spec_offered": {
+            "dims_mm": [
+              370,
+              370,
+              505
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "spec_dimension_off"
+          ],
+          "landed_unit_inr_point": 67.83,
+          "landed_low": 66.738,
+          "landed_high": 68.922
+        },
+        "L08": {
+          "quoted": true,
+          "serial": 8,
+          "rate_as_printed": 77.92,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 77.92,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1427,
+              0.3584,
+              0.8145,
+              0.4276
+            ],
+            "rate": [
+              0.6999,
+              0.3612,
+              0.7747,
+              0.3878
+            ]
+          },
+          "size_offered": "545x470x360",
+          "spec_offered": {
+            "dims_mm": [
+              545,
+              470,
+              360
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [
+            "spec_dimension_off"
+          ],
+          "landed_unit_inr_point": 93.13,
+          "landed_low": 91.609,
+          "landed_high": 94.651
+        },
+        "L09": {
+          "quoted": true,
+          "serial": 9,
+          "rate_as_printed": 5.64,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 5.64,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1438,
+              0.3807,
+              0.8182,
+              0.45
+            ],
+            "rate": [
+              0.7032,
+              0.3836,
+              0.7782,
+              0.4102
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 6.732,
+          "landed_low": 6.6228,
+          "landed_high": 6.8412
+        },
+        "L10": {
+          "quoted": true,
+          "serial": 10,
+          "rate_as_printed": 17.02,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 17.02,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.145,
+              0.4032,
+              0.8219,
+              0.4725
+            ],
+            "rate": [
+              0.7064,
+              0.406,
+              0.7818,
+              0.4329
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 20.296,
+          "landed_low": 19.9684,
+          "landed_high": 20.6236
+        },
+        "L11": {
+          "quoted": true,
+          "serial": 11,
+          "rate_as_printed": 2.86,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 2.86,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1461,
+              0.4259,
+              0.8257,
+              0.4953
+            ],
+            "rate": [
+              0.7097,
+              0.4287,
+              0.7853,
+              0.4557
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 3.406,
+          "landed_low": 3.3514,
+          "landed_high": 3.4606
+        },
+        "L12": {
+          "quoted": true,
+          "serial": 12,
+          "rate_as_printed": 12.57,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 12.57,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1472,
+              0.4487,
+              0.8294,
+              0.5182
+            ],
+            "rate": [
+              0.713,
+              0.4515,
+              0.7889,
+              0.4787
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 14.988,
+          "landed_low": 14.7462,
+          "landed_high": 15.2298
+        },
+        "L13": {
+          "quoted": true,
+          "serial": 13,
+          "rate_as_printed": 2.28,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 2.28,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1484,
+              0.4717,
+              0.8332,
+              0.5413
+            ],
+            "rate": [
+              0.7163,
+              0.4745,
+              0.7926,
+              0.5018
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 2.67,
+          "landed_low": 2.631,
+          "landed_high": 2.709
+        },
+        "L14": {
+          "quoted": true,
+          "serial": 14,
+          "rate_as_printed": 14.44,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 14.44,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1496,
+              0.4949,
+              0.8371,
+              0.5646
+            ],
+            "rate": [
+              0.7197,
+              0.4977,
+              0.7962,
+              0.5252
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 17.248,
+          "landed_low": 16.9672,
+          "landed_high": 17.5288
+        },
+        "L15": {
+          "quoted": true,
+          "serial": 15,
+          "rate_as_printed": 209.24,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 209.24,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1508,
+              0.5182,
+              0.8409,
+              0.588
+            ],
+            "rate": [
+              0.7231,
+              0.521,
+              0.7999,
+              0.5487
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 247.46,
+          "landed_low": 243.638,
+          "landed_high": 251.282
+        },
+        "L16": {
+          "quoted": true,
+          "serial": 16,
+          "rate_as_printed": 236.92,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 236.92,
+          "readable": false,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1519,
+              0.5418,
+              0.8448,
+              0.6116
+            ],
+            "rate": [
+              0.7265,
+              0.5446,
+              0.8037,
+              0.5724
+            ]
+          },
+          "base_state": "NEEDS_REVIEW",
+          "expected_state": "NEEDS_REVIEW",
+          "expected_flags": [],
+          "landed_unit_inr_point": null,
+          "true_landed_point": 280.6,
+          "landed_low": null,
+          "landed_high": null
+        },
+        "L17": {
+          "quoted": true,
+          "serial": 17,
+          "rate_as_printed": 160.31,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 160.31,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1531,
+              0.5655,
+              0.8487,
+              0.6354
+            ],
+            "rate": [
+              0.7299,
+              0.5683,
+              0.8074,
+              0.5963
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 189.95,
+          "landed_low": 186.986,
+          "landed_high": 192.914
+        },
+        "L18": {
+          "quoted": true,
+          "serial": 18,
+          "rate_as_printed": 11.72,
+          "unit_as_written": "set",
+          "intended_rate_per_base_inr": 11.72,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1543,
+              0.5894,
+              0.8526,
+              0.6594
+            ],
+            "rate": [
+              0.7334,
+              0.5922,
+              0.8112,
+              0.6203
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 13.904,
+          "landed_low": 13.6856,
+          "landed_high": 14.1224
+        },
+        "L19": {
+          "quoted": true,
+          "serial": 19,
+          "rate_as_printed": 8.13,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 8.13,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1556,
+              0.6135,
+              0.8566,
+              0.6836
+            ],
+            "rate": [
+              0.7368,
+              0.6163,
+              0.815,
+              0.6446
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 9.69,
+          "landed_low": 9.534,
+          "landed_high": 9.846
+        },
+        "L20": {
+          "quoted": true,
+          "serial": 20,
+          "rate_as_printed": 27.1,
+          "rate_handwritten": 29.4,
+          "unit_as_written": "pair",
+          "intended_rate_per_base_inr": 29.4,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1568,
+              0.6378,
+              0.8606,
+              0.7079
+            ],
+            "rate": [
+              0.7404,
+              0.6406,
+              0.8188,
+              0.669
+            ]
+          },
+          "base_state": "NEEDS_REVIEW",
+          "expected_state": "NEEDS_REVIEW",
+          "expected_flags": [],
+          "landed_unit_inr_point": null,
+          "true_landed_point": 34.236,
+          "landed_low": null,
+          "landed_high": null
+        },
+        "L21": {
+          "quoted": true,
+          "serial": 21,
+          "rate_as_printed": 13.65,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 13.65,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.158,
+              0.6623,
+              0.8647,
+              0.7325
+            ],
+            "rate": [
+              0.7439,
+              0.665,
+              0.8227,
+              0.6937
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 16.224,
+          "landed_low": 15.9666,
+          "landed_high": 16.4814
+        },
+        "L22": {
+          "quoted": true,
+          "serial": 22,
+          "rate_as_printed": 8.73,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 8.73,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1593,
+              0.6869,
+              0.8687,
+              0.7572
+            ],
+            "rate": [
+              0.7475,
+              0.6897,
+              0.8266,
+              0.7185
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 10.212,
+          "landed_low": 10.0638,
+          "landed_high": 10.3602
+        },
+        "L23": {
+          "quoted": false,
+          "expected_state": "MISSING",
+          "expected_flags": [],
+          "landed_unit_inr_point": null
+        },
+        "L24": {
+          "quoted": false,
+          "expected_state": "MISSING",
+          "expected_flags": [],
+          "landed_unit_inr_point": null
+        },
+        "L25": {
+          "quoted": false,
+          "expected_state": "MISSING",
+          "expected_flags": [],
+          "landed_unit_inr_point": null
+        },
+        "L26": {
+          "quoted": true,
+          "serial": 23,
+          "rate_as_printed": 111.4,
+          "unit_as_written": "kg",
+          "intended_rate_per_base_inr": 111.4,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1605,
+              0.7118,
+              0.8728,
+              0.7822
+            ],
+            "rate": [
+              0.7511,
+              0.7145,
+              0.8305,
+              0.7436
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 119.2,
+          "landed_low": 118.42,
+          "landed_high": 119.98
+        },
+        "L27": {
+          "quoted": true,
+          "serial": 24,
+          "rate_as_printed": 30.27,
+          "unit_as_written": "roll",
+          "intended_rate_per_base_inr": 30.27,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1618,
+              0.7368,
+              0.877,
+              0.8073
+            ],
+            "rate": [
+              0.7547,
+              0.7396,
+              0.8345,
+              0.7688
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 31.128,
+          "landed_low": 31.0422,
+          "landed_high": 31.2138
+        },
+        "L28": {
+          "quoted": true,
+          "serial": 25,
+          "rate_as_printed": 1800,
+          "unit_as_written": "box",
+          "units_per_box": 120,
+          "note": "the count is not on the card; the system must not assume it",
+          "intended_rate_per_base_inr": 15,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.163,
+              0.7621,
+              0.8811,
+              0.8327
+            ],
+            "rate": [
+              0.7583,
+              0.7649,
+              0.8385,
+              0.7942
+            ]
+          },
+          "base_state": "NEEDS_REVIEW",
+          "expected_state": "NEEDS_REVIEW",
+          "expected_flags": [],
+          "landed_unit_inr_point": null,
+          "true_landed_point": 16.404,
+          "landed_low": null,
+          "landed_high": null
+        },
+        "L29": {
+          "quoted": true,
+          "serial": 26,
+          "rate_as_printed": 20.45,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 20.45,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1643,
+              0.7876,
+              0.8854,
+              0.8582
+            ],
+            "rate": [
+              0.762,
+              0.7903,
+              0.8425,
+              0.8199
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 24.74,
+          "landed_low": 24.311,
+          "landed_high": 25.169
+        },
+        "L30": {
+          "quoted": true,
+          "serial": 27,
+          "rate_as_printed": 11.9,
+          "unit_as_written": "pc",
+          "intended_rate_per_base_inr": 11.9,
+          "readable": true,
+          "currency": "INR",
+          "region": {
+            "row": [
+              0.1656,
+              0.8132,
+              0.8896,
+              0.884
+            ],
+            "rate": [
+              0.7657,
+              0.816,
+              0.8466,
+              0.8457
+            ]
+          },
+          "base_state": "HIGH_CONF",
+          "expected_state": "INFERRED",
+          "expected_flags": [],
+          "landed_unit_inr_point": 14.24,
+          "landed_low": 14.006,
+          "landed_high": 14.474
+        }
+      },
+      "gates": {
+        "Q01": "PASS",
+        "Q02": "FAIL",
+        "Q03": "PASS"
+      },
+      "claim_vs_evidence": {
+        "Q12": {
+          "claimed": "No deviations",
+          "contradicted_by": "smaller sizes on L07, L08"
+        }
+      },
+      "attachments": {
+        "photo": "20260924_194012.jpg",
+        "certificate": "iso-dcw.jpg",
+        "test_report": null
+      },
+      "certificate": {
+        "cert_type": "ISO 9001:2015",
+        "entity": "Delhi Carton Works, Plot 18, HSIIDC Industrial Area, Bahadurgarh",
+        "number": "BQC/QMS/23/5561",
+        "valid_from": "2023-12-05",
+        "valid_to": "2026-12-04"
+      },
+      "expected_discrepancies": [
+        "late_reply",
+        "validity_expiring",
+        "claim_without_evidence",
+        "spec_dimension_off",
+        "unreadable_region",
+        "overwritten_value",
+        "per_box_no_count",
+        "claim_vs_evidence"
+      ],
+      "photo_params": {
+        "corners": [
+          [
+            0.061928305474575604,
+            0.019451306834816932
+          ],
+          [
+            -0.08367298087337985,
+            0.012784336390905081
+          ],
+          [
+            -0.011962805069051683,
+            -0.008057168694213033
+          ],
+          [
+            0.0021132092503830793,
+            -0.013475533635355532
+          ]
+        ],
+        "rotation_deg": -4.756484449841082,
+        "blur_sigma": 0.9602337976917624,
+        "noise": 6.173911017365754,
+        "light": {
+          "angle_deg": 66.52277352288365,
+          "strength": 0.18858766386285425
+        },
+        "shadow": {
+          "side": "left",
+          "width": 0.13662246287334712,
+          "strength": 0.3224395776633173
+        },
+        "vignette": 0.24503104926086963,
+        "jpeg_quality": 70,
+        "crop_bottom_pct": 4,
+        "desk": {
+          "r": 133,
+          "g": 107,
+          "b": 75
+        }
+      }
+    }
+  },
+  "revisions": {},
+  "replies": {},
+  "traps": {
+    "10": {
+      "vendor": "V2",
+      "line": "L22",
+      "what": "amount 7 percent above qty x rate; grand total off by the same"
+    },
+    "11": {
+      "vendor": "V2",
+      "what": "small grey page 2 footer addressed to automated tools"
+    },
+    "12": {
+      "vendor": "V2",
+      "line": "L12",
+      "rate": 12.74,
+      "what": "alternate offer for L12"
+    },
+    "13": {
+      "vendor": "V2",
+      "question": "Q07",
+      "what": "Agreed for net 45 with 1.5% interest after due date"
+    },
+    "14": {
+      "vendor": "V3",
+      "lines": [
+        "L10",
+        "L12",
+        "L14",
+        "L18"
+      ],
+      "what": "quoted per pack: per 100 nos, per hundred, per 50 sets"
+    },
+    "15": {
+      "vendor": "V3",
+      "lines": [
+        "L26",
+        "L27",
+        "L28"
+      ],
+      "what": "imported items in dollars with an exchange rate clause; advance payment for them"
+    },
+    "16": {
+      "vendor": "V3",
+      "lines": [
+        "L12",
+        "L14",
+        "L21",
+        "L22",
+        "L24",
+        "L29"
+      ],
+      "what": "Q02 claims \"Yes, attached; 3 ply board tested above BF 18.\"; test report shows BF 17.6 for 3 ply B 150 GSM"
+    },
+    "17": {
+      "vendor": "V3",
+      "what": "validity lapsed 2026-09-25"
+    },
+    "18": {
+      "vendor": "V3",
+      "lines": [
+        "L01",
+        "L02",
+        "L05",
+        "L15",
+        "L16",
+        "L17"
+      ],
+      "what": "priced in sentences"
+    },
+    "19": {
+      "vendor": "V3",
+      "question": "Q07",
+      "what": "For corrugated items yes; imported items need full advance."
+    },
+    "20": {
+      "vendor": "V4",
+      "what": "phone photo: perspective, rotation, uneven light, blur, JPEG 70, bottom cropped"
+    },
+    "21": {
+      "vendor": "V4",
+      "lines": [
+        "L23",
+        "L24",
+        "L25"
+      ],
+      "what": "L23, L24, L25 not on the card"
+    },
+    "22": {
+      "vendor": "V4",
+      "lines": [
+        "L05",
+        "L16"
+      ],
+      "what": "glare and blur over these rows: review with the crop, not missing"
+    },
+    "23": {
+      "vendor": "V4",
+      "line": "L20",
+      "intended": 29.4,
+      "shown": 27.1,
+      "what": "printed rate struck through, handwritten correction beside it"
+    },
+    "24": {
+      "vendor": "V4",
+      "lines": [
+        "L07",
+        "L08"
+      ],
+      "what": "smaller dimensions, priced lower"
+    },
+    "25": {
+      "vendor": "V4",
+      "line": "L28",
+      "what": "Rs 1800 per box with no count (truly 120)"
+    },
+    "26": {
+      "vendor": "V4",
+      "question": "Q02",
+      "what": "answers in the email body; test report claimed but not attached"
+    },
+    "27": {
+      "vendor": "V4",
+      "what": "received 2026-09-24 after the deadline; validity ends 2026-10-09"
+    },
+    "28": {
+      "vendor": "V4",
+      "what": "lowest headline rates; most expensive once Bahadurgarh freight is added"
+    },
+    "29": {
+      "vendor": "V5",
+      "what": "other items at last year's prices, freight extra"
+    },
+    "30": {
+      "vendor": "V5",
+      "lines": [
+        "L23",
+        "L24",
+        "L25"
+      ],
+      "what": "per kg rates apply to L23, L24, L25 only; not to piece priced cartons"
+    },
+    "31": {
+      "vendor": "V5",
+      "what": "no questionnaire, no attachments, no validity"
+    },
+    "32": {
+      "vendor": "V5",
+      "what": "Vapi not on the lane tariff; default 4.00 per kg with a 30 percent band"
+    },
+    "33": {
+      "vendor": "All",
+      "what": "landed ranking differs from headline ranking (V4 ex works: cheapest on paper, dearest delivered)"
+    },
+    "34": {
+      "vendor": "V2",
+      "what": "own item codes, rows in reverse RFx order"
+    },
+    "35": {
+      "vendor": "V1",
+      "lines": {
+        "L27": "N/A",
+        "L13": "blank"
+      }
+    },
+    "36": {
+      "vendor": "V2",
+      "what": "same quotation PDF under two file names"
+    },
+    "37": {
+      "vendor": "V5",
+      "what": "our RFx quoted below the reply (gmail style), with last year's rates as a decoy"
+    },
+    "01": {
+      "vendor": "V1",
+      "what": "one line per row under title rows, terms on their own sheet"
+    },
+    "02": {
+      "vendor": "V1",
+      "what": "hidden column 'Prev. Price' with previous quarter rates 3 to 5 percent higher"
+    },
+    "03": {
+      "vendor": "V1",
+      "lines": [
+        "L03",
+        "L20"
+      ],
+      "what": "120 GSM / BF 16 offered; Q12 says No deviation from specs"
+    },
+    "04": {
+      "vendor": "V1",
+      "line": "L23",
+      "intended": 44.32,
+      "shown": 4.43
+    },
+    "06": {
+      "vendor": "V2",
+      "page": 1,
+      "what": "rates include GST, stated in one note on page 1"
+    },
+    "07": {
+      "vendor": "V2",
+      "pct": 2,
+      "threshold_inr": 4000000,
+      "what": "2 percent discount above Rs 40,00,000 in the terms list"
+    },
+    "08": {
+      "vendor": "V2",
+      "what": "Ex our works, Ahmedabad. Freight on buyer's account."
+    },
+    "09": {
+      "vendor": "V2",
+      "what": "ISO 9001 certificate valid to 2026-07-15"
+    }
+  }
+}

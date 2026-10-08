@@ -1,0 +1,177 @@
+{
+  "V1/Shree_Ganesh_ISO.pdf": {
+    "vendor": "V1",
+    "doc_role": "certificate",
+    "cert_type": "ISO 9001:2015",
+    "number": "IQA/QMS/2023/0957",
+    "issuer": "Indus Quality Assurance Services (fictional)",
+    "entity": "Shree Ganesh Corrugators, Chakan, Pune",
+    "scope": "Manufacture of corrugated boxes and board",
+    "valid_from": "2023-11-20",
+    "valid_to": "2026-11-19",
+    "status_on_as_of_date": "valid"
+  },
+  "V1/Shree_Ganesh_Board_Tests.pdf": {
+    "vendor": "V1",
+    "doc_role": "test_report",
+    "lab": "Pune Packaging Test Laboratory (fictional)",
+    "report_no": "PPTL/26/0388",
+    "report_date": "2026-08-05",
+    "samples": [
+      {
+        "ply": 3,
+        "flute": "B",
+        "liner_gsm": 120,
+        "bf": 16.5
+      },
+      {
+        "ply": 3,
+        "flute": "B",
+        "liner_gsm": 150,
+        "bf": 18.4
+      },
+      {
+        "ply": 5,
+        "flute": "BC",
+        "liner_gsm": 120,
+        "bf": 16.2
+      },
+      {
+        "ply": 5,
+        "flute": "BC",
+        "liner_gsm": 150,
+        "bf": 18.5
+      },
+      {
+        "ply": 5,
+        "flute": "BC",
+        "liner_gsm": 180,
+        "bf": 22.3
+      },
+      {
+        "ply": 7,
+        "flute": "BCB",
+        "liner_gsm": 200,
+        "bf": 24.6
+      }
+    ],
+    "confirms": "lighter 120 GSM board on L03, L20"
+  },
+  "V2/APW_Quote_Kaveri_Sep26.pdf": {
+    "vendor": "V2",
+    "doc_role": "quote",
+    "pages": 3
+  },
+  "V2/APW_Quote_Kaveri_Sep26 (1).pdf": {
+    "vendor": "V2",
+    "doc_role": "quote",
+    "duplicate_of": "V2/APW_Quote_Kaveri_Sep26.pdf"
+  },
+  "V2/Packwell_ISO_Certificate.pdf": {
+    "vendor": "V2",
+    "doc_role": "certificate",
+    "cert_type": "ISO 9001:2015",
+    "number": "QCB/9001/2023/3318",
+    "issuer": "Quality Certification Bureau (India) Pvt Ltd (fictional)",
+    "entity": "Ahmedabad Packwell Industries, GIDC Vatva, Ahmedabad",
+    "scope": "Manufacture of corrugated boxes and board",
+    "valid_from": "2023-07-16",
+    "valid_to": "2026-07-15",
+    "status_on_as_of_date": "expired"
+  },
+  "V2/Packwell_Board_Lab_Report.pdf": {
+    "vendor": "V2",
+    "doc_role": "test_report",
+    "lab": "Sabarmati Board Testing Centre (fictional)",
+    "report_no": "SBTC/26/1021",
+    "report_date": "2026-05-12",
+    "samples": [
+      {
+        "ply": 3,
+        "flute": "B",
+        "liner_gsm": 150,
+        "bf": 18.7
+      },
+      {
+        "ply": 5,
+        "flute": "BC",
+        "liner_gsm": 180,
+        "bf": 22.6
+      },
+      {
+        "ply": 7,
+        "flute": "BCB",
+        "liner_gsm": 200,
+        "bf": 24.4
+      }
+    ]
+  },
+  "V3/SFP_Rates_Kaveri_Sep2026.docx": {
+    "vendor": "V3",
+    "doc_role": "quote"
+  },
+  "V4/Delhi Carton Works quotation.eml": {
+    "vendor": "V4",
+    "doc_role": "quote_email",
+    "attachments": [
+      "20260924_194012.jpg",
+      "iso-dcw.jpg"
+    ]
+  },
+  "V4/20260924_194012.jpg": {
+    "vendor": "V4",
+    "doc_role": "quote",
+    "kind": "image",
+    "attached_to": "V4/Delhi Carton Works quotation.eml"
+  },
+  "V4/iso-dcw.jpg": {
+    "vendor": "V4",
+    "doc_role": "certificate",
+    "kind": "image",
+    "cert_type": "ISO 9001:2015",
+    "number": "BQC/QMS/23/5561",
+    "valid_from": "2023-12-05",
+    "valid_to": "2026-12-04",
+    "status_on_as_of_date": "valid"
+  },
+  "V3/SouthernFlute_ISO.pdf": {
+    "vendor": "V3",
+    "doc_role": "certificate",
+    "cert_type": "ISO 9001:2015",
+    "number": "IQA/QMS/2024/0466",
+    "issuer": "Indus Quality Assessors Pvt Ltd (fictional)",
+    "entity": "Southern Flute Packaging, SIPCOT Phase II, Hosur",
+    "scope": "Manufacture of corrugated boxes and board",
+    "valid_from": "2024-09-01",
+    "valid_to": "2027-08-31",
+    "status_on_as_of_date": "valid"
+  },
+  "V3/SouthernFlute_BF_Report.pdf": {
+    "vendor": "V3",
+    "doc_role": "test_report",
+    "lab": "Hosur Paperboard Testing Centre (fictional)",
+    "report_no": "HPTC/2026/0631",
+    "report_date": "2026-07-14",
+    "samples": [
+      {
+        "ply": 3,
+        "flute": "B",
+        "liner_gsm": 150,
+        "bf": 17.6
+      },
+      {
+        "ply": 5,
+        "flute": "BC",
+        "liner_gsm": 180,
+        "bf": 22.5
+      },
+      {
+        "ply": 7,
+        "flute": "BCB",
+        "liner_gsm": 200,
+        "bf": 24.3
+      }
+    ],
+    "contradicts": "Q02 claim: test report shows BF 17.6 for 3 ply B 150 GSM"
+  }
+}

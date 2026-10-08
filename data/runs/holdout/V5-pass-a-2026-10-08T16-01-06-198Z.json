@@ -1,0 +1,660 @@
+{
+  "vendor_id": "V5",
+  "effort": "medium",
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V5",
+    "prompt_version": "extract_a@f22df783",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": "claude-sonnet-5-5",
+    "fallback_used": false,
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 345,
+      "output_tokens": 1600,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7844
+    },
+    "cost_usd": 0.0363,
+    "ms": 14815,
+    "at": "2026-10-08T16:01:06.198Z"
+  },
+  "errors": [],
+  "injection": [],
+  "notes": [
+    "Text after 'Original Message' is the buyer's earlier email (including last year's prices Rs 44.50 and Rs 39.80 per kg) and was not treated as vendor offer.",
+    "Vendor did not state GST basis, validity or price for carton, accessory or other lines; those fall under the 'last year's prices' statement.",
+    "No questionnaire answers given."
+  ],
+  "questionnaire": [],
+  "extraction": {
+    "vendor_terms": {
+      "freight_basis": {
+        "value": "freight_extra",
+        "snippet": "Freight will be charged extra at actuals.",
+        "locator": {
+          "type": "email",
+          "char_start": 119,
+          "char_end": 160,
+          "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+        }
+      },
+      "conditional_discounts": [],
+      "lines_not_quoted_statement": {
+        "value_text": "All other items at last year's prices.",
+        "applies_to": "unquoted lines",
+        "resolves_to": "baseline",
+        "snippet": "All other items at last year's prices.",
+        "locator": {
+          "type": "email",
+          "char_start": 80,
+          "char_end": 118,
+          "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+        }
+      }
+    },
+    "rows": [
+      {
+        "row_id": "A1",
+        "raw_text": "5 ply board Rs 41.50 per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L23",
+            "match_confidence": 0.8,
+            "reasons": [
+              "5 ply board quoted per kg; L23 is the 5 ply corrugated sheet with kg base UOM"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 41.5,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 5
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 22,
+          "char_end": 49,
+          "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+        },
+        "snippet": "5 ply board Rs 41.50 per kg",
+        "assumptions": [
+          "Generic 5 ply board rate assumed to apply to the 5 ply sheet line L23; sheet size, GSM and BF not stated."
+        ]
+      },
+      {
+        "row_id": "A2",
+        "raw_text": "3 ply board Rs 37.25 per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L24",
+            "match_confidence": 0.8,
+            "reasons": [
+              "3 ply board quoted per kg; L24 is the 3 ply corrugated sheet with kg base UOM"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 37.25,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 51,
+          "char_end": 78,
+          "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+        },
+        "snippet": "3 ply board Rs 37.25 per kg",
+        "assumptions": [
+          "Generic 3 ply board rate assumed to apply to the 3 ply sheet line L24; sheet size, GSM and BF not stated."
+        ]
+      },
+      {
+        "row_id": "A3",
+        "raw_text": "3 ply board Rs 37.25 per kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L25",
+            "match_confidence": 0.6,
+            "reasons": [
+              "3 ply board quoted per kg; L25 is a 3 ply corrugated roll with kg base UOM"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 37.25,
+          "currency": "Rs",
+          "unit_as_written": "per kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "ply": 3
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 1,
+        "locator": {
+          "type": "email",
+          "char_start": 51,
+          "char_end": 78,
+          "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+        },
+        "snippet": "3 ply board Rs 37.25 per kg",
+        "assumptions": [
+          "Generic 3 ply board rate assumed to also cover the 3 ply roll line L25."
+        ]
+      }
+    ],
+    "extras": [],
+    "notes": [
+      "Text after 'Original Message' is the buyer's earlier email (including last year's prices Rs 44.50 and Rs 39.80 per kg) and was not treated as vendor offer.",
+      "Vendor did not state GST basis, validity or price for carton, accessory or other lines; those fall under the 'last year's prices' statement.",
+      "No questionnaire answers given."
+    ]
+  },
+  "pass_b": {
+    "trace": {
+      "step": "extract_b",
+      "vendor_id": "V5",
+      "prompt_version": "extract_b@09ba265c",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 345,
+        "output_tokens": 5644,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 6452
+      },
+      "cost_usd": 0.07326,
+      "ms": 41848,
+      "at": "2026-10-08T16:01:36.251Z"
+    },
+    "errors": [],
+    "notes": [
+      "Vendor says 'All other items at last year's prices' without stating any price; not treated as an offer for any line.",
+      "Freight will be charged extra at actuals, which conflicts with the delivered Chakan basis requested.",
+      "The quoted text of Meera's earlier email (Rs 44.50 per kg for 5 ply, Rs 39.80 per kg for 3 ply) is history, not the vendor's offer.",
+      "The per kg board rates were applied only to the RFx lines priced per kg (L23, L24, L25); they do not give per piece prices for cartons, pads or trays.",
+      "The questionnaire items are not answered in the email."
+    ],
+    "extraction": {
+      "vendor_terms": {},
+      "rows": [
+        {
+          "row_id": "B-L23",
+          "raw_text": "5 ply board Rs 41.50 per kg, 3 ply board Rs 37.25 per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L23",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 41.5,
+            "currency": "Rs",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": null,
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "email",
+            "char_start": 22,
+            "char_end": 78,
+            "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+          },
+          "snippet": "5 ply board Rs 41.50 per kg, 3 ply board Rs 37.25 per kg",
+          "assumptions": [
+            "Generic 5 ply board rate per kg is taken to cover the 5 ply sheet line"
+          ]
+        },
+        {
+          "row_id": "B-L24",
+          "raw_text": "5 ply board Rs 41.50 per kg, 3 ply board Rs 37.25 per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L24",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 37.25,
+            "currency": "Rs",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": null,
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "email",
+            "char_start": 22,
+            "char_end": 78,
+            "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+          },
+          "snippet": "5 ply board Rs 41.50 per kg, 3 ply board Rs 37.25 per kg",
+          "assumptions": [
+            "Generic 3 ply board rate per kg is taken to cover the 3 ply sheet line"
+          ]
+        },
+        {
+          "row_id": "B-L25",
+          "raw_text": "5 ply board Rs 41.50 per kg, 3 ply board Rs 37.25 per kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L25",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 37.25,
+            "currency": "Rs",
+            "unit_as_written": "per kg",
+            "basis_note": ""
+          },
+          "spec_offered": null,
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 1,
+          "locator": {
+            "type": "email",
+            "char_start": 22,
+            "char_end": 78,
+            "message_id": "<jbb-20260921-1805@jaibharatboards.example>"
+          },
+          "snippet": "5 ply board Rs 41.50 per kg, 3 ply board Rs 37.25 per kg",
+          "assumptions": [
+            "Generic 3 ply board rate per kg is taken to cover the 3 ply roll line"
+          ]
+        }
+      ],
+      "extras": [],
+      "notes": [
+        "Vendor says 'All other items at last year's prices' without stating any price; not treated as an offer for any line.",
+        "Freight will be charged extra at actuals, which conflicts with the delivered Chakan basis requested.",
+        "The quoted text of Meera's earlier email (Rs 44.50 per kg for 5 ply, Rs 39.80 per kg for 3 ply) is history, not the vendor's offer.",
+        "The per kg board rates were applied only to the RFx lines priced per kg (L23, L24, L25); they do not give per piece prices for cartons, pads or trays.",
+        "The questionnaire items are not answered in the email."
+      ]
+    }
+  },
+  "rejected": [],
+  "score": {
+    "lines": [
+      {
+        "line_id": "L01",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 42.78,
+        "got_point": 42.78,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L02",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 29,
+        "got_point": 29,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L03",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 41.72,
+        "got_point": 41.72,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L04",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 81.1,
+        "got_point": 81.10000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L05",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 50,
+        "got_point": 50,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L06",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 121.9,
+        "got_point": 121.9,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L07",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 74,
+        "got_point": 74,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L08",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 101.6,
+        "got_point": 101.6,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L09",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 6.96,
+        "got_point": 6.960000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L10",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 20.88,
+        "got_point": 20.88,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L11",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 3.58,
+        "got_point": 3.58,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L12",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 15.34,
+        "got_point": 15.34,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L13",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 2.8,
+        "got_point": 2.8000000000000003,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L14",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 17.84,
+        "got_point": 17.84,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L15",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 255.6,
+        "got_point": 255.6,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L16",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 290.4,
+        "got_point": 290.4,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L17",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 197.2,
+        "got_point": 197.2,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L18",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.32,
+        "got_point": 14.32,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L19",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 9.9,
+        "got_point": 9.9,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L20",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 31.98,
+        "got_point": 31.98,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L21",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 16.92,
+        "got_point": 16.919999999999998,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L22",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 10.56,
+        "got_point": 10.56,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L23",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 45.5,
+        "got_point": 45.5,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L24",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 41.25,
+        "got_point": 41.25,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L25",
+        "expected_state": "NEEDS_REVIEW",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 41.25,
+        "got_point": 41.25,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L26",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 132,
+        "got_point": 132,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L27",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 34.94,
+        "got_point": 34.94,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L28",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 12.52,
+        "got_point": 12.520000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L29",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 25.6,
+        "got_point": 25.599999999999998,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L30",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.8,
+        "got_point": 14.799999999999999,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      }
+    ],
+    "state_accuracy": 1,
+    "price_checked": 30,
+    "price_accuracy": 1,
+    "dangerous": [],
+    "coverage_errors": [],
+    "flags_expected": 0,
+    "flag_recall": 1,
+    "missing_flags": []
+  },
+  "pending_confirmations": []
+}

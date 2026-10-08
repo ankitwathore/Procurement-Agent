@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/app.db*
+data/vendors/
+data/artifacts/
+data/holdout/
+data/ground_truth.json
+data/rfx.json
+*.log
+.DS_Store

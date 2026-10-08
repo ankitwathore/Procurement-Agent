@@ -1,0 +1,2991 @@
+{
+  "vendor_id": "V4",
+  "effort": "medium",
+  "trace": {
+    "step": "extract_a",
+    "vendor_id": "V4",
+    "prompt_version": "extract_a@cf5ab0ef",
+    "model_requested": "claude-sonnet-5-5",
+    "model_used": "claude-sonnet-5-5",
+    "fallback_used": false,
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 4969,
+      "output_tokens": 13156,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 8011
+    },
+    "cost_usd": 0.1615255,
+    "ms": 71529,
+    "at": "2026-10-08T19:48:08.025Z"
+  },
+  "errors": [],
+  "injection": [],
+  "notes": [
+    "The vendor rate card has 27 rows. Vendor rows 1-22 map to RFx L01-L22. Vendor rows 23-27 map to L26, L27, L28, L29 and L30.",
+    "RFx lines L23, L24 and L25 (corrugated sheets and roll) are not priced.",
+    "The photo is skewed, so locator boxes for rate cells are approximate."
+  ],
+  "questionnaire": [
+    {
+      "q_id": "Q01",
+      "answer_raw": "Yes (attached)",
+      "snippet": "Q01 ISO 9001 certificate: Yes (attached)"
+    },
+    {
+      "q_id": "Q02",
+      "answer_raw": "Yes, attached",
+      "snippet": "Q02 BF/GSM test report: Yes, attached"
+    },
+    {
+      "q_id": "Q03",
+      "answer_raw": "Yes, 7 years",
+      "snippet": "Q03 Experience with appliance OEMs: Yes, 7 years"
+    },
+    {
+      "q_id": "Q04",
+      "answer_raw": "No",
+      "snippet": "Q04 FSC: No"
+    },
+    {
+      "q_id": "Q05",
+      "answer_raw": "520 MT/month",
+      "snippet": "Q05 Capacity: 520 MT/month"
+    },
+    {
+      "q_id": "Q06",
+      "answer_raw": "14 days",
+      "snippet": "Q06 Lead time: 14 days"
+    },
+    {
+      "q_id": "Q07",
+      "answer_raw": "Yes",
+      "snippet": "Q07 Net 45: Yes"
+    },
+    {
+      "q_id": "Q08",
+      "answer_raw": "Yes",
+      "snippet": "Q08 Free samples: Yes"
+    },
+    {
+      "q_id": "Q09",
+      "answer_raw": "7 days",
+      "snippet": "Q09 Replacement: 7 days"
+    },
+    {
+      "q_id": "Q10",
+      "answer_raw": "Bahadurgarh (approx 1,450 km)",
+      "snippet": "Q10 Plant: Bahadurgarh (approx 1,450 km)"
+    },
+    {
+      "q_id": "Q11",
+      "answer_raw": "15 days",
+      "snippet": "Q11 Validity: 15 days"
+    },
+    {
+      "q_id": "Q12",
+      "answer_raw": "No deviations",
+      "snippet": "Q12 Deviations: No deviations"
+    }
+  ],
+  "extraction": {
+    "vendor_terms": {
+      "freight_basis": {
+        "value": "ex_works",
+        "snippet": "EX WORKS BAHADURGARH, GST EXTRA 18 PERCENT, RATES VALID 15 DAYS FROM 24-09-2026",
+        "locator": {
+          "type": "image",
+          "row": 0,
+          "box": [
+            0.2,
+            0.16,
+            0.72,
+            0.19
+          ],
+          "file": "20260924_194012.jpg"
+        }
+      },
+      "gst_basis": {
+        "value": "exclusive",
+        "rate_pct": 18,
+        "snippet": "EX WORKS BAHADURGARH, GST EXTRA 18 PERCENT, RATES VALID 15 DAYS FROM 24-09-2026",
+        "locator": {
+          "type": "image",
+          "row": 0,
+          "box": [
+            0.2,
+            0.16,
+            0.72,
+            0.19
+          ],
+          "file": "20260924_194012.jpg"
+        }
+      },
+      "conditional_discounts": [],
+      "validity": {
+        "value_text": "RATES VALID 15 DAYS FROM 24-09-2026",
+        "from_date": "2026-09-24",
+        "valid_days": 15,
+        "snippet": "EX WORKS BAHADURGARH, GST EXTRA 18 PERCENT, RATES VALID 15 DAYS FROM 24-09-2026",
+        "locator": {
+          "type": "image",
+          "row": 0,
+          "box": [
+            0.2,
+            0.16,
+            0.72,
+            0.19
+          ],
+          "file": "20260924_194012.jpg"
+        }
+      }
+    },
+    "rows": [
+      {
+        "row_id": "A1",
+        "raw_text": "1 Mixer grinder 3 jar M/C 440x330x310 5P BC 150/18 34.54 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L01",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Same item name, size 440x330x310 and board 5P BC 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 34.54,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            440,
+            330,
+            310
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 1,
+          "box": [
+            0.711,
+            0.214,
+            0.767,
+            0.228
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Mixer grinder 3 jar M/C 440x330x310 5P BC 150/18 34.54 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A2",
+        "raw_text": "2 Induction cooktop M/C 400x360x140 5P BC 150/18 23.28 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L02",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Same item name, size 400x360x140 and board 5P BC 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 23.28,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            400,
+            360,
+            140
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 2,
+          "box": [
+            0.715,
+            0.235,
+            0.771,
+            0.249
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Induction cooktop M/C 400x360x140 5P BC 150/18 23.28 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A3",
+        "raw_text": "3 Air fryer 4L M/C 360x340x380 5P BC 150/18 34.05 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L03",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Same item name, size 360x340x380 and board 5P BC 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 34.05,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            360,
+            340,
+            380
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 3,
+          "box": [
+            0.718,
+            0.257,
+            0.774,
+            0.27
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Air fryer 4L M/C 360x340x380 5P BC 150/18 34.05 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A4",
+        "raw_text": "4 Ceiling fan 1200mm M/C 1260x180x260 5P BC 180/22 66.78 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L04",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Same item name, size 1260x180x260 and board 5P BC 180/22"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 66.78,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            1260,
+            180,
+            260
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.75,
+        "locator": {
+          "type": "image",
+          "row": 4,
+          "box": [
+            0.722,
+            0.278,
+            0.777,
+            0.292
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Ceiling fan 1200mm M/C 1260x180x260 5P BC 180/22 66.78 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A5",
+        "raw_text": "5 Table fan 400mm M/C [size, board and rate blurred]",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L05",
+            "match_confidence": 0.9,
+            "reasons": [
+              "Item name Table fan 400mm M/C matches; size, board and rate are blurred"
+            ]
+          }
+        ],
+        "rate": {
+          "value": null,
+          "currency": "",
+          "unit_as_written": null,
+          "basis_note": ""
+        },
+        "spec_offered": null,
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.05,
+        "locator": {
+          "type": "image",
+          "row": 5,
+          "box": [
+            0.725,
+            0.3,
+            0.781,
+            0.314
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Table fan 400mm M/C",
+        "assumptions": []
+      },
+      {
+        "row_id": "A6",
+        "raw_text": "6 Room cooler 40L M/C 560x430x860 5P BC 180/22 97.56 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L06",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Same item name, size 560x430x860 and board 5P BC 180/22"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 97.56,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            560,
+            430,
+            860
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.85,
+        "locator": {
+          "type": "image",
+          "row": 6,
+          "box": [
+            0.729,
+            0.323,
+            0.784,
+            0.336
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Room cooler 40L M/C 560x430x860 5P BC 180/22 97.56 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A7",
+        "raw_text": "7 Water heater 15L M/C 370x370x505 5P BC 180/22 56.91 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L07",
+            "match_confidence": 0.93,
+            "reasons": [
+              "Same item name and board 5P BC 180/22; size 370x370x505 differs from RFx 380x380x520"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 56.91,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            370,
+            370,
+            505
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 7,
+          "box": [
+            0.732,
+            0.345,
+            0.788,
+            0.358
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Water heater 15L M/C 370x370x505 5P BC 180/22 56.91 pc",
+        "assumptions": [
+          "Vendor size 370x370x505 differs from RFx 380x380x520; mapped by item name."
+        ]
+      },
+      {
+        "row_id": "A8",
+        "raw_text": "8 Microwave oven 28L M/C 545x470x360 5P BC 180/22 77.92 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L08",
+            "match_confidence": 0.93,
+            "reasons": [
+              "Same item name and board 5P BC 180/22; size 545x470x360 differs from RFx 560x480x370"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 77.92,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 180,
+          "bf": 22,
+          "dims_mm": [
+            545,
+            470,
+            360
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 8,
+          "box": [
+            0.736,
+            0.366,
+            0.791,
+            0.379
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Microwave oven 28L M/C 545x470x360 5P BC 180/22 77.92 pc",
+        "assumptions": [
+          "Vendor size 545x470x360 differs from RFx 560x480x370; mapped by item name."
+        ]
+      },
+      {
+        "row_id": "A9",
+        "raw_text": "9 Mixer jar accessory box 180x140x120 3P B 120/16 5.64 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L09",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Same item name, size 180x140x120 and board 3P B 120/16"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 5.64,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            180,
+            140,
+            120
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 9,
+          "box": [
+            0.739,
+            0.389,
+            0.795,
+            0.402
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Mixer jar accessory box 180x140x120 3P B 120/16 5.64 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A10",
+        "raw_text": "10 Fan blade set Inner Box 1250x120x60 3P B 120/16 17.02 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L10",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Fan blade set inner box, size 1250x120x60, 3P B 120/16"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 17.02,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1250,
+            120,
+            60
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 10,
+          "box": [
+            0.743,
+            0.411,
+            0.799,
+            0.424
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Fan blade set Inner Box 1250x120x60 3P B 120/16 17.02 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A11",
+        "raw_text": "11 Power cord and manual pouch carton 220x160x40 3P B 120/16 2.86 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L11",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Power cord and manual pouch carton, size 220x160x40, 3P B 120/16"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 2.86,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            220,
+            160,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 11,
+          "box": [
+            0.746,
+            0.434,
+            0.802,
+            0.447
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Power cord and manual pouch carton 220x160x40 3P B 120/16 2.86 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A12",
+        "raw_text": "12 Cooktop glass plate Inner Box 380x340x50 3P B 150/18 12.57 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L12",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Cooktop glass plate inner box, size 380x340x50, 3P B 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 12.57,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            380,
+            340,
+            50
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 12,
+          "box": [
+            0.75,
+            0.457,
+            0.806,
+            0.47
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Cooktop glass plate Inner Box 380x340x50 3P B 150/18 12.57 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A13",
+        "raw_text": "13 Remote and battery kit box 160x90x40 3P B 120/16 2.28 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L13",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Remote and battery kit box, size 160x90x40, 3P B 120/16"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 2.28,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            160,
+            90,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 13,
+          "box": [
+            0.754,
+            0.48,
+            0.809,
+            0.493
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Remote and battery kit box 160x90x40 3P B 120/16 2.28 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A14",
+        "raw_text": "14 Air fryer basket Inner Box 330x300x120 3P B 150/18 14.44 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L14",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Air fryer basket inner box, size 330x300x120, 3P B 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 14.44,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            330,
+            300,
+            120
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 14,
+          "box": [
+            0.757,
+            0.503,
+            0.813,
+            0.516
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Air fryer basket Inner Box 330x300x120 3P B 150/18 14.44 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A15",
+        "raw_text": "15 Washing machine fully automatic 6.5kg Outer Box 620x640x1000 7P BCB 200/24 209.24 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L15",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Washing machine 6.5kg outer box, size 620x640x1000, 7P BCB 200/24"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 209.24,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 200,
+          "bf": 24,
+          "dims_mm": [
+            620,
+            640,
+            1000
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.85,
+        "locator": {
+          "type": "image",
+          "row": 15,
+          "box": [
+            0.761,
+            0.527,
+            0.817,
+            0.54
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Washing machine fully automatic 6.5kg Outer Box 620x640x1000 7P BCB 200/24 209.24 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A16",
+        "raw_text": "16 Refrigerator 190L Outer Box [size, board and rate blurred]",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L16",
+            "match_confidence": 0.9,
+            "reasons": [
+              "Item name Refrigerator 190L Outer Box matches; size, board and rate are blurred"
+            ]
+          }
+        ],
+        "rate": {
+          "value": null,
+          "currency": "",
+          "unit_as_written": null,
+          "basis_note": ""
+        },
+        "spec_offered": null,
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.05,
+        "locator": {
+          "type": "image",
+          "row": 16,
+          "box": [
+            0.764,
+            0.55,
+            0.82,
+            0.562
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Refrigerator 190L Outer Box",
+        "assumptions": []
+      },
+      {
+        "row_id": "A17",
+        "raw_text": "17 Split AC outdoor unit Outer Box 800x340x580 7P BCB 200/24 160.31 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L17",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Split AC outdoor unit outer box, size 800x340x580, 7P BCB 200/24"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 160.31,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 200,
+          "bf": 24,
+          "dims_mm": [
+            800,
+            340,
+            580
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 17,
+          "box": [
+            0.768,
+            0.575,
+            0.824,
+            0.587
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Split AC outdoor unit Outer Box 800x340x580 7P BCB 200/24 160.31 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A18",
+        "raw_text": "18 Mixer grinder 3 jar corrugated partition set 420x310x80 3P B 120/16 11.72 set",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L18",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Mixer grinder 3 jar partition set, size 420x310x80, 3P B 120/16"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 11.72,
+          "currency": "Rs",
+          "unit_as_written": "set",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            420,
+            310,
+            80
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 18,
+          "box": [
+            0.771,
+            0.597,
+            0.827,
+            0.61
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Mixer grinder 3 jar corrugated partition set 420x310x80 3P B 120/16 11.72 set",
+        "assumptions": []
+      },
+      {
+        "row_id": "A19",
+        "raw_text": "19 Ceiling fan blade separator pad 1230x110x15 3P B 120/16 8.13 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L19",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Ceiling fan blade separator pad, size 1230x110x15, 3P B 120/16"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 8.13,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 120,
+          "bf": 16,
+          "dims_mm": [
+            1230,
+            110,
+            15
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 19,
+          "box": [
+            0.775,
+            0.622,
+            0.831,
+            0.634
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Ceiling fan blade separator pad 1230x110x15 3P B 120/16 8.13 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A20",
+        "raw_text": "20 Microwave top and bottom pad pair 540x460x40 5P BC 150/18 29.40 (handwritten, over struck-out 27.10) pair",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L20",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Microwave top and bottom pad pair, size 540x460x40, 5P BC 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 29.4,
+          "currency": "Rs",
+          "unit_as_written": "pair",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            540,
+            460,
+            40
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": true,
+        "carried_over": [],
+        "legibility": 0.85,
+        "locator": {
+          "type": "image",
+          "row": 20,
+          "box": [
+            0.778,
+            0.645,
+            0.834,
+            0.658
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Microwave top and bottom pad pair 540x460x40 5P BC 150/18 27.10 pair",
+        "assumptions": [
+          "Printed 27.10 is struck out and handwritten 29.40 written above it; 29.40 taken as the current rate."
+        ]
+      },
+      {
+        "row_id": "A21",
+        "raw_text": "21 Cooler water tank wrap sleeve 900x300 flat 3P B 150/18 13.65 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L21",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Cooler water tank wrap sleeve, size 900x300 flat, 3P B 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 13.65,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            900,
+            300
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 21,
+          "box": [
+            0.782,
+            0.67,
+            0.838,
+            0.683
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Cooler water tank wrap sleeve 900x300 flat 3P B 150/18 13.65 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A22",
+        "raw_text": "22 Die cut tray for glass plate 370x330x25 3P B 150/18 8.73 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L22",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Die cut tray for glass plate, size 370x330x25, 3P B 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 8.73,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            370,
+            330,
+            25
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 22,
+          "box": [
+            0.785,
+            0.694,
+            0.841,
+            0.707
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Die cut tray for glass plate 370x330x25 3P B 150/18 8.73 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A23",
+        "raw_text": "23 Stretch film 23 micron 500mm 500mm - 111.40 kg",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L26",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Stretch film 23 micron 500mm, per kg"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 111.4,
+          "currency": "Rs",
+          "unit_as_written": "kg",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            500
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 23,
+          "box": [
+            0.789,
+            0.72,
+            0.845,
+            0.732
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Stretch film 23 micron 500mm 500mm - 111.40 kg",
+        "assumptions": []
+      },
+      {
+        "row_id": "A24",
+        "raw_text": "24 BOPP tape 48mm x 100m brown 48mm x 100m - 30.27 roll",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L27",
+            "match_confidence": 0.97,
+            "reasons": [
+              "BOPP tape 48mm x 100m brown, per roll"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 30.27,
+          "currency": "Rs",
+          "unit_as_written": "roll",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            48,
+            100
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 24,
+          "box": [
+            0.792,
+            0.744,
+            0.848,
+            0.757
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "BOPP tape 48mm x 100m brown 48mm x 100m - 30.27 roll",
+        "assumptions": []
+      },
+      {
+        "row_id": "A25",
+        "raw_text": "25 Pallet corner protector 50x50x4mm x 1000mm 1000mm - 1,800.00 box",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L28",
+            "match_confidence": 0.95,
+            "reasons": [
+              "Pallet corner protector 50x50x4mm x 1000mm; priced per box"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 1800,
+          "currency": "Rs",
+          "unit_as_written": "box",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1000
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 25,
+          "box": [
+            0.796,
+            0.769,
+            0.852,
+            0.782
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Pallet corner protector 50x50x4mm x 1000mm 1000mm - 1,800.00 box",
+        "assumptions": [
+          "Rate is per box; pieces per box are not stated, while RFx unit is piece."
+        ]
+      },
+      {
+        "row_id": "A26",
+        "raw_text": "26 Corrugated pallet slip sheet 1100x1100 1100x1100 3P B 150/18 20.45 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L29",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Corrugated pallet slip sheet 1100x1100, 3P B 150/18"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 20.45,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "liner_gsm": 150,
+          "bf": 18,
+          "dims_mm": [
+            1100,
+            1100
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 26,
+          "box": [
+            0.799,
+            0.795,
+            0.855,
+            0.808
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Corrugated pallet slip sheet 1100x1100 1100x1100 3P B 150/18 20.45 pc",
+        "assumptions": []
+      },
+      {
+        "row_id": "A27",
+        "raw_text": "27 Edge board 40x40x3mm x 1200mm 1200mm - 11.90 pc",
+        "mapped_line_candidates": [
+          {
+            "line_id": "L30",
+            "match_confidence": 0.97,
+            "reasons": [
+              "Edge board 40x40x3mm x 1200mm"
+            ]
+          }
+        ],
+        "rate": {
+          "value": 11.9,
+          "currency": "Rs",
+          "unit_as_written": "pc",
+          "basis_note": ""
+        },
+        "spec_offered": {
+          "dims_mm": [
+            1200
+          ]
+        },
+        "line_total_as_written": null,
+        "struck_out_or_overwritten": false,
+        "carried_over": [],
+        "legibility": 0.9,
+        "locator": {
+          "type": "image",
+          "row": 27,
+          "box": [
+            0.803,
+            0.821,
+            0.859,
+            0.834
+          ],
+          "file": "20260924_194012.jpg"
+        },
+        "snippet": "Edge board 40x40x3mm x 1200mm 1200mm - 11.90 pc",
+        "assumptions": []
+      }
+    ],
+    "extras": [],
+    "notes": [
+      "The vendor rate card has 27 rows. Vendor rows 1-22 map to RFx L01-L22. Vendor rows 23-27 map to L26, L27, L28, L29 and L30.",
+      "RFx lines L23, L24 and L25 (corrugated sheets and roll) are not priced.",
+      "The photo is skewed, so locator boxes for rate cells are approximate."
+    ]
+  },
+  "pass_b": {
+    "trace": {
+      "step": "extract_b",
+      "vendor_id": "V4",
+      "prompt_version": "extract_b@19c91483",
+      "model_requested": "claude-sonnet-5-5",
+      "model_used": "claude-sonnet-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 4969,
+        "output_tokens": 10185,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 6619
+      },
+      "cost_usd": 0.1283355,
+      "ms": 78211,
+      "at": "2026-10-08T19:48:17.722Z"
+    },
+    "errors": [],
+    "notes": [
+      "Rate card header: Ex works Bahadurgarh, GST extra 18 percent, rates valid 15 days from 24-09-2026. Rate column is headed Rate Rs, unit column Per.",
+      "Rows 5 (Table fan) and 16 (Refrigerator) are blurred; their rates are unreadable.",
+      "Row 20 (Microwave pad pair) has a printed 27.10 struck out and handwritten 29.40 above it.",
+      "Several offered dimensions differ from the RFx (e.g. L07 370x370x505, L08 545x470x360).",
+      "Pallet corner protector is priced per box, not per piece.",
+      "No offer for the RFx lines L23, L24 and L25 (corrugated sheets and roll).",
+      "The email gives questionnaire replies Q01-Q12 (ISO attached, 520 MT/month, lead time 14 days, Net 45 yes, validity 15 days, no deviations); these are not line offers. The email states no deviations, though the card differs in some dimensions."
+    ],
+    "extraction": {
+      "vendor_terms": {},
+      "rows": [
+        {
+          "row_id": "B-L01",
+          "raw_text": "Mixer grinder 3 jar M/C 440x330x310 5P BC 150/18 34.54 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L01",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 34.54,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              440,
+              330,
+              310
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 1,
+            "box": [
+              0.705,
+              0.214,
+              0.765,
+              0.229
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Mixer grinder 3 jar M/C 440x330x310 5P BC 150/18 34.54 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L02",
+          "raw_text": "Induction cooktop M/C 400x360x140 5P BC 150/18 23.28 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L02",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 23.28,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              400,
+              360,
+              140
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 2,
+            "box": [
+              0.709,
+              0.237,
+              0.769,
+              0.252
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Induction cooktop M/C 400x360x140 5P BC 150/18 23.28 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L03",
+          "raw_text": "Air fryer 4L M/C 360x340x380 5P BC 150/18 34.05 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L03",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 34.05,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              360,
+              340,
+              380
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 3,
+            "box": [
+              0.712,
+              0.261,
+              0.772,
+              0.276
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Air fryer 4L M/C 360x340x380 5P BC 150/18 34.05 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L04",
+          "raw_text": "Ceiling fan 1200mm M/C 1260x180x260 5P BC 180/22 66.78 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L04",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 66.78,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              1260,
+              180,
+              260
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.6,
+          "locator": {
+            "type": "image",
+            "row": 4,
+            "box": [
+              0.716,
+              0.284,
+              0.776,
+              0.299
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Ceiling fan 1200mm M/C 1260x180x260 5P BC 180/22 66.78 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L05",
+          "raw_text": "Table fan 400mm M/C",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L05",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": null,
+            "currency": "Rs",
+            "unit_as_written": null,
+            "basis_note": ""
+          },
+          "spec_offered": null,
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.1,
+          "locator": {
+            "type": "image",
+            "row": 5,
+            "box": [
+              0.72,
+              0.308,
+              0.78,
+              0.323
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Table fan 400mm M/C",
+          "assumptions": [
+            "Row is listed but size, board and rate are blurred and unreadable."
+          ]
+        },
+        {
+          "row_id": "B-L06",
+          "raw_text": "Room cooler 40L M/C 560x430x860 5P BC 180/22 97.56 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L06",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 97.56,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              560,
+              430,
+              860
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.7,
+          "locator": {
+            "type": "image",
+            "row": 6,
+            "box": [
+              0.723,
+              0.331,
+              0.783,
+              0.346
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Room cooler 40L M/C 560x430x860 5P BC 180/22 97.56 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L07",
+          "raw_text": "Water heater 15L M/C 370x370x505 5P BC 180/22 56.91 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L07",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 56.91,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              370,
+              370,
+              505
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 7,
+            "box": [
+              0.727,
+              0.354,
+              0.787,
+              0.369
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Water heater 15L M/C 370x370x505 5P BC 180/22 56.91 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L08",
+          "raw_text": "Microwave oven 28L M/C 545x470x360 5P BC 180/22 77.92 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L08",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 77.92,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 180,
+            "bf": 22,
+            "dims_mm": [
+              545,
+              470,
+              360
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 8,
+            "box": [
+              0.73,
+              0.378,
+              0.79,
+              0.393
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Microwave oven 28L M/C 545x470x360 5P BC 180/22 77.92 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L09",
+          "raw_text": "Mixer jar accessory box 180x140x120 3P B 120/16 5.64 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L09",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 5.64,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              180,
+              140,
+              120
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 9,
+            "box": [
+              0.734,
+              0.401,
+              0.794,
+              0.416
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Mixer jar accessory box 180x140x120 3P B 120/16 5.64 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L10",
+          "raw_text": "Fan blade set Inner Box 1250x120x60 3P B 120/16 17.02 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L10",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 17.02,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1250,
+              120,
+              60
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 10,
+            "box": [
+              0.737,
+              0.425,
+              0.797,
+              0.44
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Fan blade set Inner Box 1250x120x60 3P B 120/16 17.02 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L11",
+          "raw_text": "Power cord and manual pouch carton 220x160x40 3P B 120/16 2.86 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L11",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 2.86,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              220,
+              160,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 11,
+            "box": [
+              0.741,
+              0.448,
+              0.801,
+              0.463
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Power cord and manual pouch carton 220x160x40 3P B 120/16 2.86 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L12",
+          "raw_text": "Cooktop glass plate Inner Box 380x340x50 3P B 150/18 12.57 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L12",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 12.57,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              380,
+              340,
+              50
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 12,
+            "box": [
+              0.744,
+              0.471,
+              0.804,
+              0.486
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Cooktop glass plate Inner Box 380x340x50 3P B 150/18 12.57 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L13",
+          "raw_text": "Remote and battery kit box 160x90x40 3P B 120/16 2.28 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L13",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 2.28,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              160,
+              90,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 13,
+            "box": [
+              0.748,
+              0.495,
+              0.808,
+              0.51
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Remote and battery kit box 160x90x40 3P B 120/16 2.28 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L14",
+          "raw_text": "Air fryer basket Inner Box 330x300x120 3P B 150/18 14.44 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L14",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 14.44,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              330,
+              300,
+              120
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 14,
+            "box": [
+              0.751,
+              0.518,
+              0.811,
+              0.533
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Air fryer basket Inner Box 330x300x120 3P B 150/18 14.44 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L15",
+          "raw_text": "Washing machine fully automatic 6.5kg Outer Box 620x640x1000 7P BCB 200/24 209.24 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L15",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 209.24,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              620,
+              640,
+              1000
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.6,
+          "locator": {
+            "type": "image",
+            "row": 15,
+            "box": [
+              0.755,
+              0.542,
+              0.815,
+              0.557
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Washing machine fully automatic 6.5kg Outer Box 620x640x1000 7P BCB 200/24 209.24 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L16",
+          "raw_text": "Refrigerator 190L Outer Box",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L16",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": null,
+            "currency": "Rs",
+            "unit_as_written": null,
+            "basis_note": ""
+          },
+          "spec_offered": null,
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.1,
+          "locator": {
+            "type": "image",
+            "row": 16,
+            "box": [
+              0.758,
+              0.565,
+              0.818,
+              0.58
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Refrigerator 190L Outer Box",
+          "assumptions": [
+            "Row is listed but size, board and rate are blurred and unreadable."
+          ]
+        },
+        {
+          "row_id": "B-L17",
+          "raw_text": "Split AC outdoor unit Outer Box 800x340x580 7P BCB 200/24 160.31 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L17",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 160.31,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 7,
+            "liner_gsm": 200,
+            "bf": 24,
+            "dims_mm": [
+              800,
+              340,
+              580
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.8,
+          "locator": {
+            "type": "image",
+            "row": 17,
+            "box": [
+              0.762,
+              0.588,
+              0.822,
+              0.603
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Split AC outdoor unit Outer Box 800x340x580 7P BCB 200/24 160.31 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L18",
+          "raw_text": "Mixer grinder 3 jar corrugated partition set 420x310x80 3P B 120/16 11.72 set",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L18",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 11.72,
+            "currency": "Rs",
+            "unit_as_written": "set",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              420,
+              310,
+              80
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 18,
+            "box": [
+              0.765,
+              0.612,
+              0.825,
+              0.627
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Mixer grinder 3 jar corrugated partition set 420x310x80 3P B 120/16 11.72 set",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L19",
+          "raw_text": "Ceiling fan blade separator pad 1230x110x15 3P B 120/16 8.13 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L19",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 8.13,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 120,
+            "bf": 16,
+            "dims_mm": [
+              1230,
+              110,
+              15
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 19,
+            "box": [
+              0.769,
+              0.635,
+              0.829,
+              0.65
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Ceiling fan blade separator pad 1230x110x15 3P B 120/16 8.13 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L20",
+          "raw_text": "Microwave top and bottom pad pair 540x460x40 5P BC 150/18 29.40 27.10 pair",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L20",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 29.4,
+            "currency": "Rs",
+            "unit_as_written": "pair",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 5,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              540,
+              460,
+              40
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": true,
+          "carried_over": [],
+          "legibility": 0.8,
+          "locator": {
+            "type": "image",
+            "row": 20,
+            "box": [
+              0.772,
+              0.64,
+              0.832,
+              0.67
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Microwave top and bottom pad pair 540x460x40 5P BC 150/18 29.40 27.10 pair",
+          "assumptions": [
+            "Printed 27.10 is struck out and handwritten 29.40 is read as the current rate."
+          ]
+        },
+        {
+          "row_id": "B-L21",
+          "raw_text": "Cooler water tank wrap sleeve 900x300 flat 3P B 150/18 13.65 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L21",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 13.65,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              900,
+              300
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 21,
+            "box": [
+              0.776,
+              0.682,
+              0.836,
+              0.697
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Cooler water tank wrap sleeve 900x300 flat 3P B 150/18 13.65 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L22",
+          "raw_text": "Die cut tray for glass plate 370x330x25 3P B 150/18 8.73 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L22",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 8.73,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              370,
+              330,
+              25
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 22,
+            "box": [
+              0.779,
+              0.705,
+              0.839,
+              0.72
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Die cut tray for glass plate 370x330x25 3P B 150/18 8.73 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L26",
+          "raw_text": "Stretch film 23 micron 500mm 500mm - 111.40 kg",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L26",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 111.4,
+            "currency": "Rs",
+            "unit_as_written": "kg",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              500
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 23,
+            "box": [
+              0.783,
+              0.729,
+              0.843,
+              0.744
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Stretch film 23 micron 500mm 500mm - 111.40 kg",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L27",
+          "raw_text": "BOPP tape 48mm x 100m brown 48mm x 100m - 30.27 roll",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L27",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 30.27,
+            "currency": "Rs",
+            "unit_as_written": "roll",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              48,
+              100
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 24,
+            "box": [
+              0.786,
+              0.752,
+              0.846,
+              0.767
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "BOPP tape 48mm x 100m brown 48mm x 100m - 30.27 roll",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L28",
+          "raw_text": "Pallet corner protector 50x50x4mm x 1000mm 1000mm - 1,800.00 box",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L28",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 1800,
+            "currency": "Rs",
+            "unit_as_written": "box",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1000
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 25,
+            "box": [
+              0.79,
+              0.776,
+              0.86,
+              0.791
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Pallet corner protector 50x50x4mm x 1000mm 1000mm - 1,800.00 box",
+          "assumptions": [
+            "Priced per box; the number of pieces per box is not stated."
+          ]
+        },
+        {
+          "row_id": "B-L29",
+          "raw_text": "Corrugated pallet slip sheet 1100x1100 1100x1100 3P B 150/18 20.45 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L29",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 20.45,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "ply": 3,
+            "liner_gsm": 150,
+            "bf": 18,
+            "dims_mm": [
+              1100,
+              1100
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 26,
+            "box": [
+              0.793,
+              0.799,
+              0.853,
+              0.814
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Corrugated pallet slip sheet 1100x1100 1100x1100 3P B 150/18 20.45 pc",
+          "assumptions": []
+        },
+        {
+          "row_id": "B-L30",
+          "raw_text": "Edge board 40x40x3mm x 1200mm 1200mm - 11.90 pc",
+          "mapped_line_candidates": [
+            {
+              "line_id": "L30",
+              "match_confidence": 1,
+              "reasons": [
+                "pass B: searched for this RFx line"
+              ]
+            }
+          ],
+          "rate": {
+            "value": 11.9,
+            "currency": "Rs",
+            "unit_as_written": "pc",
+            "basis_note": ""
+          },
+          "spec_offered": {
+            "dims_mm": [
+              1200
+            ]
+          },
+          "line_total_as_written": null,
+          "struck_out_or_overwritten": false,
+          "carried_over": [],
+          "legibility": 0.9,
+          "locator": {
+            "type": "image",
+            "row": 27,
+            "box": [
+              0.797,
+              0.822,
+              0.857,
+              0.837
+            ],
+            "file": "20260924_194012.jpg"
+          },
+          "snippet": "Edge board 40x40x3mm x 1200mm 1200mm - 11.90 pc",
+          "assumptions": []
+        }
+      ],
+      "extras": [],
+      "notes": [
+        "Rate card header: Ex works Bahadurgarh, GST extra 18 percent, rates valid 15 days from 24-09-2026. Rate column is headed Rate Rs, unit column Per.",
+        "Rows 5 (Table fan) and 16 (Refrigerator) are blurred; their rates are unreadable.",
+        "Row 20 (Microwave pad pair) has a printed 27.10 struck out and handwritten 29.40 above it.",
+        "Several offered dimensions differ from the RFx (e.g. L07 370x370x505, L08 545x470x360).",
+        "Pallet corner protector is priced per box, not per piece.",
+        "No offer for the RFx lines L23, L24 and L25 (corrugated sheets and roll).",
+        "The email gives questionnaire replies Q01-Q12 (ISO attached, 520 MT/month, lead time 14 days, Net 45 yes, validity 15 days, no deviations); these are not line offers. The email states no deviations, though the card differs in some dimensions."
+      ]
+    }
+  },
+  "adjudication": {
+    "trace": {
+      "step": "adjudicate",
+      "vendor_id": "V4",
+      "prompt_version": "adjudicate@79459df6",
+      "model_requested": "claude-opus-5-5",
+      "model_used": "claude-opus-5-5",
+      "fallback_used": false,
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 5277,
+        "output_tokens": 1023,
+        "cache_read_input_tokens": 6330,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.042834,
+      "ms": 11789,
+      "at": "2026-10-08T19:48:29.530Z"
+    },
+    "errors": [],
+    "adjudications": [
+      {
+        "line_id": "L05",
+        "decision": "UNRESOLVED",
+        "reasoning": "The 'Table fan 400mm M/C' row is visible, but its size and rate cells are blurred and the board cell is blank, so no rate can be read. Neither reading supplies a value.",
+        "row": null,
+        "model": "claude-opus-5-5"
+      },
+      {
+        "line_id": "L16",
+        "decision": "UNRESOLVED",
+        "reasoning": "The 'Refrigerator 190L Outer Box' row is visible, but its size and rate cells are blurred and illegible, so no rate can be read. The 160.31 below belongs to row 17.",
+        "row": null,
+        "model": "claude-opus-5-5"
+      },
+      {
+        "line_id": "L20",
+        "decision": "B",
+        "reasoning": "Row 20 'Microwave top and bottom pad pair 540x460x40 5P BC 150/18' shows 27.10 struck through with 29.40 handwritten above it, priced per 'pair' under the 'Rate Rs' header. Reading B reports the corrected value.",
+        "row": null,
+        "model": "claude-opus-5-5"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "row_id": "A20",
+      "reason": "rate 29.4 is not written in the snippet"
+    }
+  ],
+  "score": {
+    "lines": [
+      {
+        "line_id": "L01",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 40.936,
+        "got_point": 40.936,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L02",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 27.57,
+        "got_point": 27.57,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L03",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 40.134,
+        "got_point": 40.134,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L04",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 78.87,
+        "got_point": 78.87,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L05",
+        "expected_state": "NEEDS_REVIEW",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L06",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 115.89,
+        "got_point": 115.89,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L07",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 67.83,
+        "got_point": 67.83,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L08",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 93.13,
+        "got_point": 93.13,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L09",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 6.732,
+        "got_point": 6.731999999999999,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L10",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 20.296,
+        "got_point": 20.296,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L11",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 3.406,
+        "got_point": 3.4059999999999997,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L12",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.988,
+        "got_point": 14.988,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L13",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 2.67,
+        "got_point": 2.67,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L14",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 17.248,
+        "got_point": 17.247999999999998,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L15",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 247.46,
+        "got_point": 247.46,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L16",
+        "expected_state": "NEEDS_REVIEW",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L17",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 189.95,
+        "got_point": 189.95,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L18",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 13.904,
+        "got_point": 13.904,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L19",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 9.69,
+        "got_point": 9.690000000000001,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L20",
+        "expected_state": "NEEDS_REVIEW",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": 34.236,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L21",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 16.224,
+        "got_point": 16.224,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L22",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 10.212,
+        "got_point": 10.212,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L23",
+        "expected_state": "MISSING",
+        "got_state": "MISSING",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L24",
+        "expected_state": "MISSING",
+        "got_state": "MISSING",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L25",
+        "expected_state": "MISSING",
+        "got_state": "MISSING",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L26",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 119.2,
+        "got_point": 119.2,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L27",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 31.128,
+        "got_point": 31.128,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L28",
+        "expected_state": "NEEDS_REVIEW",
+        "got_state": "NEEDS_REVIEW",
+        "state_ok": true,
+        "expected_point": null,
+        "got_point": null,
+        "price_ok": null,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L29",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 24.74,
+        "got_point": 24.74,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      },
+      {
+        "line_id": "L30",
+        "expected_state": "INFERRED",
+        "got_state": "INFERRED",
+        "state_ok": true,
+        "expected_point": 14.24,
+        "got_point": 14.24,
+        "price_ok": true,
+        "dangerous": false,
+        "missing_flags": []
+      }
+    ],
+    "state_accuracy": 1,
+    "price_checked": 23,
+    "price_accuracy": 1,
+    "dangerous": [],
+    "coverage_errors": [],
+    "flags_expected": 2,
+    "flag_recall": 1,
+    "missing_flags": []
+  },
+  "pending_confirmations": []
+}
