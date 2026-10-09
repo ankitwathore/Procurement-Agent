@@ -17,6 +17,7 @@
     "evidence": "tsx --env-file=../.env src/cli/evidence.ts",
     "eval": "tsx src/cli/eval.ts",
     "api": "tsx --env-file=../.env src/server/main.ts",
+    "start": "tsx src/server/main.ts",
     "ask": "tsx --env-file=../.env src/cli/ask.ts",
     "golden": "tsx --env-file=../.env src/cli/golden.ts",
     "db": "tsx src/cli/db.ts"

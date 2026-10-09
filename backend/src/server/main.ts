@@ -5,7 +5,7 @@ import { AnthropicChat, runAnalystTurn, type Message } from "../analyst/agent.js
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
 import { extname, join, normalize, sep } from "node:path";
 import { buildSession } from "../cli/assemble.js";
-import { DATA_SETS, VENDORS, dataDir, latestRun, type DataSet } from "../cli/vendors.js";
+import { DATA_SETS, ROOT, VENDORS, dataDir, latestRun, type DataSet } from "../cli/vendors.js";
 import { loadConfig } from "../config.js";
 import type { Policy } from "../award/optimizer.js";
 import { confirmAward } from "../award/gate.js";
@@ -21,6 +21,7 @@ import { awardDecision, awardView, cellView, clarificationView, comparisonView, 
  * (confirmations, cell verifications and overrides, gate waivers, confirmed awards) are stored in SQLite, one file per
  * data set (data/app.db for the demo set), re-applied to the rebuilt data on every load, and logged in the event log.
  * Usage: npm run api   (port 8787; the UI's dev server proxies /api here)
+ *        npm start     (one server for a deployment: the API plus the built UI from frontend/dist, on $PORT)
  */
 
 const PORT = Number(process.env.PORT ?? 8787);
@@ -84,10 +85,27 @@ async function readJson(req: IncomingMessage): Promise<Record<string, unknown>> 
   return chunks.length ? JSON.parse(Buffer.concat(chunks).toString("utf8")) : {};
 }
 
+/** The built UI (npm run build -w frontend), served when present so one process runs the whole app. */
+const UI_DIR = join(ROOT, "frontend", "dist");
+const UI_TYPES: Record<string, string> = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png", ".ico": "image/x-icon", ".woff2": "font/woff2" };
+
+function serveUi(pathname: string, res: ServerResponse): boolean {
+  if (!existsSync(UI_DIR)) return false;
+  const path = normalize(join(UI_DIR, decodeURIComponent(pathname)));
+  if (!path.startsWith(UI_DIR)) return false;
+  // Assets by path; anything else is the app itself (its routes live after the #).
+  const file = existsSync(path) && extname(path) ? path : join(UI_DIR, "index.html");
+  const hashed = file.includes(`${sep}assets${sep}`);
+  res.writeHead(200, { "content-type": UI_TYPES[extname(file)] ?? "application/octet-stream", "cache-control": hashed ? "public, max-age=31536000, immutable" : "no-cache" });
+  res.end(readFileSync(file));
+  return true;
+}
+
 const TYPES: Record<string, string> = { ".pdf": "application/pdf", ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", ".eml": "message/rfc822" };
 
 async function route(req: IncomingMessage, res: ServerResponse): Promise<void> {
   const url = new URL(req.url ?? "/", "http://localhost");
+  if (!url.pathname.startsWith("/api/") && req.method === "GET" && serveUi(url.pathname, res)) return;
   const set = (url.searchParams.get("set") ?? "tuned") as DataSet;
   if (!DATA_SETS.includes(set)) return send(res, 400, { error: `unknown set ${set}` });
   const p = url.pathname;
@@ -227,7 +245,7 @@ async function route(req: IncomingMessage, res: ServerResponse): Promise<void> {
       return void res.end();
     }
     if (!process.env.ANTHROPIC_API_KEY) {
-      event({ type: "error", message: "The analyst needs the API key (ANTHROPIC_API_KEY in .env). Everything else works without it." });
+      event({ type: "error", message: "The analyst needs an API key (ANTHROPIC_API_KEY in .env, or in the host's environment variables). Everything else works without it." });
       return void res.end();
     }
     try {
@@ -296,4 +314,4 @@ async function route(req: IncomingMessage, res: ServerResponse): Promise<void> {
 
 createServer((req, res) => {
   route(req, res).catch((err) => send(res, 500, { error: (err as Error).message }));
-}).listen(PORT, () => console.log(`QuoteKill API on http://localhost:${PORT}  (sets: ${DATA_SETS.join(", ")})`));
+}).listen(PORT, () => console.log(`QuoteKill API on http://localhost:${PORT}  (sets: ${DATA_SETS.join(", ")})${existsSync(UI_DIR) ? ", serving the built UI" : ""}`));

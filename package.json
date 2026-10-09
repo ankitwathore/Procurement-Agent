@@ -20,10 +20,14 @@
     "evidence": "npm run evidence --workspace backend --",
     "eval": "npm run eval --workspace backend",
     "api": "npm run api --workspace backend",
+    "start": "npm run start --workspace backend",
     "ui": "npm run dev --workspace frontend",
     "dev": "node scripts/dev.mjs",
     "ask": "npm run ask --workspace backend --",
     "golden": "npm run golden --workspace backend --",
     "db": "npm run db --workspace backend --"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
